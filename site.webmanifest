@@ -1,0 +1,10 @@
+{
+  "name": "SelfReg AI",
+  "short_name": "SelfReg AI",
+  "description": "AI support for adolescent self-regulation with teacher dashboard and BYOK deployment.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f8fb",
+  "theme_color": "#2f80ed",
+  "lang": "ru"
+}

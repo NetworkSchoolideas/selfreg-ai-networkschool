@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 620" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">SelfReg AI experimental base</title>
+  <desc id="desc">A map linking emotional intelligence, self-regulation, AI engagement, and three adolescent cluster profiles.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10z" fill="#2f80ed"/>
+    </marker>
+    <style>
+      .bg{fill:#f8fbfd}.title{font:900 28px Arial,sans-serif;fill:#132238}.sub{font:700 15px Arial,sans-serif;fill:#5f6f82}.card{fill:#fff;stroke:#d8e0ea;stroke-width:2}.blue{fill:#eef5ff;stroke:#2f80ed;stroke-width:3}.green{fill:#edf8f4;stroke:#23967f;stroke-width:3}.txt{font:900 18px Arial,sans-serif;fill:#132238}.small{font:700 13px Arial,sans-serif;fill:#5f6f82}.num{font:900 25px Arial,sans-serif;fill:#2f80ed}.line{fill:none;stroke:#2f80ed;stroke-width:4;marker-end:url(#arrow)}.softLine{fill:none;stroke:#9ab0c5;stroke-width:3;stroke-dasharray:9 8;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect class="bg" width="1120" height="620" rx="18"/>
+  <text class="title" x="48" y="58">Experiment: mediation model and clusters</text>
+  <text class="sub" x="48" y="88">Overall sample N=140; current statistical block n=82.</text>
+  <rect class="blue" x="72" y="155" width="260" height="112" rx="16"/>
+  <text class="txt" x="120" y="200">Emotional</text>
+  <text class="txt" x="124" y="226">intelligence</text>
+  <text class="small" x="112" y="250">self-understanding and feedback</text>
+  <rect class="green" x="430" y="140" width="260" height="142" rx="16"/>
+  <text class="txt" x="484" y="190">Self-regulation</text>
+  <text class="small" x="482" y="220">goal · action · feedback</text>
+  <text class="small" x="490" y="242">compare · correction</text>
+  <rect class="blue" x="788" y="155" width="260" height="112" rx="16"/>
+  <text class="txt" x="840" y="200">AI engagement</text>
+  <text class="small" x="852" y="250">as a mode of action</text>
+  <path class="line" d="M334 211 C370 211 390 211 428 211"/>
+  <path class="line" d="M692 211 C730 211 750 211 786 211"/>
+  <path class="softLine" d="M202 268 C330 392 790 392 918 268"/>
+  <rect class="card" x="366" y="328" width="500" height="44" rx="10"/>
+  <text class="num" x="365" y="190">0.54</text>
+  <text class="num" x="723" y="190">0.17</text>
+  <text class="small" x="398" y="355">Partial indirect effect; clusters clarify the type of support</text>
+  <rect class="card" x="72" y="430" width="292" height="112" rx="16"/>
+  <text class="txt" x="120" y="472">Deficit profile</text>
+  <text class="small" x="112" y="502">cluster: support and a soft start</text>
+  <rect class="card" x="414" y="430" width="292" height="112" rx="16"/>
+  <text class="txt" x="478" y="472">Baseline profile</text>
+  <text class="small" x="458" y="502">cluster: microsteps and observation</text>
+  <rect class="card" x="756" y="430" width="292" height="112" rx="16"/>
+  <text class="txt" x="812" y="472">Resource profile</text>
+  <text class="small" x="808" y="502">cluster: broader development paths</text>
+</svg>

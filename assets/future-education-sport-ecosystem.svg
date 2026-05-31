@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 660" role="img" aria-labelledby="title desc">
+  <title id="title">Будущая образовательная экосистема SelfReg AI</title>
+  <desc id="desc">Экосистема сопровождения подростка по аналогии с большим спортом.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10z" fill="#ffffff"/>
+    </marker>
+    <style>
+      .bg{fill:#102a43}
+      .orbit{fill:none;stroke:#fff;stroke-opacity:.16;stroke-width:2}
+      .node{fill:#fff;stroke:#d8e0ea;stroke-width:2}
+      .core{fill:#2f80ed;stroke:#fff;stroke-width:3}
+      .green{fill:#23967f;stroke:#fff;stroke-width:3}
+      .title{font:900 28px Arial,sans-serif;fill:#fff}
+      .light{font:700 14px Arial,sans-serif;fill:#e4eef7}
+      .label{font:900 18px Arial,sans-serif;fill:#132238}
+      .small{font:700 13px Arial,sans-serif;fill:#5f6f82}
+      .coreText{font:900 20px Arial,sans-serif;fill:#fff}
+      .line{fill:none;stroke:#fff;stroke-width:3;stroke-opacity:.72;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect class="bg" width="1120" height="660" rx="18"/>
+  <text class="title" x="48" y="58">Образование как “большой спорт” развития</text>
+  <text class="light" x="48" y="88">Данные помогают заметить талант, риск и следующий шаг.</text>
+  <ellipse class="orbit" cx="560" cy="354" rx="405" ry="220"/>
+  <ellipse class="orbit" cx="560" cy="354" rx="275" ry="150"/>
+
+  <circle class="core" cx="560" cy="350" r="86"/>
+  <text class="coreText" x="510" y="340">SelfReg AI</text>
+  <text class="light" x="500" y="370">контур поддержки</text>
+
+  <rect class="node" x="90" y="190" width="202" height="94" rx="16"/>
+  <text class="label" x="138" y="228">Подросток</text>
+  <text class="small" x="130" y="254">цели · ответы · след</text>
+
+  <rect class="node" x="828" y="190" width="202" height="94" rx="16"/>
+  <text class="label" x="878" y="228">Педагог</text>
+  <text class="small" x="868" y="254">не только интуиция</text>
+
+  <rect class="node" x="90" y="442" width="202" height="94" rx="16"/>
+  <text class="label" x="122" y="480">Сигналы</text>
+  <text class="small" x="126" y="506">учебные · психо · тело</text>
+
+  <rect class="node" x="828" y="442" width="202" height="94" rx="16"/>
+  <text class="label" x="862" y="480">Возможности</text>
+  <text class="small" x="865" y="506">проекты · наставники</text>
+
+  <rect class="green" x="407" y="552" width="306" height="62" rx="16"/>
+  <text class="coreText" x="458" y="590">Профиль развития</text>
+
+  <path class="line" d="M292 237 C385 238 438 280 500 318"/>
+  <path class="line" d="M828 237 C735 238 682 280 620 318"/>
+  <path class="line" d="M292 489 C385 470 438 420 500 382"/>
+  <path class="line" d="M828 489 C735 470 682 420 620 382"/>
+  <path class="line" d="M560 436 V550"/>
+</svg>

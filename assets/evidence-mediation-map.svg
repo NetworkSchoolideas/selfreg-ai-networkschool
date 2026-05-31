@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 620" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">Экспериментальная база SelfReg AI</title>
+  <desc id="desc">Карта связи эмоционального интеллекта, саморегуляции, вовлеченности в ИИ и трех кластерных профилей подростков.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10z" fill="#2f80ed"/>
+    </marker>
+    <style>
+      .bg{fill:#f8fbfd}
+      .title{font:900 28px Arial,sans-serif;fill:#132238}
+      .sub{font:700 15px Arial,sans-serif;fill:#5f6f82}
+      .card{fill:#fff;stroke:#d8e0ea;stroke-width:2}
+      .blue{fill:#eef5ff;stroke:#2f80ed;stroke-width:3}
+      .green{fill:#edf8f4;stroke:#23967f;stroke-width:3}
+      .red{fill:#fff1ee;stroke:#d85c4a;stroke-width:3}
+      .txt{font:900 18px Arial,sans-serif;fill:#132238}
+      .small{font:700 13px Arial,sans-serif;fill:#5f6f82}
+      .num{font:900 25px Arial,sans-serif;fill:#2f80ed}
+      .line{fill:none;stroke:#2f80ed;stroke-width:4;marker-end:url(#arrow)}
+      .softLine{fill:none;stroke:#9ab0c5;stroke-width:3;stroke-dasharray:9 8;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect class="bg" width="1120" height="620" rx="18"/>
+  <text class="title" x="48" y="58">Эксперимент: медиаторная модель и кластеры</text>
+  <text class="sub" x="48" y="88">Общая выборка N=140; статистический блок рассчитан на n=82.</text>
+
+  <rect class="blue" x="72" y="155" width="260" height="112" rx="16"/>
+  <text class="txt" x="110" y="200">Эмоциональный</text>
+  <text class="txt" x="132" y="226">интеллект</text>
+  <text class="small" x="104" y="250">понимание себя и обратной связи</text>
+
+  <rect class="green" x="430" y="140" width="260" height="142" rx="16"/>
+  <text class="txt" x="492" y="190">Саморегуляция</text>
+  <text class="small" x="466" y="220">цель · действие · обратная связь</text>
+  <text class="small" x="482" y="242">сличение · коррекция</text>
+
+  <rect class="blue" x="788" y="155" width="260" height="112" rx="16"/>
+  <text class="txt" x="850" y="200">Вовлеченность</text>
+  <text class="txt" x="880" y="226">в ИИ</text>
+  <text class="small" x="846" y="250">как способ действия</text>
+
+  <path class="line" d="M334 211 C370 211 390 211 428 211"/>
+  <path class="line" d="M692 211 C730 211 750 211 786 211"/>
+  <path class="softLine" d="M202 268 C330 392 790 392 918 268"/>
+  <rect class="card" x="366" y="328" width="500" height="44" rx="10"/>
+  <text class="num" x="365" y="190">0.54</text>
+  <text class="num" x="723" y="190">0.17</text>
+  <text class="small" x="398" y="355">Непрямой эффект частичный; кластеры уточняют тип поддержки</text>
+
+  <rect class="card" x="72" y="430" width="292" height="112" rx="16"/>
+  <text class="txt" x="116" y="472">Дефицитарный</text>
+  <text class="small" x="104" y="502">кластер: нужна опора и мягкий старт</text>
+
+  <rect class="card" x="414" y="430" width="292" height="112" rx="16"/>
+  <text class="txt" x="474" y="472">Базовый</text>
+  <text class="small" x="458" y="502">кластер: микрошаги и наблюдение</text>
+
+  <rect class="card" x="756" y="430" width="292" height="112" rx="16"/>
+  <text class="txt" x="820" y="472">Ресурсный</text>
+  <text class="small" x="806" y="502">кластер: расширение траектории</text>
+</svg>

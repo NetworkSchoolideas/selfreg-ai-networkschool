@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 700" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">C4-архитектура SelfReg AI</title>
+  <desc id="desc">Контекст, контейнеры и компоненты SelfReg AI.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10z" fill="#2f80ed"/>
+    </marker>
+    <style>
+      .bg{fill:#f8fbfd}
+      .area{fill:#eef4f7;stroke:#d8e0ea;stroke-width:2}
+      .box{fill:#fff;stroke:#2f80ed;stroke-width:3}
+      .person{fill:#edf8f4;stroke:#23967f;stroke-width:3}
+      .external{fill:#fff1ee;stroke:#d85c4a;stroke-width:3}
+      .title{font:900 28px Arial,sans-serif;fill:#132238}
+      .tag{font:900 15px Arial,sans-serif;fill:#2f80ed}
+      .label{font:900 18px Arial,sans-serif;fill:#132238}
+      .small{font:700 13px Arial,sans-serif;fill:#5f6f82}
+      .line{fill:none;stroke:#2f80ed;stroke-width:3;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect class="bg" width="1120" height="700" rx="18"/>
+  <text class="title" x="48" y="58">C4: смысл системы → сервисы → компоненты</text>
+  <rect class="area" x="58" y="96" width="1004" height="540" rx="20"/>
+  <text class="tag" x="86" y="130">C1 · Контекст</text>
+
+  <rect class="person" x="92" y="184" width="190" height="86" rx="14"/>
+  <text class="label" x="132" y="220">Подросток</text>
+  <text class="small" x="130" y="246">диалог · ответы</text>
+
+  <rect class="person" x="92" y="424" width="190" height="86" rx="14"/>
+  <text class="label" x="138" y="460">Педагог</text>
+  <text class="small" x="126" y="486">динамика · решение</text>
+
+  <rect class="box" x="350" y="150" width="420" height="390" rx="18"/>
+  <text class="tag" x="380" y="184">C2 · Контейнеры</text>
+
+  <rect class="box" x="390" y="220" width="150" height="84" rx="12"/>
+  <text class="label" x="420" y="254">Наставник</text>
+  <text class="small" x="420" y="280">диалог · отклик</text>
+
+  <rect class="box" x="585" y="220" width="150" height="84" rx="12"/>
+  <text class="label" x="616" y="254">Дашборд</text>
+  <text class="small" x="617" y="280">профиль · вывод</text>
+
+  <rect class="box" x="390" y="360" width="150" height="84" rx="12"/>
+  <text class="label" x="438" y="394">База</text>
+  <text class="small" x="413" y="420">ответы · профили</text>
+
+  <rect class="box" x="585" y="360" width="150" height="84" rx="12"/>
+  <text class="label" x="610" y="394">Ключ ИИ</text>
+  <text class="small" x="612" y="420">ключ · провайдер</text>
+
+  <rect class="external" x="840" y="184" width="190" height="86" rx="14"/>
+  <text class="label" x="890" y="220">Модели ИИ</text>
+  <text class="small" x="884" y="246">провайдеры и ключи</text>
+
+  <rect class="external" x="840" y="424" width="190" height="86" rx="14"/>
+  <text class="label" x="894" y="460">Данные</text>
+  <text class="small" x="884" y="486">пилот · сигналы</text>
+
+  <path class="line" d="M283 228 H388"/>
+  <path class="line" d="M283 468 C330 468 340 262 388 262"/>
+  <path class="line" d="M540 262 H583"/>
+  <path class="line" d="M660 304 V358"/>
+  <path class="line" d="M735 402 H838"/>
+  <path class="line" d="M735 262 H838"/>
+
+  <text class="tag" x="86" y="586">C3 · Компоненты</text>
+  <text class="small" x="86" y="616">этап · A/B · обратная связь · интерпретация · экспорт</text>
+</svg>
