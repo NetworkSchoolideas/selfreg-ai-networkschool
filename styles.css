@@ -978,6 +978,24 @@ h3 {
   margin-top: 26px;
 }
 
+.status-tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: #e7eefc;
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.status-grid h3 {
+  margin-top: 16px;
+}
+
 .link-panel {
   display: grid;
   gap: 12px;
