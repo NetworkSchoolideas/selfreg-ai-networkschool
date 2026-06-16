@@ -89,7 +89,7 @@ nav a:hover { color: var(--ink); }
   color: #ffffff;
 }
 
-.app-link { text-align: center; margin-bottom: 16px; } .app-link a { display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #2f80ed, #56ccf2); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: transform 0.2s, box-shadow 0.2s; } .app-link a:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(47, 128, 237, 0.4); } .hero {
+.hero {
   position: relative;
   min-height: 88vh;
   display: grid;
@@ -302,6 +302,25 @@ h3 {
   margin-top: 26px;
 }
 
+.app-actions {
+  margin-top: 28px;
+}
+
+.hero-note {
+  max-width: 620px;
+  margin: 14px 0 0;
+  color: #c8d7e6;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+
 .primary,
 .secondary,
 .link-panel a {
@@ -323,6 +342,16 @@ h3 {
 .secondary {
   border: 1px solid rgba(255, 255, 255, 0.72);
   color: #ffffff;
+}
+
+.hero-links .primary {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+.hero-links .secondary {
+  border-color: rgba(255, 255, 255, 0.42);
+  color: #dce8f2;
 }
 
 .section {
@@ -1070,7 +1099,7 @@ footer {
 @media (max-width: 1180px) {
   .nav { grid-template-columns: 1fr auto; }
   nav { grid-column: 1 / -1; justify-content: flex-start; }
-  .app-link { text-align: center; margin-bottom: 16px; } .app-link a { display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #2f80ed, #56ccf2); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: transform 0.2s, box-shadow 0.2s; } .app-link a:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(47, 128, 237, 0.4); } .hero {
+  .hero {
     min-height: auto;
     grid-template-columns: 1fr;
     align-items: start;
@@ -1124,7 +1153,7 @@ footer {
 @media (max-width: 640px) {
   .nav { gap: 12px; padding: 12px 16px; }
   nav { gap: 12px; font-size: 13px; }
-  .app-link { text-align: center; margin-bottom: 16px; } .app-link a { display: inline-block; padding: 10px 20px; background: linear-gradient(135deg, #2f80ed, #56ccf2); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: transform 0.2s, box-shadow 0.2s; } .app-link a:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(47, 128, 237, 0.4); } .hero {
+  .hero {
     display: flex;
     flex-direction: column;
     align-items: stretch;
