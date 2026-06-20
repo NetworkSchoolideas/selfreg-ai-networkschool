@@ -379,13 +379,17 @@ h3 {
 
 #loop,
 #evidence,
-#teacher {
+#teacher,
+#mission,
+#risks {
   overflow: hidden;
 }
 
 #loop::before,
 #evidence::before,
-#teacher::before {
+#teacher::before,
+#mission::before,
+#risks::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -411,6 +415,18 @@ h3 {
     url("assets/bg-teacher-dashboard.webp") center / cover no-repeat;
 }
 
+#mission::before {
+  background:
+    linear-gradient(180deg, rgba(246, 248, 251, 0.97), rgba(246, 248, 251, 0.94)),
+    url("assets/bg-evidence-research.webp") center top / cover no-repeat;
+}
+
+#risks::before {
+  background:
+    linear-gradient(180deg, rgba(238, 244, 247, 0.96), rgba(238, 244, 247, 0.92)),
+    url("assets/bg-future-ecosystem.webp") center / cover no-repeat;
+}
+
 .content {
   width: min(1120px, calc(100vw - 32px));
   margin: 0 auto;
@@ -430,6 +446,83 @@ h3 {
 .split p {
   color: var(--muted);
   font-size: 18px;
+}
+
+.mission-shell {
+  display: grid;
+  gap: 30px;
+}
+
+.mission-intro {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+
+.mission-intro .wide {
+  max-width: 920px;
+}
+
+.mission-principles {
+  padding: 34px;
+  border: 1px solid rgba(216, 224, 234, 0.9);
+  border-radius: 8px;
+  background: rgba(238, 244, 247, 0.78);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+.mission-principles-head h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 28px;
+}
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.principle-card {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(6px);
+}
+
+.principle-card h4 {
+  margin: 0 0 14px;
+  font-size: 24px;
+  line-height: 1.18;
+}
+
+.principle-list {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.principle-list li {
+  position: relative;
+  padding-left: 20px;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.principle-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 11px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--green);
 }
 
 .byok .note { color: #bed0df; }
@@ -978,6 +1071,87 @@ h3 {
   margin-top: 26px;
 }
 
+.risks-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.risks-main {
+  min-width: 0;
+  padding: 10px 0;
+}
+
+.risks-intro {
+  max-width: 760px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+.risk-highlight,
+.risk-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(6px);
+}
+
+.risk-highlight {
+  padding: 24px;
+  background: linear-gradient(180deg, #ffffff, #f8fbfd);
+}
+
+.risk-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  margin-bottom: 16px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: #fff1ec;
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.risk-highlight h3 {
+  margin-bottom: 12px;
+  font-size: 30px;
+}
+
+.risk-highlight p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.risk-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.risk-card {
+  min-width: 0;
+  padding: 22px;
+}
+
+.risk-card h3 {
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+
+.risk-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .status-tag {
   display: inline-flex;
   align-items: center;
@@ -1166,6 +1340,10 @@ footer {
   .reverse,
   .product-flow { grid-template-columns: 1fr; }
   .cards { grid-template-columns: 1fr; }
+  .principles-grid,
+  .risk-grid,
+  .risks-shell { grid-template-columns: 1fr; }
+  .mission-principles { padding: 24px; }
 }
 
 @media (max-width: 640px) {
@@ -1233,6 +1411,17 @@ footer {
     min-height: 38px;
     padding: 0 12px;
     font-size: 13px;
+  }
+  .mission-principles-head h3,
+  .principle-card h4,
+  .risk-highlight h3,
+  .risk-card h3 {
+    font-size: 24px;
+  }
+  .principle-card,
+  .risk-highlight,
+  .risk-card {
+    padding: 18px;
   }
   .stage-bars {
     height: 112px;
