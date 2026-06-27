@@ -22,7 +22,7 @@
   </defs>
   <rect class="bg" width="1120" height="620" rx="18"/>
   <text class="title" x="48" y="58">Эксперимент: медиаторная модель и кластеры</text>
-  <text class="sub" x="48" y="88">Общая выборка N=140; статистический блок рассчитан на n=82.</text>
+  <text class="sub" x="48" y="88">Основное исследование N=82; дополнительная проверка N=174.</text>
 
   <rect class="blue" x="72" y="155" width="260" height="112" rx="16"/>
   <text class="txt" x="110" y="200">Эмоциональный</text>

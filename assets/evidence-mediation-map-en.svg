@@ -11,7 +11,7 @@
   </defs>
   <rect class="bg" width="1120" height="620" rx="18"/>
   <text class="title" x="48" y="58">Experiment: mediation model and clusters</text>
-  <text class="sub" x="48" y="88">Overall sample N=140; current statistical block n=82.</text>
+  <text class="sub" x="48" y="88">Main study N=82; additional validation N=174.</text>
   <rect class="blue" x="72" y="155" width="260" height="112" rx="16"/>
   <text class="txt" x="120" y="200">Emotional</text>
   <text class="txt" x="124" y="226">intelligence</text>
