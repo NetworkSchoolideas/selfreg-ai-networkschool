@@ -2457,7 +2457,7 @@ h3 {
 
 .section {
   padding: clamp(84px, 8vw, 124px) 0;
-  scroll-margin-top: 96px;
+  scroll-margin-top: 24px;
 }
 
 .content {
