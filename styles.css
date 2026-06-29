@@ -1414,37 +1414,37 @@ main {
 
 .media-shell {
   display: grid;
-  grid-template-columns: minmax(360px, 0.46fr) minmax(0, 0.54fr);
-  gap: 28px;
+  grid-template-columns: minmax(320px, 0.42fr) minmax(0, 0.58fr);
+  gap: 30px;
   align-items: start;
 }
 
 .media-copy {
   position: sticky;
-  top: 112px;
+  top: 104px;
   display: grid;
   gap: 14px;
-  padding: 28px;
+  padding: 26px;
   border: 1px solid rgba(210, 221, 232, 0.86);
   border-radius: 8px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(247, 250, 253, 0.92));
-  box-shadow: 0 18px 40px rgba(14, 27, 43, 0.08);
+  box-shadow: 0 16px 34px rgba(14, 27, 43, 0.08);
   backdrop-filter: blur(12px);
 }
 
 .media-copy h2 {
-  max-width: 440px;
+  max-width: 400px;
   margin-bottom: 8px;
   color: #13263c;
-  font-size: clamp(30px, 3vw, 46px);
-  line-height: 1.08;
+  font-size: clamp(28px, 2.5vw, 40px);
+  line-height: 1.1;
 }
 
 .media-copy .wide {
   max-width: 100%;
   margin: 0;
   color: #4d6278;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.66;
 }
 
@@ -1464,18 +1464,18 @@ main {
 
 .media-card {
   display: grid;
-  gap: 16px;
+  gap: 14px;
   min-width: 0;
   align-content: start;
   min-height: 0;
   background: rgba(255, 255, 255, 0.95);
-  padding: 28px;
+  padding: 24px;
 }
 
 .media-card-head {
   display: grid;
-  gap: 10px;
-  padding-bottom: 14px;
+  gap: 8px;
+  padding-bottom: 12px;
   border-bottom: 1px solid rgba(215, 226, 237, 0.92);
 }
 
@@ -1566,7 +1566,7 @@ main {
 
 .future {
   background:
-    linear-gradient(120deg, rgba(16, 42, 67, 0.96), rgba(16, 42, 67, 0.78) 58%, rgba(35, 150, 127, 0.66)),
+    linear-gradient(120deg, rgba(12, 33, 53, 0.98), rgba(15, 39, 63, 0.9) 56%, rgba(27, 108, 111, 0.72)),
     url("assets/bg-future-ecosystem.webp") center / cover no-repeat,
     #102a43;
   color: #ffffff;
@@ -1584,25 +1584,50 @@ main {
 .future .manifesto {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.1));
-  border-color: rgba(255, 255, 255, 0.24);
-  box-shadow: 0 22px 48px rgba(6, 12, 24, 0.2);
+  max-width: 460px;
+  justify-self: end;
+  padding: 26px 24px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.14));
+  border-color: rgba(255, 255, 255, 0.28);
+  box-shadow: 0 18px 36px rgba(6, 12, 24, 0.18);
 }
 
 #teacher .split,
 #future .split {
-  gap: 42px;
+  gap: 38px;
+}
+
+#future .split > div:first-child {
+  max-width: 640px;
+}
+
+#future h2 {
+  max-width: 620px;
+}
+
+#future p {
+  line-height: 1.66;
+}
+
+.future .manifesto p {
+  margin: 0;
+  color: #eff5fb;
+  font-size: 17px;
+  line-height: 1.68;
 }
 
 #teacher .dashboard-preview {
+  max-width: 560px;
   min-height: 100%;
+  padding: 20px;
+  box-shadow: 0 18px 38px rgba(8, 17, 31, 0.12);
 }
 
 #teacher .teacher-copy-panel {
   position: relative;
   z-index: 1;
-  max-width: 720px;
-  padding: clamp(24px, 3vw, 34px);
+  max-width: 680px;
+  padding: clamp(22px, 2.8vw, 30px);
   border: 1px solid rgba(210, 221, 232, 0.92);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.92);
@@ -1622,6 +1647,9 @@ main {
 
 #teacher .teacher-copy-panel p {
   color: #4a6076;
+  max-width: 560px;
+  font-size: 17px;
+  line-height: 1.65;
 }
 
 #teacher .section-kicker {
@@ -1782,8 +1810,8 @@ main {
 footer {
   display: flex;
   flex-direction: column;
-  gap: 22px;
-  padding: 48px 16px 32px;
+  gap: 18px;
+  padding: 42px 16px 28px;
   color: rgba(224, 234, 244, 0.82);
   border-top: 1px solid rgba(126, 149, 175, 0.22);
   background:
@@ -1794,7 +1822,7 @@ footer {
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
+  gap: 14px;
   width: min(1160px, calc(100vw - 32px));
   margin: 0 auto;
 }
@@ -1802,13 +1830,13 @@ footer {
 .footer-grid > div {
   display: grid;
   align-content: start;
-  gap: 12px;
+  gap: 10px;
   min-width: 0;
   border: 1px solid rgba(126, 149, 175, 0.18);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 16px 34px rgba(4, 10, 20, 0.22);
-  padding: 20px;
+  padding: 18px;
 }
 
 .footer-grid strong {
@@ -1822,6 +1850,8 @@ footer {
 .footer-copy {
   margin: 0;
   color: rgba(224, 234, 244, 0.84);
+  font-size: 15px;
+  line-height: 1.55;
 }
 
 .footer-links {
@@ -1860,10 +1890,10 @@ footer {
 .footer-bottom {
   width: min(1160px, calc(100vw - 32px));
   margin: 2px auto 0;
-  padding-top: 18px;
+  padding-top: 16px;
   border-top: 1px solid rgba(126, 149, 175, 0.18);
-  color: rgba(224, 234, 244, 0.8);
-  font-size: 14px;
+  color: rgba(224, 234, 244, 0.76);
+  font-size: 13px;
 }
 
 
@@ -2051,6 +2081,10 @@ footer {
   .mission-principles { padding: 24px; }
   .media-copy { position: static; }
   .media-grid { grid-template-columns: 1fr; }
+  .future .manifesto {
+    max-width: none;
+    justify-self: stretch;
+  }
 }
 
 @media (max-width: 640px) {
@@ -2237,10 +2271,14 @@ footer {
     font-size: 17px;
   }
   .media-copy {
-    padding-right: 0;
+    padding: 20px;
   }
   .media-copy h2 {
-    font-size: 38px;
+    font-size: 34px;
+  }
+  #teacher .teacher-copy-panel,
+  .future .manifesto {
+    padding: 20px;
   }
   .loop-grid { grid-template-columns: 1fr; }
   .actions { align-items: stretch; flex-direction: column; }

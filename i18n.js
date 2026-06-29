@@ -341,8 +341,8 @@
     interp3Title: "What this changes for schools",
     interp3Text: "Schools need an instrument that helps notice the moment support is needed without reducing the adolescent to grades and indicators.",
     mediaKicker: "Video and audio",
-    mediaTitle: "How the project is explained in video and audio",
-    mediaText: "The video unfolds the problem frame, the hybrid self-regulation model, and the pedagogical support scenario in one sequence. The audio version holds the same logic in a more concentrated form: why growing up requires early support and what exactly the teacher needs to see.",
+    mediaTitle: "How the project is presented in video and audio",
+    mediaText: "The video unfolds the problem frame, the hybrid self-regulation model, and the pedagogical support scenario in one sequence. The audio version keeps the same logic in a more focused form: why growing up requires early support and what exactly the teacher needs to see.",
     mediaVideoBadge: "Video",
     mediaVideoTitle: "Project video overview",
     mediaVideoText: "The problem frame, the five-step self-regulation loop, the teacher's role, and the direction of further development.",
@@ -351,7 +351,7 @@
     mediaAudioText: "A focused explanation of the project's core logic: why education often misses the process of growing up and how SelfReg AI turns that gap into a support cue.",
     futureKicker: "Future",
     futureTitle: "Future: AI-supported development in education",
-    futureText: "This is only the first step. Next, the project can grow into an educational ecosystem where data helps support the person rather than only evaluate them after the fact: showing load, interest, recovery, and growth before breakdown appears.",
+    futureText: "This is only the first step. Next, the project can grow into an educational ecosystem where data helps support the person rather than only evaluate them after the fact: revealing workload, interest, recovery, and growth before breakdown appears.",
     manifestoTitle: "For teachers",
     manifestoText: "Teachers and psychologists should not work with less data than digital platforms that easily collect behavioral traces. Education needs its own data tools: with consent, a clear purpose, and human interpretation.",
     futureVisualCaption: "The future version connects psychology, physiology, and pedagogy: data helps adults see the adolescent's state and path earlier.",
@@ -436,12 +436,12 @@
     risk6Text: "Compensatory substitution of real social activity and personal development with spectacular communication and passive digital consumption leads to loss of subjectivity.",
     footerTagline: "Psychological self-regulation model + AI as temporary pedagogical support",
     footerAbout: "SelfReg AI",
-    footerAboutText: "Psychological self-regulation model and AI as temporary pedagogical support.",
+    footerAboutText: "A psychological model of self-regulation and AI as temporary pedagogical support.",
     footerCode: "Project media",
     footerMediaVideo: "Video",
     footerMediaAudio: "Audio",
     footerLicense: "Legal information",
-    footerPilot: "Pilot launches by request, with an agreed educational purpose."
+    footerPilot: "Pilot runs by request, with an agreed educational purpose."
   }
 };
 
