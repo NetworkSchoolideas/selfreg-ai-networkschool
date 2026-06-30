@@ -4585,4 +4585,363 @@ html[data-theme="dark"] .hero-links .secondary {
   }
 }
 
+/* Design refinement pack 2026-07-01: compact navigation, calmer rhythm, stronger product polish. */
+:root {
+  --refine-shadow: 0 18px 46px rgba(12, 31, 51, 0.08);
+  --refine-shadow-dark: 0 18px 46px rgba(0, 0, 0, 0.22);
+}
+
+.nav {
+  grid-template-columns: auto minmax(0, 1fr) auto !important;
+}
+
+nav a {
+  position: relative;
+  padding: 6px 0;
+  font-weight: 720 !important;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--mature-blue);
+  opacity: 0;
+  transform: scaleX(0.64);
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+nav a:hover::after {
+  opacity: 0.8;
+  transform: scaleX(1);
+}
+
+.hero {
+  min-height: min(700px, calc(100vh - 72px)) !important;
+  align-items: center !important;
+}
+
+.hero-visual {
+  filter: saturate(0.94);
+}
+
+.hero-copy {
+  padding: 8px 0;
+}
+
+.actions .primary,
+.hero-links .primary,
+.hero-links .secondary {
+  min-height: 48px !important;
+  padding-inline: 22px !important;
+}
+
+.section {
+  padding-block: clamp(64px, 6.4vw, 88px) !important;
+}
+
+.section-kicker,
+.eyebrow,
+.status-tag,
+.risk-badge {
+  font-size: 12px !important;
+  font-weight: 820 !important;
+}
+
+.mission-shell,
+.media-shell,
+.risks-shell,
+.split,
+.product-flow {
+  gap: clamp(28px, 4.2vw, 56px) !important;
+}
+
+.problem-grid,
+.cards,
+.case-grid,
+.risk-grid,
+.loop-grid,
+.principles-grid,
+.data-grid,
+.cluster-grid,
+.interpretation-grid {
+  gap: 18px !important;
+}
+
+.cards article,
+.loop-grid article,
+.case-grid article,
+.problem-grid article,
+.model-stage-card,
+.ai-role-card,
+.scenario-card,
+.support-step,
+.ab-item,
+.media-card,
+.media-copy,
+.teacher-copy-panel,
+.teacher-mockup,
+.student-phone,
+.api-key,
+.risk-highlight,
+.risk-card,
+.flow-card,
+.link-panel,
+.manifesto {
+  box-shadow: var(--refine-shadow) !important;
+}
+
+.problem-grid article,
+.cards article,
+.risk-card,
+.media-card,
+.case-grid article {
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.problem-grid article:hover,
+.cards article:hover,
+.risk-card:hover,
+.media-card:hover,
+.case-grid article:hover {
+  transform: translateY(-2px);
+  border-color: #c7d5e4 !important;
+  box-shadow: 0 22px 54px rgba(12, 31, 51, 0.1) !important;
+}
+
+.problem-grid span,
+.principle-number {
+  font-family: var(--font-ui);
+  font-variant-numeric: tabular-nums;
+}
+
+.problem-grid span {
+  display: inline-flex;
+  min-width: 42px;
+  height: 34px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #0c1f33 !important;
+  color: #ffffff !important;
+}
+
+.risk-icon,
+.principle-icon {
+  border-radius: 8px !important;
+}
+
+.research-figure,
+.model-figure,
+.visual-figure {
+  max-width: 100%;
+}
+
+.research-figure img,
+.model-figure img,
+.visual-figure img {
+  background: #ffffff;
+}
+
+.media-grid {
+  align-items: stretch;
+}
+
+.media-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.media-card .media-player,
+.media-card .audio-player {
+  margin-top: auto;
+}
+
+.dashboard-preview,
+.chat-preview {
+  border-radius: 8px !important;
+}
+
+.model-figure,
+.visual-figure,
+.research-figure,
+.future .visual-figure {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.model-figure figcaption,
+.visual-figure figcaption,
+.research-figure figcaption,
+#evidence .research-figure figcaption,
+.future .visual-figure figcaption {
+  width: 100% !important;
+  max-width: 100% !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere !important;
+  word-break: normal !important;
+}
+
+html[data-theme="dark"] .problem-grid article:hover,
+html[data-theme="dark"] .cards article:hover,
+html[data-theme="dark"] .risk-card:hover,
+html[data-theme="dark"] .media-card:hover,
+html[data-theme="dark"] .case-grid article:hover {
+  border-color: rgba(196, 214, 232, 0.3) !important;
+  box-shadow: var(--refine-shadow-dark) !important;
+}
+
+html[data-theme="dark"] nav a::after {
+  background: #8fd8c7;
+}
+
+html[data-theme="dark"] .problem-grid span {
+  background: rgba(143, 216, 199, 0.12) !important;
+  color: #8fd8c7 !important;
+}
+
+@media (max-width: 980px) {
+  .nav {
+    grid-template-columns: auto auto !important;
+    align-items: start !important;
+    gap: 10px 16px !important;
+  }
+
+  .brand {
+    min-height: 38px;
+  }
+
+  .nav-actions {
+    justify-self: end;
+  }
+
+  nav {
+    grid-column: 1 / -1;
+    justify-content: flex-start !important;
+    flex-wrap: nowrap !important;
+    gap: 8px !important;
+    overflow-x: auto;
+    padding: 2px 0 4px;
+    scrollbar-width: none;
+  }
+
+  nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  nav a {
+    flex: 0 0 auto;
+    min-height: 34px;
+    padding: 8px 10px;
+    border: 1px solid rgba(207, 220, 232, 0.82);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.74);
+    white-space: nowrap;
+  }
+
+  nav a::after {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 116px !important;
+  }
+
+  html[data-theme="dark"] nav a {
+    border-color: rgba(196, 214, 232, 0.18);
+    background: rgba(255, 255, 255, 0.055);
+  }
+}
+
+@media (max-width: 760px) {
+  body {
+    font-size: 15.5px;
+  }
+
+  .nav {
+    padding: 10px 14px !important;
+  }
+
+  .brand {
+    font-size: 16px !important;
+  }
+
+  .theme-toggle,
+  .lang-switch button {
+    width: 38px !important;
+    height: 34px !important;
+  }
+
+  nav {
+    margin-inline: -2px;
+  }
+
+  nav a {
+    font-size: 13px;
+  }
+
+  .hero {
+    min-height: auto !important;
+    padding: 118px 20px 46px !important;
+    background:
+      linear-gradient(180deg, rgba(245, 247, 250, 0.995), rgba(245, 247, 250, 0.97)),
+      url("assets/bg-hero-selfreg-ai.webp") center / cover no-repeat,
+      var(--mature-bg) !important;
+  }
+
+  .hero-copy {
+    width: 100%;
+  }
+
+  .lead {
+    font-size: 20px !important;
+  }
+
+  .actions .primary,
+  .hero-links .primary,
+  .hero-links .secondary {
+    width: 100%;
+  }
+
+  .hero-links {
+    gap: 10px !important;
+  }
+
+  .hero-visual {
+    display: none;
+  }
+
+  .section {
+    padding-block: 54px !important;
+  }
+
+  .mission-principles,
+  .mission-principles-head,
+  .principle-card,
+  .principle-card-featured,
+  .problem-grid article,
+  .risk-card,
+  .risk-highlight,
+  .media-copy,
+  .media-card,
+  .flow-card,
+  .teacher-copy-panel,
+  .cards article {
+    padding: 22px !important;
+  }
+
+  .model-figure figcaption,
+  .visual-figure figcaption,
+  .research-figure figcaption,
+  #evidence .research-figure figcaption,
+  .future .visual-figure figcaption {
+    padding: 14px 16px !important;
+    font-size: 15px !important;
+  }
+}
+
 
