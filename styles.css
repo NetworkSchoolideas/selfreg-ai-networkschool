@@ -3989,3 +3989,600 @@ html[data-theme="dark"] .case-grid article h3 {
 }
 
 
+/* Emergency design pack 2026-06-30: mature readable product surface. */
+:root {
+  --mature-bg: #f5f7fa;
+  --mature-panel: #ffffff;
+  --mature-panel-soft: #f9fbfd;
+  --mature-ink: #0c1f33;
+  --mature-muted: #4b637a;
+  --mature-border: #dbe4ee;
+  --mature-night: #07111f;
+  --mature-night-2: #0d1c2d;
+  --mature-night-panel: #112235;
+  --mature-night-border: rgba(196, 214, 232, 0.2);
+  --mature-accent: #177f72;
+  --mature-blue: #246fd2;
+}
+
+body {
+  background: var(--mature-bg) !important;
+  color: var(--mature-ink) !important;
+  font-family: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif !important;
+  font-size: 16px;
+  line-height: 1.58;
+  text-rendering: optimizeLegibility;
+}
+
+.nav {
+  top: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  min-height: 72px;
+  margin: 0 !important;
+  padding: 14px clamp(28px, 5vw, 72px) !important;
+  border-width: 0 0 1px !important;
+  border-radius: 0 !important;
+  border-color: rgba(207, 218, 230, 0.92) !important;
+  background: rgba(255, 255, 255, 0.96) !important;
+  box-shadow: 0 12px 28px rgba(12, 31, 51, 0.06) !important;
+  backdrop-filter: blur(14px);
+}
+
+.brand,
+nav a {
+  color: var(--mature-ink) !important;
+}
+
+nav {
+  gap: clamp(12px, 1.7vw, 22px) !important;
+  font-size: 14px !important;
+}
+
+nav a {
+  opacity: 0.82;
+}
+
+nav a:hover {
+  opacity: 1;
+}
+
+.theme-toggle,
+.lang-switch button {
+  border-color: #cfdce8 !important;
+  background: #f5f8fb !important;
+  color: var(--mature-ink) !important;
+}
+
+.lang-switch button.active {
+  border-color: var(--mature-blue) !important;
+  background: var(--mature-blue) !important;
+  color: #ffffff !important;
+}
+
+.hero {
+  min-height: min(760px, calc(100vh - 72px)) !important;
+  grid-template-columns: minmax(440px, 0.86fr) minmax(360px, 0.9fr) !important;
+  gap: clamp(32px, 5vw, 76px) !important;
+  padding: clamp(86px, 9vw, 118px) clamp(28px, 6vw, 84px) clamp(58px, 6vw, 78px) !important;
+  border-bottom: 1px solid var(--mature-border) !important;
+  background:
+    linear-gradient(90deg, rgba(245, 247, 250, 0.995) 0%, rgba(245, 247, 250, 0.985) 43%, rgba(245, 247, 250, 0.82) 67%, rgba(245, 247, 250, 0.58) 100%),
+    url("assets/bg-hero-selfreg-ai.webp") right center / cover no-repeat,
+    var(--mature-bg) !important;
+}
+
+.hero::before {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.36), rgba(255, 255, 255, 0)),
+    radial-gradient(circle at 78% 38%, rgba(36, 111, 210, 0.1), transparent 24%) !important;
+}
+
+.hero::after {
+  height: 1px !important;
+  background: transparent !important;
+}
+
+.hero-copy {
+  max-width: 660px !important;
+}
+
+h1 {
+  font-size: clamp(42px, 5.1vw, 66px) !important;
+  font-weight: 760 !important;
+  line-height: 1.02 !important;
+}
+
+h2 {
+  font-size: clamp(28px, 2.8vw, 38px) !important;
+  font-weight: 720 !important;
+  line-height: 1.12 !important;
+}
+
+h3 {
+  font-size: clamp(20px, 1.7vw, 25px) !important;
+  font-weight: 720 !important;
+  line-height: 1.22 !important;
+}
+
+h4 {
+  font-size: 18px !important;
+  line-height: 1.28 !important;
+}
+
+.lead {
+  max-width: 640px !important;
+  margin-top: 20px !important;
+  color: var(--mature-ink) !important;
+  font-size: clamp(19px, 1.6vw, 22px) !important;
+  line-height: 1.55 !important;
+}
+
+.hero-note,
+.content > p,
+.wide,
+.split p,
+.model-lead,
+.risks-intro {
+  color: var(--mature-muted) !important;
+  font-size: clamp(17px, 1.25vw, 19px) !important;
+  line-height: 1.62 !important;
+}
+
+.hero-note {
+  max-width: 620px !important;
+  margin-top: 22px !important;
+  border-top-color: rgba(12, 31, 51, 0.12) !important;
+}
+
+.section {
+  padding: clamp(72px, 7vw, 96px) 0 !important;
+  scroll-margin-top: 96px !important;
+}
+
+.content {
+  width: min(1140px, calc(100vw - 48px)) !important;
+}
+
+.section.light,
+.problem-frame,
+#loop,
+#media,
+#teacher,
+#safety,
+#risks,
+#cases {
+  background: var(--mature-bg) !important;
+  color: var(--mature-ink) !important;
+}
+
+#loop::before,
+#media::before,
+#teacher::before,
+#risks::before,
+.problem-frame::before {
+  background: transparent !important;
+}
+
+#story,
+#mission,
+#evidence,
+.future {
+  background:
+    linear-gradient(180deg, rgba(7, 17, 31, 0.98), rgba(9, 24, 40, 0.97)),
+    url("assets/bg-hero-selfreg-ai.webp") center / cover no-repeat,
+    var(--mature-night) !important;
+  color: #f4f8fc !important;
+}
+
+#story::before,
+#mission::before,
+#evidence::before,
+.future::before {
+  background: linear-gradient(180deg, rgba(7, 17, 31, 0.86), rgba(7, 17, 31, 0.92)) !important;
+}
+
+#story h2,
+#story h3,
+#story p,
+#mission h2,
+#mission h3,
+#mission h4,
+#mission p,
+#evidence h2,
+#evidence h3,
+#evidence p,
+.future h2,
+.future h3,
+.future p {
+  color: #f4f8fc !important;
+}
+
+#story .wide,
+#story .split p,
+#mission .wide,
+#mission p,
+#evidence .wide,
+#evidence .interpretation-grid p,
+#evidence .cluster-grid p,
+.future .wide,
+.future p {
+  color: #cbd9e7 !important;
+}
+
+.section-kicker,
+.eyebrow,
+.status-tag,
+.risk-badge {
+  color: var(--mature-accent) !important;
+  letter-spacing: 0.08em !important;
+}
+
+#story .section-kicker,
+#mission .section-kicker,
+#evidence .section-kicker,
+.future .section-kicker {
+  color: #8fd8c7 !important;
+}
+
+.cards article,
+.loop-grid article,
+.case-grid article,
+.problem-grid article,
+.model-stage-card,
+.ai-role-card,
+.scenario-card,
+.support-step,
+.ab-item,
+.media-card,
+.media-copy,
+.teacher-copy-panel,
+.teacher-mockup,
+.student-phone,
+.api-key,
+.risk-highlight,
+.risk-card,
+.flow-card,
+.link-panel {
+  border: 1px solid var(--mature-border) !important;
+  border-radius: 8px !important;
+  background: var(--mature-panel) !important;
+  color: var(--mature-ink) !important;
+  box-shadow: 0 14px 34px rgba(12, 31, 51, 0.07) !important;
+  backdrop-filter: none !important;
+}
+
+.cards article h3,
+.loop-grid article h3,
+.case-grid article h3,
+.problem-grid article h3,
+.model-stage-card h3,
+.ai-role-card h3,
+.scenario-card h3,
+.support-step h3,
+.media-card h3,
+.media-copy h2,
+.teacher-copy-panel h2,
+.risk-highlight h3,
+.risk-card h3,
+.flow-card h2,
+.link-panel h3 {
+  color: var(--mature-ink) !important;
+}
+
+.cards article p,
+.loop-grid article p,
+.case-grid article p,
+.problem-grid article p,
+.model-stage-card p,
+.ai-role-card p,
+.scenario-card p,
+.support-step p,
+.ab-item,
+.media-card p,
+.media-copy p,
+.teacher-copy-panel p,
+.risk-highlight p,
+.risk-card p,
+.flow-card p,
+.link-panel p {
+  color: var(--mature-muted) !important;
+}
+
+.mission-principles,
+.mission-principles-head,
+.principle-card,
+.principle-card-featured,
+.evidence-panel,
+#evidence .data-grid article,
+#evidence .interpretation-grid article,
+.cluster-grid article,
+.research-dashboard,
+.research-notes article {
+  border: 1px solid rgba(196, 214, 232, 0.22) !important;
+  background: rgba(255, 255, 255, 0.065) !important;
+  color: #f4f8fc !important;
+  box-shadow: none !important;
+}
+
+.principle-card h4,
+.principle-card p,
+.principle-card-featured h4,
+.principle-card-featured p,
+.evidence-panel h3,
+.evidence-panel p,
+#evidence .data-grid strong,
+#evidence .data-grid span,
+#evidence .interpretation-grid h3,
+#evidence .interpretation-grid p,
+.cluster-grid h3,
+.cluster-grid p,
+.research-notes h3,
+.research-notes span {
+  color: #f4f8fc !important;
+}
+
+.principle-card p,
+.principle-card-featured p,
+.evidence-panel p,
+#evidence .data-grid span,
+#evidence .interpretation-grid p,
+.cluster-grid p,
+.research-notes span {
+  color: #cbd9e7 !important;
+}
+
+.model-figure,
+.visual-figure,
+.research-figure,
+.future .visual-figure {
+  border: 1px solid var(--mature-border) !important;
+  border-radius: 8px !important;
+  background: #ffffff !important;
+  color: var(--mature-ink) !important;
+  box-shadow: 0 18px 44px rgba(12, 31, 51, 0.1) !important;
+  overflow: hidden;
+}
+
+.model-figure img,
+.visual-figure img,
+.research-figure img,
+.future .visual-figure img {
+  display: block;
+  width: 100%;
+}
+
+.model-figure figcaption,
+.visual-figure figcaption,
+.research-figure figcaption,
+#evidence .research-figure figcaption,
+.future .visual-figure figcaption {
+  display: block !important;
+  margin: 0 !important;
+  padding: 16px 20px !important;
+  background: #0f2134 !important;
+  color: #f3f8fd !important;
+  font-size: 16px !important;
+  font-weight: 650 !important;
+  line-height: 1.48 !important;
+}
+
+.risk-grid {
+  gap: 18px !important;
+}
+
+.risk-card {
+  padding: 24px !important;
+}
+
+.risk-card h3 {
+  font-size: clamp(22px, 2vw, 28px) !important;
+}
+
+.media-shell,
+.risks-shell,
+.mission-shell {
+  gap: clamp(24px, 4vw, 44px) !important;
+}
+
+.media-card {
+  padding: clamp(24px, 3vw, 34px) !important;
+}
+
+.media-player {
+  border-radius: 6px !important;
+  background: #07111f !important;
+}
+
+.primary {
+  background: var(--mature-blue) !important;
+  color: #ffffff !important;
+  box-shadow: 0 12px 28px rgba(36, 111, 210, 0.22) !important;
+}
+
+.secondary,
+.hero-links .secondary {
+  border-color: #c7d4e1 !important;
+  background: #ffffff !important;
+  color: var(--mature-ink) !important;
+  box-shadow: none !important;
+}
+
+.hero-links .primary {
+  background: var(--mature-ink) !important;
+  color: #ffffff !important;
+}
+
+html[data-theme="dark"] body,
+html[data-theme="dark"] .section,
+html[data-theme="dark"] .section.light,
+html[data-theme="dark"] .problem-frame,
+html[data-theme="dark"] #loop,
+html[data-theme="dark"] #media,
+html[data-theme="dark"] #teacher,
+html[data-theme="dark"] #safety,
+html[data-theme="dark"] #risks,
+html[data-theme="dark"] #cases {
+  background: var(--mature-night) !important;
+  color: #f4f8fc !important;
+}
+
+html[data-theme="dark"] .nav {
+  border-color: rgba(196, 214, 232, 0.14) !important;
+  background: rgba(7, 17, 31, 0.96) !important;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22) !important;
+}
+
+html[data-theme="dark"] .brand,
+html[data-theme="dark"] nav a,
+html[data-theme="dark"] .theme-toggle,
+html[data-theme="dark"] .lang-switch button {
+  color: #f4f8fc !important;
+}
+
+html[data-theme="dark"] .theme-toggle,
+html[data-theme="dark"] .lang-switch button {
+  border-color: rgba(196, 214, 232, 0.22) !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+}
+
+html[data-theme="dark"] .hero {
+  background:
+    linear-gradient(90deg, rgba(7, 17, 31, 0.99) 0%, rgba(7, 17, 31, 0.96) 48%, rgba(7, 17, 31, 0.78) 100%),
+    url("assets/bg-hero-selfreg-ai.webp") right center / cover no-repeat,
+    var(--mature-night) !important;
+}
+
+html[data-theme="dark"] .lead,
+html[data-theme="dark"] .hero-note,
+html[data-theme="dark"] .content > p,
+html[data-theme="dark"] .wide,
+html[data-theme="dark"] .split p,
+html[data-theme="dark"] .model-lead,
+html[data-theme="dark"] .risks-intro {
+  color: #cbd9e7 !important;
+}
+
+html[data-theme="dark"] .cards article,
+html[data-theme="dark"] .loop-grid article,
+html[data-theme="dark"] .case-grid article,
+html[data-theme="dark"] .problem-grid article,
+html[data-theme="dark"] .model-stage-card,
+html[data-theme="dark"] .ai-role-card,
+html[data-theme="dark"] .scenario-card,
+html[data-theme="dark"] .support-step,
+html[data-theme="dark"] .ab-item,
+html[data-theme="dark"] .media-card,
+html[data-theme="dark"] .media-copy,
+html[data-theme="dark"] .teacher-copy-panel,
+html[data-theme="dark"] .teacher-mockup,
+html[data-theme="dark"] .student-phone,
+html[data-theme="dark"] .api-key,
+html[data-theme="dark"] .risk-highlight,
+html[data-theme="dark"] .risk-card,
+html[data-theme="dark"] .flow-card,
+html[data-theme="dark"] .link-panel {
+  border-color: var(--mature-night-border) !important;
+  background: var(--mature-night-panel) !important;
+  color: #f4f8fc !important;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18) !important;
+}
+
+html[data-theme="dark"] .cards article h3,
+html[data-theme="dark"] .loop-grid article h3,
+html[data-theme="dark"] .case-grid article h3,
+html[data-theme="dark"] .problem-grid article h3,
+html[data-theme="dark"] .model-stage-card h3,
+html[data-theme="dark"] .ai-role-card h3,
+html[data-theme="dark"] .scenario-card h3,
+html[data-theme="dark"] .support-step h3,
+html[data-theme="dark"] .media-card h3,
+html[data-theme="dark"] .media-copy h2,
+html[data-theme="dark"] .teacher-copy-panel h2,
+html[data-theme="dark"] .risk-highlight h3,
+html[data-theme="dark"] .risk-card h3,
+html[data-theme="dark"] .flow-card h2,
+html[data-theme="dark"] .link-panel h3 {
+  color: #f4f8fc !important;
+}
+
+html[data-theme="dark"] .cards article p,
+html[data-theme="dark"] .loop-grid article p,
+html[data-theme="dark"] .case-grid article p,
+html[data-theme="dark"] .problem-grid article p,
+html[data-theme="dark"] .model-stage-card p,
+html[data-theme="dark"] .ai-role-card p,
+html[data-theme="dark"] .scenario-card p,
+html[data-theme="dark"] .support-step p,
+html[data-theme="dark"] .ab-item,
+html[data-theme="dark"] .media-card p,
+html[data-theme="dark"] .media-copy p,
+html[data-theme="dark"] .teacher-copy-panel p,
+html[data-theme="dark"] .risk-highlight p,
+html[data-theme="dark"] .risk-card p,
+html[data-theme="dark"] .flow-card p,
+html[data-theme="dark"] .link-panel p {
+  color: #cbd9e7 !important;
+}
+
+html[data-theme="dark"] .secondary,
+html[data-theme="dark"] .hero-links .secondary {
+  border-color: rgba(196, 214, 232, 0.28) !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  color: #f4f8fc !important;
+}
+
+@media (max-width: 980px) {
+  .hero {
+    min-height: auto !important;
+    grid-template-columns: 1fr !important;
+    padding-top: 98px !important;
+    background:
+      linear-gradient(180deg, rgba(245, 247, 250, 0.995), rgba(245, 247, 250, 0.94)),
+      url("assets/bg-hero-selfreg-ai.webp") center / cover no-repeat,
+      var(--mature-bg) !important;
+  }
+
+  .hero-visual {
+    max-width: 620px !important;
+  }
+
+  .media-shell,
+  .risks-shell,
+  .mission-shell {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .nav {
+    min-height: auto !important;
+    padding: 12px 16px !important;
+  }
+
+  .content {
+    width: min(100% - 32px, 1140px) !important;
+  }
+
+  .hero {
+    padding: 88px 20px 48px !important;
+  }
+
+  h1 {
+    font-size: clamp(38px, 11vw, 48px) !important;
+  }
+
+  h2 {
+    font-size: clamp(28px, 8vw, 34px) !important;
+  }
+
+  .risk-grid,
+  .cards,
+  .problem-grid,
+  .case-grid,
+  .media-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+
