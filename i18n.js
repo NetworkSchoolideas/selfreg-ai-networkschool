@@ -452,6 +452,25 @@ function getLang() {
   return localStorage.getItem("selfreg_lang") || "ru";
 }
 
+function getTheme() {
+  const saved = localStorage.getItem("selfreg_theme");
+  if (saved === "dark" || saved === "light") return saved;
+  return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+}
+
+function setTheme(theme) {
+  const normalized = theme === "dark" ? "dark" : "light";
+  document.documentElement.dataset.theme = normalized;
+  localStorage.setItem("selfreg_theme", normalized);
+  const toggle = document.querySelector("[data-theme-toggle]");
+  if (toggle) {
+    const next = normalized === "dark" ? "light" : "dark";
+    toggle.setAttribute("aria-pressed", String(normalized === "dark"));
+    toggle.setAttribute("aria-label", next === "dark" ? "Switch to dark theme" : "Switch to light theme");
+    toggle.setAttribute("title", next === "dark" ? "Switch to dark theme" : "Switch to light theme");
+  }
+}
+
 function setLang(lang) {
   localStorage.setItem("selfreg_lang", lang);
   const t = translations[lang];
@@ -481,6 +500,14 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("[data-lang-button]").forEach((button) => {
     button.addEventListener("click", () => setLang(button.getAttribute("data-lang-button")));
   });
+  const themeToggle = document.querySelector("[data-theme-toggle]");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      const current = document.documentElement.dataset.theme === "dark" ? "dark" : "light";
+      setTheme(current === "dark" ? "light" : "dark");
+    });
+  }
+  setTheme(getTheme());
   setLang(getLang());
 });
 

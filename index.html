@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#2f80ed" />
     <link rel="manifest" href="site.webmanifest" />
     <link rel="preload" as="image" href="assets/bg-hero-selfreg-ai.webp" />
-    <link rel="stylesheet" href="styles.css?v=20260629-product-readiness-1" />
+    <link rel="stylesheet" href="styles.css?v=20260630-design-package-2" />
   </head>
   <body>
     <header class="nav">
@@ -23,9 +23,20 @@
         <a href="#mission" data-i18n="navMission">Миссия</a>
         <a href="#risks" data-i18n="navRisks">Риски</a>
       </nav>
-      <div class="lang-switch" aria-label="Language switcher">
-        <button data-lang-button="ru" type="button">RU</button>
-        <button data-lang-button="en" type="button">EN</button>
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme" title="Toggle color theme">
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2.5M12 19.5V22M4.93 4.93 6.7 6.7M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07 6.7 17.3M17.3 6.7l1.77-1.77"></path>
+          </svg>
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 15.5A8.5 8.5 0 0 1 8.5 4 7 7 0 1 0 20 15.5Z"></path>
+          </svg>
+        </button>
+        <div class="lang-switch" aria-label="Language switcher">
+          <button data-lang-button="ru" type="button">RU</button>
+          <button data-lang-button="en" type="button">EN</button>
+        </div>
       </div>
     </header>
 
@@ -90,41 +101,65 @@
               <div class="principles-grid">
                 <article class="principle-card">
                   <span class="principle-number">01</span>
+                  <span class="principle-icon icon-world" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"></circle><path d="M4 12h16M12 4c2.2 2.1 3.2 4.8 3.2 8s-1 5.9-3.2 8M12 4C9.8 6.1 8.8 8.8 8.8 12s1 5.9 3.2 8"></path></svg>
+                  </span>
                   <h4 data-i18n="missionPoint1Title">Разрыв миров — главная проблема современного взросления</h4>
                   <p data-i18n="missionPoint1Text">Подростки живут в среде, которая плохо адаптирована как в реальной жизни, так и в цифровом пространстве. Этот разрыв усиливает кризис идентичности.</p>
                 </article>
                 <article class="principle-card">
                   <span class="principle-number">02</span>
+                  <span class="principle-icon icon-loop" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M7 7h8a4 4 0 0 1 0 8H6"></path><path d="m9 4-3 3 3 3M15 20l3-3-3-3"></path></svg>
+                  </span>
                   <h4 data-i18n="missionPoint2Title">Саморегуляция — центральное новообразование подросткового возраста</h4>
                   <p data-i18n="missionPoint2Text">Способность самостоятельно замыкать цикл «Цель → Действие → Обратная связь → Сличение → Коррекция» формирует субъектность.</p>
                 </article>
                 <article class="principle-card">
                   <span class="principle-number">03</span>
+                  <span class="principle-icon icon-shield" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.5 2.8 8.4 7 10 4.2-1.6 7-5.5 7-10V6l-7-3Z"></path><path d="m8.8 12 2.2 2.2 4.4-4.7"></path></svg>
+                  </span>
                   <h4 data-i18n="missionPoint3Title">Эмоциональный интеллект — ключевой защитный фактор</h4>
                   <p data-i18n="missionPoint3Text">Именно он, а не технические навыки, снижает риск синдрома самозванца и позволяет безопасно взаимодействовать с ИИ.</p>
                 </article>
                 <article class="principle-card">
                   <span class="principle-number">04</span>
+                  <span class="principle-icon icon-bridge" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M4 18V9a8 8 0 0 1 16 0v9"></path><path d="M4 14h16M8 18v-4M16 18v-4"></path></svg>
+                  </span>
                   <h4 data-i18n="missionPoint4Title">Гибридный скаффолдинг</h4>
                   <p data-i18n="missionPoint4Text">Когда внутренний контур саморегуляции разорван, ИИ временно выступает «подпоркой», помогая подростку пройти цикл, чтобы постепенно вернуть функцию ему самому.</p>
                 </article>
                 <article class="principle-card">
                   <span class="principle-number">05</span>
+                  <span class="principle-icon icon-tool" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M14.5 5.5a4 4 0 0 0 4 4L8.5 19.5a2.1 2.1 0 0 1-3-3L15.5 6.5a4 4 0 0 0-1-1Z"></path><path d="m12 9 3 3"></path></svg>
+                  </span>
                   <h4 data-i18n="missionPoint5Title">ИИ как культурное орудие</h4>
                   <p data-i18n="missionPoint5Text">Искусственный интеллект не нейтрален. Без грамотного взрослого он может усиливать выученную беспомощность. Но в руках педагога и психолога становится мощным инструментом личностного роста.</p>
                 </article>
                 <article class="principle-card">
                   <span class="principle-number">06</span>
+                  <span class="principle-icon icon-dialog" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M5 6.5h14v9H9l-4 3v-12Z"></path><path d="M8 10h8M8 13h5"></path></svg>
+                  </span>
                   <h4 data-i18n="missionPoint6Title">Мнимый Другой</h4>
                   <p data-i18n="missionPoint6Text">Реальные отношения и деятельность всё чаще замещаются цифровыми суррогатами. ИИ не должен становиться ещё одним симулякром диалога — он должен помогать выходить за пределы цифрового пузыря.</p>
                 </article>
                 <article class="principle-card">
                   <span class="principle-number">07</span>
+                  <span class="principle-icon icon-choice" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M12 4v5c0 2.2-1.8 4-4 4H5"></path><path d="M12 9c0 2.2 1.8 4 4 4h3"></path><path d="m16 10 3 3-3 3M8 10l-3 3 3 3"></path></svg>
+                  </span>
                   <h4 data-i18n="missionPoint7Title">Точка бифуркации</h4>
                   <p data-i18n="missionPoint7Text">Как когда-то социальные сети, ИИ сейчас находится на развилке: он может либо усиливать деформацию развития, либо стать инструментом формирования зрелой личности. Выбор за нами.</p>
                 </article>
                 <article class="principle-card principle-card-featured">
                   <span class="principle-number">08</span>
+                  <span class="principle-icon icon-adult" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M8 19v-1a4 4 0 0 1 8 0v1"></path><circle cx="12" cy="9" r="3"></circle><path d="M4 20h16M18 10.5c1.7.6 3 2.2 3 4.1V16M6 10.5c-1.7.6-3 2.2-3 4.1V16"></path></svg>
+                  </span>
                   <h4 data-i18n="missionPoint8Title">Подростку нужен не ещё один алгоритм</h4>
                   <p data-i18n="missionPoint8Text">Ему нужен взрослый, который признаёт его взросление. SelfReg AI — это переводчик и посредник между двумя мирами, которые разучились слышать друг друга.</p>
                 </article>
@@ -484,22 +519,27 @@
           </div>
           <div class="risk-grid">
             <article class="risk-card">
+              <span class="risk-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 7h14v9H9l-4 3V7Z"></path><path d="M8 11h8M8 14h5"></path></svg></span>
               <h3 data-i18n="risk1Title">Иллюзия диалога</h3>
               <p data-i18n="risk1Text">ИИ создаёт иллюзию диалога и поддержки, но не способен обеспечить настоящее субъект-субъектное взаимодействие.</p>
             </article>
             <article class="risk-card">
+              <span class="risk-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v18"></path><path d="M6 8h7a5 5 0 0 1 0 10H6"></path><path d="m9 5-3 3 3 3"></path></svg></span>
               <h3 data-i18n="risk2Title">Делегирование и беспомощность</h3>
               <p data-i18n="risk2Text">Подросток привыкает перекладывать мышление и решение на алгоритм, закрепляя выученную беспомощность.</p>
             </article>
             <article class="risk-card">
+              <span class="risk-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3 5 7v10l7 4 7-4V7l-7-4Z"></path><path d="M12 8v8M8 12h8"></path></svg></span>
               <h3 data-i18n="risk3Title">Утрата авторства</h3>
               <p data-i18n="risk3Text">Стираются границы собственного «Я» — подросток перестаёт чувствовать себя автором своих действий и достижений.</p>
             </article>
             <article class="risk-card">
+              <span class="risk-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 7a5 5 0 0 1 7 0l3 3a5 5 0 0 1-7 7l-1-1"></path><path d="M17 17a5 5 0 0 1-7 0l-3-3a5 5 0 0 1 7-7l1 1"></path></svg></span>
               <h3 data-i18n="risk4Title">Зависимость вместо развития</h3>
               <p data-i18n="risk4Text">Вместо интериоризации саморегуляции происходит закрепление внешней зависимости в условиях дефицита доверительных взрослых.</p>
             </article>
             <article class="risk-card">
+              <span class="risk-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="3"></rect><path d="M9 8h6M9 12h6M9 16h3"></path></svg></span>
               <h3 data-i18n="risk6Title">Расстройство сетевого поведения</h3>
               <p data-i18n="risk6Text">Компенсаторное замещение реальной социальной активности и личностного становления на «зрелищное общение» и пассивное потребление в цифровой среде. Приводит к утрате субъектности и неспособности к подлинному взрослению.</p>
             </article>
@@ -531,7 +571,7 @@
         <span data-i18n="footerPilot">Пилотные запуски — по запросу, с согласованной педагогической целью.</span>
       </div>
     </footer>
-    <script src="i18n.js?v=20260626-copyedit-3"></script>
+    <script src="i18n.js?v=20260630-theme-1"></script>
   </body>
 </html>
 
