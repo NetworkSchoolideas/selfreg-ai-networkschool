@@ -79,6 +79,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  transition: background-color 200ms ease, color 200ms ease;
 }
 
 body,
@@ -430,6 +431,7 @@ html[data-theme="dark"] .hero {
   background: color-mix(in srgb, var(--surface) 95%, transparent);
   color: var(--text);
   box-shadow: var(--shadow-md);
+  transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
 }
 
 .teacher-mockup {
@@ -550,6 +552,7 @@ html[data-theme="dark"] .api-key span {
   position: relative;
   padding: var(--section-y) 0;
   scroll-margin-top: calc(var(--nav-h) + 24px);
+  transition: background-color 200ms ease, color 200ms ease;
 }
 
 .section + .section.light,
@@ -718,6 +721,7 @@ html[data-theme="dark"] .api-key span {
   border-radius: var(--radius);
   background: rgba(255, 255, 255, 0.052);
   color: var(--night-text);
+  transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease;
 }
 
 .principle-card,
@@ -857,6 +861,30 @@ html[data-theme="dark"] .api-key span {
 .risk-card,
 .media-card {
   padding: 26px;
+}
+
+.problem-grid article,
+.cards article,
+.case-grid article,
+.model-stage-card,
+.ai-role-card,
+.scenario-card,
+.support-step,
+.ab-item,
+.media-card,
+.media-copy,
+.teacher-copy-panel,
+.dashboard-preview,
+.chat-preview,
+.risk-highlight,
+.risk-card,
+.flow-card,
+.link-panel,
+.manifesto,
+.model-figure,
+.visual-figure,
+.research-figure {
+  transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
 }
 
 .problem-grid span,
@@ -1438,6 +1466,32 @@ html[data-theme="dark"] .ab-item span {
 
   .support-arrow {
     display: none;
+  }
+}
+
+@media (max-width: 1080px) {
+  .mission-shell,
+  .media-shell,
+  .evidence-head,
+  .risks-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-intro,
+  .media-copy {
+    position: static;
+  }
+
+  .hero-visual {
+    max-width: 520px;
+  }
+
+  .teacher-mockup {
+    width: min(320px, 48vw);
+  }
+
+  .student-phone {
+    width: min(280px, 42vw);
   }
 }
 
