@@ -440,6 +440,12 @@ html[data-theme="dark"] .hero {
   background: var(--surface);
 }
 
+.link-panel a:hover,
+.theme-toggle:hover,
+.lang-switch button:hover {
+  box-shadow: 0 8px 18px rgba(13, 31, 51, 0.08);
+}
+
 .teacher-mockup,
 .student-phone,
 .api-key,
@@ -589,7 +595,23 @@ html[data-theme="dark"] .api-key span {
 #safety,
 #risks,
 #cases {
-  background: var(--bg);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--bg) 88%, var(--surface) 12%), var(--bg));
+}
+
+.problem-frame,
+#safety {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--bg-soft) 74%, var(--surface) 26%), var(--bg));
+}
+
+#loop,
+#teacher {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--surface-soft) 54%, var(--bg) 46%), color-mix(in srgb, var(--bg-soft) 76%, var(--surface) 24%));
+}
+
+#media,
+#cases,
+#risks {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--bg) 82%, var(--surface) 18%), color-mix(in srgb, var(--bg-soft) 70%, var(--surface) 30%));
 }
 
 .content {
@@ -874,6 +896,37 @@ html[data-theme="dark"] .api-key span {
   background: linear-gradient(180deg, var(--surface) 0%, var(--surface-panel) 100%);
   color: var(--text);
   box-shadow: var(--shadow-sm);
+}
+
+.problem-grid article,
+.cards article,
+.case-grid article,
+.media-card,
+.risk-card,
+.risk-highlight,
+.teacher-copy-panel,
+.flow-card,
+.manifesto {
+  position: relative;
+}
+
+.problem-grid article::before,
+.cards article::before,
+.case-grid article::before,
+.media-card::before,
+.risk-card::before,
+.risk-highlight::before,
+.teacher-copy-panel::before,
+.flow-card::before,
+.manifesto::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 1px;
+  background: linear-gradient(90deg, rgba(36, 111, 210, 0), color-mix(in srgb, var(--teal) 42%, white 58%), rgba(36, 111, 210, 0));
+  opacity: 0.75;
 }
 
 .problem-grid article,
@@ -1283,6 +1336,7 @@ html[data-theme="dark"] .api-key span {
   padding: 28px;
   background: linear-gradient(180deg, #0b1829 0%, #081321 100%);
   color: var(--night-text);
+  border: 1px solid rgba(198, 213, 228, 0.12);
 }
 
 .bubble {
@@ -1442,6 +1496,22 @@ html[data-theme="dark"] nav a:hover {
 
 html[data-theme="dark"] nav a::after {
   background: #8fd8c7;
+}
+
+html[data-theme="dark"] .problem-frame,
+html[data-theme="dark"] #safety {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--bg-soft) 72%, var(--surface) 28%), var(--bg));
+}
+
+html[data-theme="dark"] #loop,
+html[data-theme="dark"] #teacher {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--surface-soft) 52%, var(--bg) 48%), color-mix(in srgb, var(--bg-soft) 80%, var(--surface) 20%));
+}
+
+html[data-theme="dark"] #media,
+html[data-theme="dark"] #cases,
+html[data-theme="dark"] #risks {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--bg) 76%, var(--surface) 24%), color-mix(in srgb, var(--bg-soft) 76%, var(--surface) 24%));
 }
 
 html[data-theme="dark"] .teacher-mockup,
