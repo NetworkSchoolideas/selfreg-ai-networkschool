@@ -2,6 +2,7 @@
   color-scheme: light;
 
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, "Times New Roman", serif;
 
   --bg: #f5f7fa;
   --bg-soft: #edf2f7;
@@ -126,23 +127,25 @@ h4 {
   margin: 0;
   color: var(--text);
   letter-spacing: 0;
+  font-family: var(--font-display);
+  text-wrap: balance;
 }
 
 h1 {
-  font-size: clamp(40px, 4.2vw, 56px);
-  font-weight: 720;
-  line-height: 1.02;
+  font-size: clamp(40px, 4.4vw, 58px);
+  font-weight: 700;
+  line-height: 0.98;
 }
 
 h2 {
   font-size: clamp(30px, 2.7vw, 40px);
-  font-weight: 680;
-  line-height: 1.15;
+  font-weight: 650;
+  line-height: 1.1;
 }
 
 h3 {
   font-size: clamp(20px, 1.6vw, 25px);
-  font-weight: 670;
+  font-weight: 650;
   line-height: 1.25;
 }
 
@@ -188,7 +191,7 @@ li + li {
   min-height: 36px;
   color: var(--text);
   font-size: 16px;
-  font-weight: 760;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -220,7 +223,7 @@ nav a {
   position: relative;
   padding: 7px 0;
   color: var(--text-soft);
-  font-weight: 640;
+  font-weight: 620;
   text-decoration: none;
   opacity: 0.96;
 }
@@ -360,6 +363,9 @@ html[data-theme="dark"] .hero {
   z-index: 2;
   grid-column: 1;
   grid-row: 1;
+  display: grid;
+  align-content: start;
+  gap: 0;
   max-width: 660px;
   padding-right: clamp(6px, 1vw, 18px);
 }
@@ -373,8 +379,8 @@ html[data-theme="dark"] .hero {
   max-width: 640px;
   margin-top: 20px;
   color: var(--text-soft);
-  font-size: clamp(18px, 1.25vw, 20px);
-  line-height: 1.7;
+  font-size: clamp(18px, 1.2vw, 20px);
+  line-height: 1.74;
 }
 
 .hero-note {
@@ -400,6 +406,7 @@ html[data-theme="dark"] .hero {
 
 .hero-links {
   margin-top: 18px;
+  gap: 10px;
 }
 
 .primary,
@@ -415,6 +422,30 @@ html[data-theme="dark"] .hero {
   font-weight: 690;
   text-decoration: none;
   transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.app-actions .primary {
+  min-width: 238px;
+  padding-inline: 28px;
+}
+
+.hero-links .primary,
+.hero-links .secondary {
+  min-height: 40px;
+  padding: 0 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  box-shadow: none;
+}
+
+.hero-links .primary {
+  border-color: color-mix(in srgb, var(--teal) 28%, var(--border));
+  background: color-mix(in srgb, var(--teal-soft) 62%, var(--surface) 38%);
+  color: var(--text);
+}
+
+.hero-links .secondary {
+  background: color-mix(in srgb, var(--surface) 84%, transparent);
 }
 
 .primary {
@@ -738,7 +769,7 @@ main#top {
 
 .mission-intro .wide {
   margin-top: 18px;
-  max-width: 520px;
+  max-width: 560px;
 }
 
 .mission-principles {
@@ -830,8 +861,8 @@ main#top {
 .principle-card-featured h4 {
   grid-column: 2;
   color: var(--night-text);
-  font-size: 18px;
-  line-height: 1.32;
+  font-size: 19px;
+  line-height: 1.28;
 }
 
 .principle-card p,
@@ -839,7 +870,7 @@ main#top {
   grid-column: 2;
   color: var(--night-muted);
   font-size: 15px;
-  line-height: 1.62;
+  line-height: 1.68;
 }
 
 .evidence-panel {
@@ -1880,19 +1911,21 @@ html[data-theme="dark"] .ab-item span {
   }
 
   .lead {
-    font-size: 19px;
-    line-height: 1.64;
+    font-size: 18px;
+    line-height: 1.72;
   }
 
   .hero-note {
     font-size: 15px;
   }
 
-  .actions .primary,
-  .app-actions .primary,
+  .app-actions .primary {
+    min-width: 0;
+  }
+
   .hero-links .primary,
   .hero-links .secondary {
-    width: 100%;
+    width: auto;
   }
 
   .section {
@@ -1923,6 +1956,12 @@ html[data-theme="dark"] .ab-item span {
 
   .principle-card-featured {
     border-bottom: 1px solid var(--night-border);
+  }
+
+  .principles-grid > .principle-card:first-child,
+  .principles-grid > .principle-card-featured:first-child {
+    border-top: 0;
+    padding-top: 6px;
   }
 
   .principle-number,
@@ -2005,11 +2044,20 @@ html[data-theme="dark"] .ab-item span {
   }
 
   h1 {
-    font-size: clamp(38px, 11vw, 48px);
+    font-size: clamp(38px, 11vw, 50px);
   }
 
   h2 {
     font-size: clamp(28px, 8vw, 34px);
+  }
+}
+
+@media (max-width: 560px) {
+  .actions .primary,
+  .app-actions .primary,
+  .hero-links .primary,
+  .hero-links .secondary {
+    width: 100%;
   }
 }
 
