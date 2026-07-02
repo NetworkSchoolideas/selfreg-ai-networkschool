@@ -650,6 +650,10 @@ main#top {
   background: linear-gradient(180deg, color-mix(in srgb, var(--bg) 82%, var(--surface) 18%), color-mix(in srgb, var(--bg-soft) 70%, var(--surface) 30%));
 }
 
+#media {
+  scroll-margin-top: calc(var(--nav-h) + 44px);
+}
+
 #teacher {
   background:
     linear-gradient(180deg, rgba(246, 249, 252, 0.98), rgba(241, 246, 250, 0.96)),
@@ -2063,6 +2067,11 @@ html[data-theme="dark"] .ab-item span {
 
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .footer-grid > div + div {
+    padding-top: 18px;
+    border-top: 1px solid var(--night-border);
   }
 }
 
