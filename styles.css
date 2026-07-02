@@ -1226,7 +1226,44 @@ html[data-theme="dark"] .api-key span {
 #evidence .data-grid article,
 #evidence .interpretation-grid article,
 .cluster-grid article {
+  display: grid;
+  gap: 10px;
+  align-content: start;
   padding: 28px;
+}
+
+.cluster-grid span {
+  display: block;
+  color: var(--night-text);
+  font-size: 18px;
+  font-weight: 720;
+  line-height: 1.25;
+}
+
+.cluster-grid b {
+  display: block;
+  width: fit-content;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  background: rgba(143, 216, 199, 0.12);
+  color: #8fd8c7;
+  font-size: 14px;
+  font-weight: 760;
+  line-height: 1.2;
+}
+
+.cluster-grid p {
+  margin: 0;
+  color: #d7e2ee;
+  line-height: 1.6;
+}
+
+.interpretation-grid h3 {
+  margin: 0;
+}
+
+.interpretation-grid p {
+  margin-top: 8px;
 }
 
 .media-shell {
