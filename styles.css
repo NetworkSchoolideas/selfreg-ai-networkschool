@@ -716,18 +716,18 @@ html[data-theme="dark"] .api-key span {
 
 .mission-principles {
   display: grid;
-  gap: 18px;
+  gap: 22px;
 }
 
 .mission-principles-head {
-  padding: 0 0 14px;
+  padding: 0 0 16px;
   border-bottom: 1px solid var(--night-border);
 }
 
 .principles-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
+  gap: 20px;
 }
 
 .principle-card,
@@ -739,8 +739,9 @@ html[data-theme="dark"] .api-key span {
 .research-notes article {
   border: 1px solid var(--night-border);
   border-radius: var(--radius);
-  background: rgba(10, 24, 39, 0.58);
+  background: linear-gradient(180deg, rgba(12, 28, 45, 0.86), rgba(9, 23, 38, 0.74));
   color: var(--night-text);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.18);
   transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease;
 }
 
@@ -748,15 +749,15 @@ html[data-theme="dark"] .api-key span {
 .principle-card-featured {
   display: grid;
   grid-template-columns: auto auto minmax(0, 1fr);
-  gap: 12px 14px;
+  gap: 12px 16px;
   align-items: start;
-  padding: 26px;
+  padding: 28px;
   border-left: 3px solid rgba(143, 216, 199, 0.42);
 }
 
 .principle-card-featured {
   grid-column: 1 / -1;
-  background: rgba(18, 50, 46, 0.72);
+  background: linear-gradient(180deg, rgba(17, 46, 44, 0.92), rgba(12, 33, 32, 0.82));
 }
 
 .principle-number {
@@ -802,23 +803,23 @@ html[data-theme="dark"] .api-key span {
 .principle-card-featured p {
   grid-column: 3;
   color: var(--night-muted);
-  font-size: 15.5px;
-  line-height: 1.58;
+  font-size: 15px;
+  line-height: 1.62;
 }
 
 .evidence-panel {
   display: grid;
-  gap: 14px;
-  padding: 24px;
+  gap: 16px;
+  padding: 26px;
 }
 
 .evidence-panel div {
   display: grid;
-  gap: 3px;
-  padding: 18px;
+  gap: 4px;
+  padding: 18px 18px 17px;
   border: 1px solid var(--night-border);
   border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.045);
 }
 
 .evidence-panel strong {
@@ -842,8 +843,8 @@ html[data-theme="dark"] .api-key span {
 .case-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 18px;
-  margin-top: 34px;
+  gap: 20px;
+  margin-top: 36px;
 }
 
 .cards {
@@ -880,7 +881,7 @@ html[data-theme="dark"] .api-key span {
 .case-grid article,
 .risk-card,
 .media-card {
-  padding: 26px;
+  padding: 28px;
 }
 
 .problem-grid article,
@@ -907,6 +908,14 @@ html[data-theme="dark"] .api-key span {
   transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
 }
 
+.problem-grid article,
+.cards article,
+.case-grid article {
+  display: grid;
+  align-content: start;
+  min-height: 100%;
+}
+
 .problem-grid span,
 .stage-number,
 .c4-grid b {
@@ -929,7 +938,7 @@ html[data-theme="dark"] .api-key span {
 .risk-card h3,
 .risk-highlight h3,
 .media-card h3 {
-  margin-top: 18px;
+  margin-top: 16px;
 }
 
 .problem-grid p,
@@ -944,17 +953,18 @@ html[data-theme="dark"] .api-key span {
 .manifesto p {
   margin-top: 12px;
   color: color-mix(in srgb, var(--text) 78%, white 22%);
+  line-height: 1.68;
 }
 
 .theory-strip {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 26px;
-  padding: 18px;
-  border: 1px solid #b9e4d9;
+  gap: 12px;
+  margin-top: 28px;
+  padding: 20px;
+  border: 1px solid color-mix(in srgb, var(--teal) 28%, var(--border));
   border-radius: var(--radius);
-  background: var(--teal-soft);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--teal-soft) 72%, white 28%), color-mix(in srgb, var(--surface) 84%, var(--teal-soft) 16%));
   color: var(--text);
 }
 
@@ -965,7 +975,7 @@ html[data-theme="dark"] .api-key span {
   min-height: 34px;
   padding: 0 12px;
   border-radius: var(--radius-sm);
-  background: color-mix(in srgb, var(--surface) 70%, transparent);
+  background: color-mix(in srgb, var(--surface) 84%, transparent);
 }
 
 .model-figure,
@@ -984,9 +994,9 @@ html[data-theme="dark"] .api-key span {
 .model-detail {
   display: grid;
   grid-template-columns: minmax(190px, 0.34fr) minmax(280px, 0.62fr) minmax(360px, 1fr);
-  gap: 18px;
-  padding: 28px;
-  background: #f7fafc;
+  gap: 20px;
+  padding: 30px;
+  background: linear-gradient(180deg, #f9fbfd 0%, #f2f7fb 100%);
 }
 
 .model-mini-title {
@@ -1004,10 +1014,12 @@ html[data-theme="dark"] .api-key span {
 }
 
 .support-step {
-  padding: 16px;
+  padding: 18px 16px;
   text-align: center;
   color: #0d1f33;
-  box-shadow: none;
+  border-color: #d4e0ea;
+  background: #ffffff;
+  box-shadow: 0 6px 16px rgba(13, 31, 51, 0.04);
 }
 
 .support-arrow {
@@ -1020,7 +1032,7 @@ html[data-theme="dark"] .api-key span {
 .model-stage-card,
 .ai-role-card {
   padding: 22px;
-  box-shadow: none;
+  box-shadow: 0 6px 16px rgba(13, 31, 51, 0.04);
 }
 
 .model-stage-card {
@@ -1058,8 +1070,9 @@ html[data-theme="dark"] .api-key span {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
   gap: 10px;
-  padding: 14px;
-  box-shadow: none;
+  padding: 15px 14px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(13, 31, 51, 0.035);
 }
 
 .ab-item b {
@@ -1107,8 +1120,8 @@ html[data-theme="dark"] .api-key span {
 .research-dashboard {
   display: grid;
   grid-template-columns: minmax(0, 1.46fr) minmax(260px, 0.72fr);
-  gap: 22px;
-  margin-top: 42px;
+  gap: 24px;
+  margin-top: 44px;
 }
 
 .research-figure {
@@ -1124,12 +1137,12 @@ html[data-theme="dark"] .api-key span {
 
 .research-notes {
   display: grid;
-  gap: 14px;
+  gap: 16px;
 }
 
 .research-notes article {
-  padding: 26px;
-  min-height: 150px;
+  padding: 28px;
+  min-height: 152px;
   align-content: center;
 }
 
@@ -1154,13 +1167,13 @@ html[data-theme="dark"] .api-key span {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
-  margin-top: 26px;
+  margin-top: 28px;
 }
 
 #evidence .data-grid article,
 #evidence .interpretation-grid article,
 .cluster-grid article {
-  padding: 26px;
+  padding: 28px;
 }
 
 .media-shell {
@@ -1173,7 +1186,7 @@ html[data-theme="dark"] .api-key span {
 .media-copy {
   position: sticky;
   top: 104px;
-  padding: 18px 0 0;
+  padding: 20px 0 0;
   background: transparent;
   border: 0;
   box-shadow: none;
@@ -1186,18 +1199,18 @@ html[data-theme="dark"] .api-key span {
 
 .media-grid {
   display: grid;
-  gap: 20px;
+  gap: 22px;
 }
 
 .media-card {
   display: grid;
-  gap: 22px;
+  gap: 20px;
   padding: 30px;
 }
 
 .media-card-head {
   display: grid;
-  gap: 10px;
+  gap: 8px;
   padding-bottom: 16px;
   border-bottom: 1px solid var(--border);
 }
@@ -1211,6 +1224,7 @@ html[data-theme="dark"] .api-key span {
   padding: 0 10px;
   border-radius: 999px;
   background: var(--teal-soft);
+  color: var(--teal);
 }
 
 .media-player,
@@ -1259,15 +1273,15 @@ html[data-theme="dark"] .api-key span {
 }
 
 .flow-card {
-  padding: 30px;
+  padding: 32px;
 }
 
 .chat-preview,
 .dashboard-preview {
   display: grid;
   gap: 14px;
-  padding: 26px;
-  background: var(--night);
+  padding: 28px;
+  background: linear-gradient(180deg, #0b1829 0%, #081321 100%);
   color: var(--night-text);
 }
 
@@ -1276,8 +1290,9 @@ html[data-theme="dark"] .api-key span {
   max-width: 86%;
   padding: 14px 16px;
   border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.09);
   color: var(--night-muted);
+  line-height: 1.55;
 }
 
 .bubble.user {
@@ -1291,9 +1306,9 @@ html[data-theme="dark"] .api-key span {
   grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
   gap: 14px;
   align-items: center;
-  padding: 14px 16px;
+  padding: 15px 16px;
   border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.09);
 }
 
 .dash-row span {
@@ -1314,8 +1329,8 @@ html[data-theme="dark"] .api-key span {
 .risk-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 14px;
-  margin-top: 28px;
+  gap: 16px;
+  margin-top: 30px;
 }
 
 .risks-shell {
@@ -1334,7 +1349,7 @@ html[data-theme="dark"] .api-key span {
 .risk-card {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
-  gap: 4px 18px;
+  gap: 6px 18px;
   padding: 24px 26px;
   box-shadow: var(--shadow-sm);
 }
