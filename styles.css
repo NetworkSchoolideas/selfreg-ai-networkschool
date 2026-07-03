@@ -55,7 +55,11 @@ html[data-theme="dark"] {
   --text-muted: #aabbd0;
   --border: rgba(198, 213, 228, 0.18);
   --border-strong: rgba(198, 213, 228, 0.28);
-  --teal-soft: rgba(22, 127, 114, 0.18);
+  --blue: #78adff;
+  --blue-dark: #9ec4ff;
+  --teal: #68dcc8;
+  --teal-soft: rgba(104, 220, 200, 0.16);
+  --red: #b9493f;
 }
 
 * {
@@ -1800,7 +1804,7 @@ html[data-theme="dark"] nav a:hover {
 }
 
 html[data-theme="dark"] nav a::after {
-  background: #8fd8c7;
+  background: var(--teal);
 }
 
 html[data-theme="dark"] .problem-frame,
@@ -1857,6 +1861,53 @@ html[data-theme="dark"] .teacher-copy-panel p,
 html[data-theme="dark"] .media-copy p,
 html[data-theme="dark"] .manifesto p {
   color: var(--text-soft);
+}
+
+html[data-theme="dark"] .eyebrow,
+html[data-theme="dark"] .section-kicker,
+html[data-theme="dark"] .status-tag,
+html[data-theme="dark"] .risk-badge {
+  color: var(--teal);
+}
+
+html[data-theme="dark"] .status-tag,
+html[data-theme="dark"] .risk-badge {
+  background: rgba(104, 220, 200, 0.14);
+  border: 1px solid rgba(104, 220, 200, 0.18);
+}
+
+html[data-theme="dark"] .case-grid a {
+  color: var(--blue);
+}
+
+html[data-theme="dark"] .primary {
+  border-color: #246fd2;
+  background: #246fd2;
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .primary:hover {
+  background: #185bb4;
+}
+
+html[data-theme="dark"] .ab-a b {
+  color: #07111f;
+}
+
+html[data-theme="dark"] .ab-b b {
+  background: var(--red);
+}
+
+html[data-theme="dark"] .dashboard-preview .dash-row {
+  background: rgba(19, 38, 59, 0.92);
+}
+
+html[data-theme="dark"] .dashboard-preview .dash-row span {
+  color: var(--text-soft);
+}
+
+html[data-theme="dark"] .dashboard-preview .dash-row strong {
+  color: var(--text);
 }
 
 html[data-theme="dark"] .model-detail,
