@@ -19,7 +19,7 @@
   --blue-dark: #185bb4;
   --teal: #167f72;
   --teal-soft: #dff4ee;
-  --red: #c85548;
+  --red: #b9493f;
   --amber: #c99b20;
   --night: #07111f;
   --night-2: #0d1c2d;
@@ -405,7 +405,7 @@ html[data-theme="dark"] .hero {
 .hero-note {
   max-width: 620px;
   margin-top: 20px;
-  color: var(--text-muted);
+  color: var(--text-soft);
   font-size: 16px;
   line-height: 1.64;
 }
@@ -1498,7 +1498,7 @@ main#top {
   padding: 0 10px;
   border-radius: 999px;
   background: var(--teal-soft);
-  color: var(--teal);
+  color: #0f6f64;
 }
 
 .media-player,
@@ -1613,7 +1613,7 @@ main#top {
   align-items: center;
   padding: 15px 16px;
   border-radius: var(--radius);
-  background: rgba(255, 255, 255, 0.09);
+  background: #13263b;
 }
 
 .dash-row span {
@@ -2179,11 +2179,22 @@ html[data-theme="dark"] .ab-item span {
 
   .hero {
     padding: 48px 20px 48px;
+    gap: 0;
+    background:
+      linear-gradient(180deg, rgba(245, 247, 250, 0.97), rgba(245, 247, 250, 0.9)),
+      url("assets/bg-hero-selfreg-ai.webp") center / cover no-repeat,
+      var(--bg);
+  }
+
+  html[data-theme="dark"] .hero {
+    background:
+      linear-gradient(180deg, rgba(7, 17, 31, 0.97), rgba(7, 17, 31, 0.9)),
+      url("assets/bg-hero-selfreg-ai.webp") center / cover no-repeat,
+      var(--bg);
   }
 
   .hero-visual {
-    display: grid;
-    min-height: auto;
+    display: none;
   }
 
   .teacher-mockup {
@@ -2209,6 +2220,7 @@ html[data-theme="dark"] .ab-item span {
 
   .hero-note {
     font-size: 15px;
+    line-height: 1.62;
   }
 
   .app-actions .primary {
