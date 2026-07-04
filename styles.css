@@ -1150,6 +1150,16 @@ main#top {
   background: linear-gradient(180deg, #f9fbfd 0%, #f2f7fb 100%);
 }
 
+.model-detail .model-stage-card,
+.model-detail .ai-role-card,
+.model-detail .support-step,
+.model-detail .ab-item {
+  border-color: #d4e0ea;
+  background: #ffffff;
+  color: #0d1f33;
+  box-shadow: 0 6px 16px rgba(13, 31, 51, 0.04);
+}
+
 .model-mini-title {
   color: #0d1f33;
   font-size: 16px;
@@ -1168,9 +1178,6 @@ main#top {
   padding: 18px 16px;
   text-align: center;
   color: #0d1f33;
-  border-color: #d4e0ea;
-  background: #ffffff;
-  box-shadow: 0 6px 16px rgba(13, 31, 51, 0.04);
 }
 
 .support-arrow {
@@ -1183,7 +1190,6 @@ main#top {
 .model-stage-card,
 .ai-role-card {
   padding: 22px;
-  box-shadow: 0 6px 16px rgba(13, 31, 51, 0.04);
 }
 
 .model-stage-card {
@@ -1223,8 +1229,6 @@ main#top {
   grid-template-columns: auto minmax(0, 1fr);
   gap: 10px;
   padding: 15px 14px;
-  background: #ffffff;
-  box-shadow: 0 4px 12px rgba(13, 31, 51, 0.035);
 }
 
 .ab-item b {

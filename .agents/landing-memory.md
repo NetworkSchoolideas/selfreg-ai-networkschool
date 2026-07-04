@@ -7,6 +7,7 @@
 - Before replacing a block, compare it against the current version and state what improves: readability, hierarchy, maturity, contrast, responsiveness, or publication readiness.
 - Do not simplify by deletion when a working public block already carries meaning; improve layout, hierarchy, and readability first.
 - After every visual edit, verify contrast on the real rendered background in both RU and EN versions. Dark theme is a separate release gate, not an optional check. Any unreadable text on translucent, image-backed, or dark cards is a blocking regression. Light panels must always force dark text, and dark panels must use high-contrast text tokens.
+- Hybrid diagrams and embedded light panels must isolate their own component styles; their cards, badges, and captions must not inherit global dark-card backgrounds in dark theme.
 - Treat duplicate meaning across sections as a blocking issue. If a point is already stated clearly once, reorganize instead of repeating it.
 
 ## Next Work Priority
