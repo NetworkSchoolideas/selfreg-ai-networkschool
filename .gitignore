@@ -5,3 +5,9 @@ Thumbs.db
 node_modules
 .env
 .env.*
+
+# Local QA and audit artifacts
+tmp-qa/
+plans/
+docs/design-audit-2026-06-27/
+docs/design-audit-2026-07-02/*.png
