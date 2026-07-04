@@ -2024,7 +2024,7 @@ html[data-theme="dark"] .ab-item span {
 
 @media (max-width: 980px) {
   :root {
-    --nav-h: 94px;
+    --nav-h: 104px;
   }
 
   .nav {
@@ -2234,6 +2234,7 @@ html[data-theme="dark"] .ab-item span {
 
   .section {
     padding: 56px 0;
+    scroll-margin-top: calc(var(--nav-h) + 36px);
   }
 
   .principles-grid,

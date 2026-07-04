@@ -500,9 +500,27 @@ function setLang(lang) {
   });
 }
 
+function scrollToHashTarget() {
+  const hash = window.location.hash;
+  if (!hash) return;
+  const target = document.getElementById(decodeURIComponent(hash.slice(1)));
+  if (!target) return;
+  target.scrollIntoView({ block: "start", behavior: "auto" });
+}
+
+function scheduleHashScroll() {
+  if (!window.location.hash) return;
+  requestAnimationFrame(() => requestAnimationFrame(scrollToHashTarget));
+  window.setTimeout(scrollToHashTarget, 250);
+  window.setTimeout(scrollToHashTarget, 900);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll("[data-lang-button]").forEach((button) => {
-    button.addEventListener("click", () => setLang(button.getAttribute("data-lang-button")));
+    button.addEventListener("click", () => {
+      setLang(button.getAttribute("data-lang-button"));
+      scheduleHashScroll();
+    });
   });
   const themeToggle = document.querySelector("[data-theme-toggle]");
   if (themeToggle) {
@@ -513,7 +531,11 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   setTheme(getTheme());
   setLang(getLang());
+  scheduleHashScroll();
 });
+
+window.addEventListener("load", scheduleHashScroll, { once: true });
+window.addEventListener("hashchange", scheduleHashScroll);
 
 
 
