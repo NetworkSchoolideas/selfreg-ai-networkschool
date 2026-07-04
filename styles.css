@@ -1363,14 +1363,14 @@ main#top {
   grid-column: 1;
   display: block;
   color: var(--night-text);
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 720;
   line-height: 1.25;
 }
 
 .cluster-grid b {
-  grid-column: 2;
-  justify-self: end;
+  grid-column: 1;
+  justify-self: start;
   display: block;
   width: fit-content;
   padding: 4px 10px;
@@ -1392,8 +1392,8 @@ main#top {
 
 .cluster-grid article {
   position: relative;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: 12px 16px;
+  grid-template-columns: 1fr;
+  gap: 10px;
   padding-top: 24px;
   border-left: 2px solid rgba(143, 216, 199, 0.35);
   background: linear-gradient(180deg, rgba(13, 28, 46, 0.9), rgba(9, 23, 38, 0.72));
@@ -2346,6 +2346,16 @@ html[data-theme="dark"] .ab-item span {
   .cluster-grid,
   .interpretation-grid {
     grid-template-columns: 1fr;
+  }
+
+  .research-figure {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  }
+
+  .research-figure img {
+    width: 620px;
+    max-width: none;
   }
 
   .media-player {
