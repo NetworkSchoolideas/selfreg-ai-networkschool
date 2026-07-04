@@ -1384,18 +1384,23 @@ main#top {
   font-size: 18px;
   font-weight: 720;
   line-height: 1.25;
+  min-width: 0;
 }
 
 .cluster-grid b {
-  grid-column: 1;
-  justify-self: start;
-  display: block;
+  grid-column: 2;
+  justify-self: end;
+  align-self: start;
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
   width: fit-content;
-  padding: 4px 10px;
-  border-radius: var(--radius-sm);
-  background: rgba(143, 216, 199, 0.12);
-  color: #8fd8c7;
-  font-size: 14px;
+  padding: 6px 11px;
+  border: 1px solid rgba(143, 216, 199, 0.22);
+  border-radius: 999px;
+  background: rgba(143, 216, 199, 0.11);
+  color: #aee9dd;
+  font-size: 13px;
   font-weight: 760;
   line-height: 1.2;
   white-space: nowrap;
@@ -1410,11 +1415,14 @@ main#top {
 
 .cluster-grid article {
   position: relative;
-  grid-template-columns: 1fr;
-  gap: 10px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px 18px;
+  min-height: 138px;
   padding-top: 24px;
   border-left: 2px solid rgba(143, 216, 199, 0.35);
-  background: linear-gradient(180deg, rgba(13, 28, 46, 0.9), rgba(9, 23, 38, 0.72));
+  background:
+    radial-gradient(circle at 92% 12%, rgba(143, 216, 199, 0.1), transparent 34%),
+    linear-gradient(180deg, rgba(13, 28, 46, 0.92), rgba(9, 23, 38, 0.76));
 }
 
 .interpretation-grid h3 {
