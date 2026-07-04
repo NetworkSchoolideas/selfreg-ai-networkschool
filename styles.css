@@ -1736,12 +1736,24 @@ main#top {
 }
 
 footer {
-  padding: 54px var(--gutter) 30px;
+  position: relative;
+  padding: 64px var(--gutter) 32px;
   border-top: 1px solid var(--border);
   background:
+    radial-gradient(circle at 12% 0%, rgba(104, 220, 200, 0.12), transparent 28%),
     linear-gradient(180deg, rgba(9, 20, 34, 0.98), rgba(7, 17, 31, 1)),
     var(--night);
   color: var(--night-muted);
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: var(--gutter);
+  left: var(--gutter);
+  height: 1px;
+  background: linear-gradient(90deg, rgba(104, 220, 200, 0), rgba(104, 220, 200, 0.55), rgba(36, 111, 210, 0));
 }
 
 .footer-grid {
@@ -1755,7 +1767,10 @@ footer {
 .footer-grid > div {
   display: grid;
   align-content: start;
-  gap: 8px;
+  gap: 10px;
+  min-height: 150px;
+  padding: 22px 0 0;
+  border-top: 1px solid rgba(198, 213, 228, 0.12);
 }
 
 footer strong {
@@ -1787,12 +1802,21 @@ footer strong {
 }
 
 .footer-links a {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  padding: 0 12px;
+  border: 1px solid rgba(198, 213, 228, 0.14);
+  border-radius: 999px;
   color: var(--night-muted);
   text-decoration: none;
   font-size: 15px;
+  transition: border-color 180ms ease, color 180ms ease, background-color 180ms ease;
 }
 
 .footer-links a:hover {
+  border-color: rgba(104, 220, 200, 0.36);
+  background: rgba(104, 220, 200, 0.08);
   color: var(--night-text);
 }
 
