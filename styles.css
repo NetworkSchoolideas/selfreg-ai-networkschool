@@ -969,6 +969,11 @@ main#top {
   gap: 22px;
 }
 
+.case-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
 .problem-grid article,
 .cards article,
 .case-grid article,
@@ -1073,6 +1078,13 @@ main#top {
   min-height: 210px;
 }
 
+.case-grid article {
+  gap: 0;
+  min-height: 250px;
+  padding: 30px 32px;
+  border-left: 2px solid color-mix(in srgb, var(--blue) 46%, var(--teal) 54%);
+}
+
 .problem-grid article:nth-child(2) {
   animation-delay: 80ms;
 }
@@ -1133,6 +1145,25 @@ main#top {
 
 .problem-grid p {
   grid-column: 2;
+}
+
+.case-grid article h3 {
+  margin-top: 0;
+}
+
+.case-grid article p {
+  max-width: 560px;
+}
+
+.case-grid article a {
+  align-self: end;
+  justify-self: start;
+  margin-top: 24px;
+  padding: 8px 12px;
+  border: 1px solid color-mix(in srgb, var(--blue) 28%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--blue) 8%, transparent);
+  line-height: 1.2;
 }
 
 .problem-grid p,
