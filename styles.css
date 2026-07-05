@@ -847,10 +847,10 @@ main#top {
 .principle-card,
 .principle-card-featured {
   display: grid;
-  grid-template-columns: 42px minmax(0, 1fr);
-  gap: 8px 16px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px 16px;
   align-items: start;
-  padding: 22px;
+  padding: 24px;
   border-left: 2px solid rgba(143, 216, 199, 0.42);
 }
 
@@ -860,12 +860,18 @@ main#top {
 }
 
 .principle-number {
-  grid-column: 1;
+  grid-column: 2;
   grid-row: 1;
+  justify-self: end;
+  min-width: 42px;
+  border: 1px solid rgba(143, 216, 199, 0.18);
+  border-radius: 999px;
+  background: rgba(143, 216, 199, 0.08);
   color: #8fd8c7;
   font-size: 13px;
   font-weight: 760;
   font-variant-numeric: tabular-nums;
+  text-align: center;
   line-height: 32px;
 }
 
@@ -884,7 +890,7 @@ main#top {
 
 .principle-icon {
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 1;
 }
 
 .principle-icon svg,
@@ -900,7 +906,7 @@ main#top {
 
 .principle-card h4,
 .principle-card-featured h4 {
-  grid-column: 2;
+  grid-column: 1 / -1;
   color: var(--night-text);
   font-size: 19px;
   line-height: 1.28;
@@ -908,7 +914,7 @@ main#top {
 
 .principle-card p,
 .principle-card-featured p {
-  grid-column: 2;
+  grid-column: 1 / -1;
   color: var(--night-muted);
   font-size: 15px;
   line-height: 1.68;
@@ -2300,10 +2306,13 @@ html[data-theme="dark"] .ab-item span {
     grid-template-columns: 1fr;
   }
 
-  .principle-card,
-  .principle-card-featured,
   .risk-card {
     grid-template-columns: 40px minmax(0, 1fr);
+  }
+
+  .principle-card,
+  .principle-card-featured {
+    grid-template-columns: minmax(0, 1fr) auto;
   }
 
   .principle-card,
@@ -2339,7 +2348,18 @@ html[data-theme="dark"] .ab-item span {
   }
 
   .principle-number,
-  .principle-icon,
+  .principle-icon {
+    grid-row: 1;
+  }
+
+  .principle-number {
+    grid-column: 2;
+  }
+
+  .principle-icon {
+    grid-column: 1;
+  }
+
   .risk-icon {
     grid-column: 1;
   }
@@ -2347,7 +2367,10 @@ html[data-theme="dark"] .ab-item span {
   .principle-card h4,
   .principle-card-featured h4,
   .principle-card p,
-  .principle-card-featured p,
+  .principle-card-featured p {
+    grid-column: 1 / -1;
+  }
+
   .risk-card h3,
   .risk-card p {
     grid-column: 2;
