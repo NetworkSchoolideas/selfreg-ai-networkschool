@@ -964,6 +964,11 @@ main#top {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.problem-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
 .problem-grid article,
 .cards article,
 .case-grid article,
@@ -1061,6 +1066,13 @@ main#top {
   animation: cardFadeIn 520ms ease both;
 }
 
+.problem-grid article {
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 6px 18px;
+  padding: 30px 32px;
+  min-height: 210px;
+}
+
 .problem-grid article:nth-child(2) {
   animation-delay: 80ms;
 }
@@ -1090,6 +1102,8 @@ main#top {
 }
 
 .problem-grid span {
+  grid-column: 1;
+  grid-row: 1 / span 2;
   justify-self: start;
   width: fit-content;
   min-width: 38px;
@@ -1110,6 +1124,15 @@ main#top {
 .risk-highlight h3,
 .media-card h3 {
   margin-top: 16px;
+}
+
+.problem-grid h3 {
+  grid-column: 2;
+  margin-top: 0;
+}
+
+.problem-grid p {
+  grid-column: 2;
 }
 
 .problem-grid p,
