@@ -442,8 +442,15 @@ html[data-theme="dark"] .hero {
 }
 
 .app-actions .primary {
-  min-width: 238px;
-  padding-inline: 28px;
+  min-width: 226px;
+  padding-inline: 24px;
+  border-color: color-mix(in srgb, var(--blue) 76%, var(--border) 24%);
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--blue) 88%, var(--surface) 12%),
+    color-mix(in srgb, var(--blue-dark) 88%, var(--surface) 12%)
+  );
+  box-shadow: 0 8px 18px rgba(36, 111, 210, 0.11);
 }
 
 .hero-links .primary,
@@ -2029,6 +2036,12 @@ html[data-theme="dark"] .primary:hover {
   background: #185bb4;
 }
 
+html[data-theme="dark"] .app-actions .primary {
+  border-color: rgba(120, 173, 255, 0.42);
+  background: linear-gradient(180deg, rgba(36, 111, 210, 0.84), rgba(24, 91, 180, 0.82));
+  box-shadow: 0 10px 24px rgba(36, 111, 210, 0.16);
+}
+
 html[data-theme="dark"] .ab-a b {
   color: #07111f;
 }
@@ -2545,11 +2558,18 @@ html[data-theme="dark"] .ab-item span {
 }
 
 @media (max-width: 560px) {
-  .actions .primary,
-  .app-actions .primary,
+  .actions .primary {
+    width: 100%;
+  }
+
+  .app-actions .primary {
+    width: min(100%, 300px);
+  }
+
   .hero-links .primary,
   .hero-links .secondary {
-    width: 100%;
+    flex: 1 1 150px;
+    width: auto;
   }
 
   #safety .cards article {
