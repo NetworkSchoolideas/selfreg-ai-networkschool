@@ -1097,8 +1097,9 @@ main#top {
 
 .problem-grid article {
   grid-template-columns: auto minmax(0, 1fr);
-  gap: 6px 18px;
+  gap: 6px 22px;
   padding: 30px 32px;
+  border-left: 2px solid color-mix(in srgb, var(--teal) 42%, var(--border) 58%);
   min-height: 210px;
 }
 
@@ -1141,16 +1142,17 @@ main#top {
   grid-column: 1;
   grid-row: 1 / span 2;
   justify-self: start;
-  width: fit-content;
-  min-width: 38px;
-  height: 28px;
-  padding: 0 10px;
-  border: 1px solid rgba(143, 216, 199, 0.26);
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--teal) 10%, white 90%);
-  color: var(--teal);
-  font-size: 12px;
+  width: 34px;
+  min-width: 0;
+  height: auto;
+  padding: 2px 0 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: color-mix(in srgb, var(--teal) 72%, var(--text) 28%);
+  font-size: 13px;
   letter-spacing: 0;
+  line-height: 1;
 }
 
 .problem-grid h3,
@@ -2019,8 +2021,8 @@ html[data-theme="dark"] .risk-badge {
 }
 
 html[data-theme="dark"] .problem-grid span {
-  background: rgba(104, 220, 200, 0.14);
-  border-color: rgba(104, 220, 200, 0.22);
+  background: transparent;
+  border-color: transparent;
   color: #8fd8c7;
 }
 
