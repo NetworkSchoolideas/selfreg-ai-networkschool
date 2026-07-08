@@ -1464,11 +1464,12 @@ main#top {
 .cluster-grid span {
   grid-column: 1;
   display: block;
+  min-width: 0;
   color: var(--night-text);
   font-size: 18px;
   font-weight: 650;
   line-height: 1.25;
-  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .cluster-grid b {
@@ -1487,6 +1488,7 @@ main#top {
   font-size: 13px;
   font-weight: 650;
   line-height: 1.2;
+  margin-left: 8px;
   white-space: nowrap;
 }
 
@@ -2397,6 +2399,22 @@ html[data-theme="dark"] .ab-item span {
 
   .data-grid {
     grid-template-columns: 1fr;
+  }
+
+  .cluster-grid article {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .cluster-grid span,
+  .cluster-grid b,
+  .cluster-grid p {
+    grid-column: 1;
+  }
+
+  .cluster-grid b {
+    justify-self: start;
+    margin-left: 0;
   }
 
   .risk-card {
