@@ -1,5 +1,13 @@
 ﻿const translations = {
   ru: {
+    documentTitle: "SelfReg AI — поддержка саморегуляции подростков",
+    documentDescription: "SelfReg AI — пространство педагогической поддержки саморегуляции подростков.",
+    skipToContent: "Перейти к содержимому",
+    brandHome: "Главная SelfReg AI",
+    navLabel: "Основная навигация",
+    languageLabel: "Выбор языка",
+    themeToDark: "Включить тёмную тему",
+    themeToLight: "Включить светлую тему",
     navProblem: "Проблема",
     primaryProblem: "Зачем это нужно",
     problemKicker: "Проблемная рамка",
@@ -99,17 +107,19 @@
     chatBot2: "Начнем спокойно. Выбери один кусок проекта, который можно сдвинуть сегодня.",
     evidenceKicker: "Исследовательская основа",
     evidenceTitle: "На чем держится модель",
-    evidenceText: "Первое исследование на выборке N=82 показало сильную связь эмоционального интеллекта и саморегуляции. Дополнительное исследование N=174 подтвердило, что пик уязвимости приходится на возраст 17–23 лет. Вместе они показывают: поддержка нужна раньше, чем трудность превращается в срыв или ярлык.",
-    evidenceVisualCaption: "Медиаторная модель показывает частичный путь от эмоционального интеллекта к вовлеченности в ИИ через саморегуляцию. Кластерные профили дополняют ее и помогают различать типы поддержки.",
+    evidenceText: "Рабочая база первого исследования включала N=82 подростка; корреляционный и кластерный анализы выполнены на аналитической подвыборке n=77. Дополнительное исследование N=174 показало наиболее низкие значения ряда показателей в группе 17–23 лет. Вместе эти результаты указывают на важность своевременной педагогической поддержки.",
+    evidenceVisualCaption: "Схема показывает исследовательскую проверку связей между показателями. Непрямой эффект через саморегуляцию в этой выборке статистически не подтверждён и требует дальнейшей проверки.",
+    evidenceMobilePath1: "Эмоциональный интеллект → саморегуляция: 0,54, p<0,001.",
+    evidenceMobilePath2: "Саморегуляция → вовлечённость в ИИ: 0,17, p=0,14; связь требует дальнейшей проверки.",
     dataSample: "взаимодополняющих исследования",
     dataEq: "связь эмоционального интеллекта и саморегуляции",
     dataVariance: "объясненной дисперсии саморегуляции",
-    dataAge: "возрастной пик уязвимости",
+    dataAge: "группа с наиболее низкими значениями ряда показателей во втором исследовании",
     dataMainSample: "участника в основном исследовании",
-    dataAi: "профиля педагогической поддержки",
+    dataAi: "участников в корреляционном и кластерном анализе",
     dataProfiles: "участника в дополнительном исследовании",
-    clusterDeficitTitle: "Дефицитарный",
-    clusterDeficitText: "нужна ранняя опора и мягкий старт",
+    clusterDeficitTitle: "Профиль ранней поддержки",
+    clusterDeficitText: "нужны ранняя опора и мягкий старт",
     clusterBasicTitle: "Базовый",
     clusterBasicText: "поддержка через микрошаги и наблюдение",
     clusterResourceTitle: "Ресурсный",
@@ -133,7 +143,7 @@
     futureTitle: "Будущее: ИИ-сопровождение развития в образовательной среде",
     futureText: "Это только первый шаг. Дальше проект может развиваться в сторону образовательной экосистемы, где данные помогают сопровождать человека, а не только оценивать его постфактум: видеть нагрузку, интерес, восстановление и рост раньше, чем появляется срыв.",
     manifestoTitle: "Для педагога",
-    manifestoText: "Педагог и психолог не должны работать в информационном дефиците, пока цифровые платформы легко собирают поведенческие данные. Образованию нужны свои инструменты данных: с согласием, понятной целью и человеческой интерпретацией.",
+    manifestoText: "Педагогу и психологу важны контекст, понятная цель и человеческая интерпретация. Любые инструменты, работающие с данными подростков, требуют отдельной этической и правовой рамки.",
     futureVisualCaption: "Будущая версия соединяет психологию, физиологию и педагогику: данные помогают раньше увидеть состояние и путь подростка.",
     casesKicker: "Аналоги",
     casesTitle: "Что переносим из спорта и аналитических систем",
@@ -144,7 +154,7 @@
     caseLearning: "Образовательные дашборды уже поддерживают планирование, мониторинг и рефлексию, но часто нуждаются в более строгой теоретической рамке.",
     teacherKicker: "Педагогический контур",
     teacherTitle: "Что видит педагог",
-    teacherText: "Педагог видит не только итог, а конкретный участок, на котором подростку потребовалась поддержка: ход ответов, этап саморегуляции и короткую интерпретацию для бережного следующего шага.",
+    teacherText: "Педагогический контур помогает обсуждать не только итог, но и следующий бережный шаг: где нужна опора, как уточнить цель и как сохранить пространство для самостоятельного действия подростка.",
     dashStage1: "Цель",
     dashStage2: "Действие",
     dashStage3: "Сигнал",
@@ -158,8 +168,8 @@
     safety1Text: "Фидбек говорит о действиях и следующем шаге, а не о “хорошем” или “плохом” ученике.",
     safety2Title: "Педагог как доверительный взрослый",
     safety2Text: "Система не выносит вердикт. Она помогает доверительному взрослому увидеть контекст и выбрать форму поддержки.",
-    safety3Title: "Данные ограничены целью сопровождения",
-    safety3Text: "Собираются только те сигналы, которые помогают сопровождать подростка бережно, с согласием и понятной педагогической целью.",
+    safety3Title: "Принцип минимизации данных",
+    safety3Text: "Любое использование данных подростков должно быть ограничено понятной педагогической целью, согласием и заранее определёнными правилами доступа.",
     pilotKicker: "Пилот",
     pilotTitle: "Что нужно проверить перед пилотом",
     pilotText: "Перед пилотом проверяем, что диалог понятен подростку, следующий вопрос связан с предыдущим ответом, а педагогический контур дает интерпретацию без превращения данных в ярлык.",
@@ -210,20 +220,28 @@
     risk3Text: "Стираются границы собственного «Я» — подросток перестаёт чувствовать себя автором своих действий и достижений.",
     risk4Title: "Зависимость вместо развития",
     risk4Text: "Вместо интериоризации саморегуляции происходит закрепление внешней зависимости в условиях дефицита доверительных взрослых.",
-    risk5Title: "Группа повышенной уязвимости",
-    risk5Text: "Подростки с дефицитарным кластерным профилем особенно уязвимы: им сложнее удерживать саморегуляцию, переносить обратную связь и сохранять чувство авторства. Именно им нужна более ранняя и бережная поддержка.",
-    risk6Title: "Расстройство сетевого поведения",
-    risk6Text: "Компенсаторное замещение реальной социальной активности и личностного становления на «зрелищное общение» и пассивное потребление в цифровой среде. Приводит к утрате субъектности и неспособности к подлинному взрослению.",
+    risk5Title: "Потребность в ранней поддержке",
+    risk5Text: "Один из выявленных профилей описывает сочетание менее выраженных ресурсов саморегуляции и эмоционального интеллекта. Это основание предложить более раннюю и бережную педагогическую поддержку, а не оценивать личность подростка.",
+    risk6Title: "Замещение реального действия",
+    risk6Text: "Когда цифровое взаимодействие вытесняет реальные отношения и самостоятельное действие, поддержка должна возвращать подростка к диалогу, рефлексии и собственным решениям.",
     footerTagline: "Психологическая модель саморегуляции + ИИ как временная педагогическая опора",
     footerAbout: "SelfReg AI",
     footerAboutText: "Саморегуляция подростков и ИИ как временная педагогическая опора.",
     footerCode: "Медиа проекта",
     footerMediaVideo: "Видео",
     footerMediaAudio: "Аудио",
-    footerLicense: "Правовая информация",
+    footerLicense: "SelfReg AI",
     footerPilot: "Пилотные запуски — по запросу, с согласованной педагогической целью."
   },
   en: {
+    documentTitle: "SelfReg AI — adolescent self-regulation support",
+    documentDescription: "SelfReg AI is a space for pedagogical support of adolescent self-regulation.",
+    skipToContent: "Skip to content",
+    brandHome: "SelfReg AI home",
+    navLabel: "Main navigation",
+    languageLabel: "Language selector",
+    themeToDark: "Switch to dark theme",
+    themeToLight: "Switch to light theme",
     navProblem: "Problem",
     primaryProblem: "Why this matters",
     problemKicker: "Problem frame",
@@ -323,16 +341,18 @@
     chatBot2: "Let us start calmly. Choose one part of the project you can move today.",
     evidenceKicker: "Evidence base",
     evidenceTitle: "What the model stands on",
-    evidenceText: "The first study with N=82 showed a strong link between emotional intelligence and self-regulation. The additional study with N=174 confirmed that the peak of vulnerability falls on ages 17-23. Together they show that support is needed before difficulty turns into breakdown or labeling.",
-    evidenceVisualCaption: "The mediation model shows a partial path from emotional intelligence to AI engagement through self-regulation. Cluster profiles complement it and help distinguish types of support.",
+    evidenceText: "The working base of the first study included N=82 adolescents; the correlation and cluster analyses used an analytic subsample of n=77. The additional N=174 study found the lowest values on several indicators in the 17-23 age group. Together, these results point to the value of timely pedagogical support.",
+    evidenceVisualCaption: "The diagram shows an exploratory test of links between indicators. The indirect effect through self-regulation was not statistically confirmed in this sample and requires further study.",
+    evidenceMobilePath1: "Emotional intelligence → self-regulation: 0.54, p<0.001.",
+    evidenceMobilePath2: "Self-regulation → AI engagement: 0.17, p=0.14; the link requires further study.",
     dataSample: "complementary studies",
     dataEq: "link between emotional intelligence and self-regulation",
     dataVariance: "explained variance of self-regulation",
-    dataAge: "age peak of vulnerability",
+    dataAge: "group with the lowest values on several indicators in the second study",
     dataMainSample: "participants in the main study",
-    dataAi: "pedagogical support profiles",
+    dataAi: "participants in the correlation and cluster analyses",
     dataProfiles: "participants in the additional study",
-    clusterDeficitTitle: "Deficit",
+    clusterDeficitTitle: "Early-support profile",
     clusterDeficitText: "early support and a gentle start are needed",
     clusterBasicTitle: "Basic",
     clusterBasicText: "support through micro-steps and observation",
@@ -357,7 +377,7 @@
     futureTitle: "Future: AI-supported development in education",
     futureText: "This is only the first step. Next, the project can grow into an educational ecosystem where data helps support the person rather than only evaluate them after the fact: revealing workload, interest, recovery, and growth before breakdown appears.",
     manifestoTitle: "For teachers",
-    manifestoText: "Teachers and psychologists should not work with less data than digital platforms that easily collect behavioral traces. Education needs its own data tools: with consent, a clear purpose, and human interpretation.",
+    manifestoText: "Teachers and psychologists need context, a clear purpose, and human interpretation. Any tool that works with adolescent data requires a distinct ethical and legal framework.",
     futureVisualCaption: "The future version connects psychology, physiology, and pedagogy: data helps adults see the adolescent's state and path earlier.",
     casesKicker: "Comparisons",
     casesTitle: "What we borrow from sport and analytics systems",
@@ -368,7 +388,7 @@
     caseLearning: "Educational dashboards already support planning, monitoring, and reflection, but often need a stronger theoretical framework.",
     teacherKicker: "Teacher view",
     teacherTitle: "What the teacher sees",
-    teacherText: "The teacher sees not only the outcome but the specific point where support was needed: the response path, the self-regulation stage, and a short interpretation for the next careful step.",
+    teacherText: "The pedagogical layer helps discuss not only the outcome but the next careful step: where support is needed, how to clarify a goal, and how to preserve room for the adolescent's own action.",
     dashStage1: "Goal",
     dashStage2: "Action",
     dashStage3: "Signal",
@@ -382,8 +402,8 @@
     safety1Text: "Feedback talks about actions and the next step, not about a good or bad student.",
     safety2Title: "Educator as a trusted adult",
     safety2Text: "The system does not deliver a verdict. It helps a trusted adult see context and choose a form of support.",
-    safety3Title: "Data is limited by the support purpose",
-    safety3Text: "Only signals that help support the adolescent carefully are collected, with consent and a clear pedagogical purpose.",
+    safety3Title: "Data minimisation principle",
+    safety3Text: "Any use of adolescent data should be limited by a clear pedagogical purpose, consent, and pre-defined access rules.",
     pilotKicker: "Pilot",
     pilotTitle: "What must be tested before the pilot",
     pilotText: "Before the pilot, we verify that the dialogue is clear to adolescents, the next question follows the previous answer, and the educator area provides interpretation without turning data into a label.",
@@ -434,17 +454,17 @@
     risk3Text: "Boundaries of the self are erased — the adolescent stops feeling like the author of actions and achievements.",
     risk4Title: "Dependency instead of development",
     risk4Text: "Instead of internalizing self-regulation, external dependency becomes entrenched when trusted adult support is missing.",
-    risk5Title: "Group of heightened vulnerability",
-    risk5Text: "Adolescents with a deficit cluster profile are especially vulnerable: it is harder for them to hold self-regulation, tolerate feedback, and preserve a sense of authorship. They need earlier and more careful support.",
-    risk6Title: "Network behavior disorder",
-    risk6Text: "Compensatory substitution of real social activity and personal development with spectacular communication and passive digital consumption leads to loss of subjectivity.",
+    risk5Title: "Need for earlier support",
+    risk5Text: "One identified profile describes less pronounced self-regulation and emotional-intelligence resources. It is a reason to offer earlier, careful pedagogical support, not to judge an adolescent's personality.",
+    risk6Title: "Substitution of real action",
+    risk6Text: "When digital interaction displaces real relationships and independent action, support should bring the adolescent back to dialogue, reflection, and their own decisions.",
     footerTagline: "Psychological self-regulation model + AI as temporary pedagogical support",
     footerAbout: "SelfReg AI",
     footerAboutText: "Adolescent self-regulation and AI as temporary pedagogical support.",
     footerCode: "Project media",
     footerMediaVideo: "Video",
     footerMediaAudio: "Audio",
-    footerLicense: "Legal information",
+    footerLicense: "SelfReg AI",
     footerPilot: "Pilot runs by request, with an agreed educational purpose."
   }
 };
@@ -468,10 +488,11 @@ function setTheme(theme) {
   localStorage.setItem("selfreg_theme", normalized);
   const toggle = document.querySelector("[data-theme-toggle]");
   if (toggle) {
-    const next = normalized === "dark" ? "light" : "dark";
+    const t = translations[document.documentElement.lang] || translations.ru;
+    const nextLabel = normalized === "dark" ? t.themeToLight : t.themeToDark;
     toggle.setAttribute("aria-pressed", String(normalized === "dark"));
-    toggle.setAttribute("aria-label", next === "dark" ? "Switch to dark theme" : "Switch to light theme");
-    toggle.setAttribute("title", next === "dark" ? "Switch to dark theme" : "Switch to light theme");
+    toggle.setAttribute("aria-label", nextLabel);
+    toggle.setAttribute("title", nextLabel);
   }
 }
 
@@ -479,6 +500,18 @@ function setLang(lang) {
   localStorage.setItem("selfreg_lang", lang);
   const t = translations[lang];
   document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i18n-title]").forEach((node) => {
+    const key = node.getAttribute("data-i18n-title");
+    if (t[key]) node.textContent = t[key];
+  });
+  document.querySelectorAll("[data-i18n-content]").forEach((node) => {
+    const key = node.getAttribute("data-i18n-content");
+    if (t[key]) node.setAttribute("content", t[key]);
+  });
+  document.querySelectorAll("[data-i18n-aria-label]").forEach((node) => {
+    const key = node.getAttribute("data-i18n-aria-label");
+    if (t[key]) node.setAttribute("aria-label", t[key]);
+  });
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const key = node.getAttribute("data-i18n");
     if (t[key]) node.textContent = t[key];
@@ -498,6 +531,10 @@ function setLang(lang) {
     node.classList.toggle("active", active);
     node.setAttribute("aria-pressed", String(active));
   });
+  const url = new URL(window.location.href);
+  url.searchParams.set("lang", lang);
+  window.history.replaceState(null, "", url);
+  setTheme(getTheme());
 }
 
 function scrollToHashTarget() {

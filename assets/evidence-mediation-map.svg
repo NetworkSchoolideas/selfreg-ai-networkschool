@@ -21,8 +21,8 @@
     </style>
   </defs>
   <rect class="bg" width="1120" height="620" rx="18"/>
-  <text class="title" x="48" y="58">Эксперимент: медиаторная модель и кластеры</text>
-  <text class="sub" x="48" y="88">Основное исследование N=82; дополнительная проверка N=174.</text>
+  <text class="title" x="48" y="58">Исследовательская схема: связи и профили</text>
+  <text class="sub" x="48" y="88">Рабочая база N=82; аналитическая подвыборка n=77; дополнительное исследование N=174.</text>
 
   <rect class="blue" x="72" y="155" width="260" height="112" rx="16"/>
   <text class="txt" x="110" y="200">Эмоциональный</text>
@@ -45,7 +45,7 @@
   <rect class="card" x="366" y="328" width="500" height="44" rx="10"/>
   <text class="num" x="365" y="190">0.54</text>
   <text class="num" x="723" y="190">0.17</text>
-  <text class="small" x="398" y="355">Непрямой эффект частичный; кластеры уточняют тип поддержки</text>
+  <text class="small" x="398" y="355">Исследовательская проверка: непрямой эффект требует дальнейшей верификации</text>
 
   <rect class="card" x="72" y="430" width="292" height="112" rx="16"/>
   <text class="txt" x="116" y="472">Дефицитарный</text>

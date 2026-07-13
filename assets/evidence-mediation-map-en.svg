@@ -10,8 +10,8 @@
     </style>
   </defs>
   <rect class="bg" width="1120" height="620" rx="18"/>
-  <text class="title" x="48" y="58">Experiment: mediation model and clusters</text>
-  <text class="sub" x="48" y="88">Main study N=82; additional validation N=174.</text>
+  <text class="title" x="48" y="58">Research diagram: links and profiles</text>
+  <text class="sub" x="48" y="88">Working base N=82; analytic subsample n=77; additional study N=174.</text>
   <rect class="blue" x="72" y="155" width="260" height="112" rx="16"/>
   <text class="txt" x="120" y="200">Emotional</text>
   <text class="txt" x="124" y="226">intelligence</text>
@@ -29,7 +29,7 @@
   <rect class="card" x="366" y="328" width="500" height="44" rx="10"/>
   <text class="num" x="365" y="190">0.54</text>
   <text class="num" x="723" y="190">0.17</text>
-  <text class="small" x="398" y="355">Partial indirect effect; clusters clarify the type of support</text>
+  <text class="small" x="398" y="355">Exploratory test: the indirect effect requires further verification</text>
   <rect class="card" x="72" y="430" width="292" height="112" rx="16"/>
   <text class="txt" x="120" y="472">Deficit profile</text>
   <text class="small" x="112" y="502">cluster: support and a soft start</text>

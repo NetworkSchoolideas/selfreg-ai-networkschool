@@ -3,17 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SelfReg AI - AI support for adolescent self-regulation</title>
-    <meta name="description" content="SelfReg AI: веб-инструмент с ИИ для поддержки саморегуляции подростков и работы педагога." />
+    <title data-i18n-title="documentTitle">SelfReg AI — поддержка саморегуляции подростков</title>
+    <meta name="description" data-i18n-content="documentDescription" content="SelfReg AI — пространство педагогической поддержки саморегуляции подростков." />
     <meta name="theme-color" content="#2f80ed" />
     <link rel="manifest" href="site.webmanifest" />
     <link rel="preload" as="image" href="assets/bg-hero-selfreg-ai.webp" />
     <link rel="stylesheet" href="styles.css?v=20260710-mobile-hero" />
   </head>
   <body>
+    <a class="skip-link" href="#top" data-i18n="skipToContent">Перейти к содержимому</a>
     <header class="nav">
-      <a class="brand" href="#top" aria-label="SelfReg AI home">SelfReg AI</a>
-      <nav aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Главная SelfReg AI" data-i18n-aria-label="brandHome">SelfReg AI</a>
+      <nav aria-label="Основная навигация" data-i18n-aria-label="navLabel">
         <a href="#problem-frame" data-i18n="navProblem">Проблема</a>
         <a href="#loop" data-i18n="navLoop">Модель</a>
         <a href="#evidence" data-i18n="navArchitecture">Исследования</a>
@@ -24,7 +25,7 @@
         <a href="#risks" data-i18n="navRisks">Риски</a>
       </nav>
       <div class="nav-actions">
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme" title="Toggle color theme">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Включить тёмную тему" title="Включить тёмную тему">
           <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
             <circle cx="12" cy="12" r="4"></circle>
             <path d="M12 2v2.5M12 19.5V22M4.93 4.93 6.7 6.7M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07 6.7 17.3M17.3 6.7l1.77-1.77"></path>
@@ -33,7 +34,7 @@
             <path d="M20 15.5A8.5 8.5 0 0 1 8.5 4 7 7 0 1 0 20 15.5Z"></path>
           </svg>
         </button>
-        <div class="lang-switch" aria-label="Language switcher">
+        <div class="lang-switch" aria-label="Выбор языка" data-i18n-aria-label="languageLabel">
           <button data-lang-button="ru" type="button">RU</button>
           <button data-lang-button="en" type="button">EN</button>
         </div>
@@ -345,30 +346,34 @@
               <p class="section-kicker" data-i18n="evidenceKicker">Исследовательская основа</p>
               <h2 data-i18n="evidenceTitle">На чем держится модель</h2>
             </div>
-            <p class="wide" data-i18n="evidenceText">Первое исследование на выборке N=82 показало сильную связь эмоционального интеллекта и саморегуляции. Дополнительное исследование N=174 подтвердило, что пик уязвимости приходится на возраст 17–23 лет. Вместе они показывают: поддержка нужна раньше, чем трудность превращается в срыв или ярлык.</p>
+            <p class="wide" data-i18n="evidenceText">Рабочая база первого исследования включала N=82 подростка; корреляционный и кластерный анализы выполнены на аналитической подвыборке n=77. Дополнительное исследование N=174 показало наиболее низкие значения ряда показателей в группе 17–23 лет. Вместе эти результаты указывают на важность своевременной педагогической поддержки.</p>
           </div>
           <div class="research-dashboard">
             <figure class="visual-figure research-figure">
-              <img src="assets/evidence-mediation-map.svg?v=20260527-evidencefix" data-src-ru="assets/evidence-mediation-map.svg?v=20260527-evidencefix" data-src-en="assets/evidence-mediation-map-en.svg?v=20260527-evidencefix" data-alt-ru="Экспериментальная база SelfReg AI: медиаторная модель и кластерные профили" data-alt-en="SelfReg AI experimental base: mediation model and cluster profiles" alt="Экспериментальная база SelfReg AI: медиаторная модель и кластерные профили" />
-              <figcaption data-i18n="evidenceVisualCaption">Медиаторная модель показывает частичный путь от эмоционального интеллекта к вовлеченности в ИИ через саморегуляцию. Кластерные профили дополняют ее и помогают различать типы поддержки.</figcaption>
+              <img src="assets/evidence-mediation-map.svg?v=20260712-evidence-precision" data-src-ru="assets/evidence-mediation-map.svg?v=20260712-evidence-precision" data-src-en="assets/evidence-mediation-map-en.svg?v=20260712-evidence-precision" data-alt-ru="Исследовательская схема SelfReg AI: связи показателей и кластерные профили" data-alt-en="SelfReg AI research diagram: indicator links and cluster profiles" alt="Исследовательская схема SelfReg AI: связи показателей и кластерные профили" />
+              <figcaption data-i18n="evidenceVisualCaption">Схема показывает исследовательскую проверку связей между показателями. Непрямой эффект через саморегуляцию в этой выборке статистически не подтверждён и требует дальнейшей проверки.</figcaption>
+              <div class="research-mobile-summary">
+                <p data-i18n="evidenceMobilePath1">Эмоциональный интеллект → саморегуляция: 0,54, p&lt;0,001.</p>
+                <p data-i18n="evidenceMobilePath2">Саморегуляция → вовлечённость в ИИ: 0,17, p=0,14; связь требует дальнейшей проверки.</p>
+              </div>
             </figure>
             <div class="research-notes" aria-label="Research highlights">
               <article><strong>r=0.59</strong><span data-i18n="dataEq">связь эмоционального интеллекта и саморегуляции</span></article>
               <article><strong>29%</strong><span data-i18n="dataVariance">объясненной дисперсии саморегуляции</span></article>
-              <article><strong>17–23</strong><span data-i18n="dataAge">возрастной пик уязвимости</span></article>
+              <article><strong>17–23</strong><span data-i18n="dataAge">группа с наиболее низкими значениями ряда показателей во втором исследовании</span></article>
             </div>
           </div>
           <div class="data-grid">
             <article><strong>2</strong><span data-i18n="dataSample">взаимодополняющих исследования</span></article>
             <article><strong>82</strong><span data-i18n="dataMainSample">участника в основном исследовании</span></article>
-            <article><strong>3</strong><span data-i18n="dataAi">профиля педагогической поддержки</span></article>
+            <article><strong>77</strong><span data-i18n="dataAi">участников в корреляционном и кластерном анализе</span></article>
             <article><strong>174</strong><span data-i18n="dataProfiles">участника в дополнительном исследовании</span></article>
           </div>
           <div class="cluster-grid">
             <article>
-              <span data-i18n="clusterDeficitTitle">Дефицитарный</span>
+              <span data-i18n="clusterDeficitTitle">Профиль ранней поддержки</span>
               <b>n=23</b>
-              <p data-i18n="clusterDeficitText">нужна ранняя опора и мягкий старт</p>
+              <p data-i18n="clusterDeficitText">нужны ранняя опора и мягкий старт</p>
             </article>
             <article>
               <span data-i18n="clusterBasicTitle">Базовый</span>
@@ -442,7 +447,7 @@
           </div>
           <div class="manifesto">
             <h3 data-i18n="manifestoTitle">Для педагога</h3>
-            <p data-i18n="manifestoText">Педагог и психолог не должны работать в информационном дефиците, пока цифровые платформы легко собирают поведенческие данные. Образованию нужны свои инструменты данных: с согласием, понятной целью и человеческой интерпретацией.</p>
+            <p data-i18n="manifestoText">Педагогу и психологу важны контекст, понятная цель и человеческая интерпретация. Любые инструменты, работающие с данными подростков, требуют отдельной этической и правовой рамки.</p>
           </div>
         </div>
         <div class="content">
@@ -498,7 +503,7 @@
           <div class="teacher-copy-panel">
             <p class="section-kicker" data-i18n="teacherKicker">Педагогический контур</p>
             <h2 data-i18n="teacherTitle">Что видит педагог</h2>
-            <p data-i18n="teacherText">Педагог видит не только итог, а конкретный участок, на котором подростку потребовалась поддержка: ход ответов, этап саморегуляции и короткую интерпретацию для бережного следующего шага.</p>
+            <p data-i18n="teacherText">Педагогический контур помогает обсуждать не только итог, но и следующий бережный шаг: где нужна опора, как уточнить цель и как сохранить пространство для самостоятельного действия подростка.</p>
           </div>
         </div>
       </section>
@@ -510,7 +515,7 @@
           <div class="cards">
             <article><h3 data-i18n="safety1Title">ИИ не оценивает личность</h3><p data-i18n="safety1Text">Фидбек говорит о действиях и следующем шаге, а не о “хорошем” или “плохом” ученике.</p></article>
             <article><h3 data-i18n="safety2Title">Педагог как доверительный взрослый</h3><p data-i18n="safety2Text">Система не выносит вердикт. Она помогает доверительному взрослому увидеть контекст и выбрать форму поддержки.</p></article>
-            <article><h3 data-i18n="safety3Title">Данные ограничены целью сопровождения</h3><p data-i18n="safety3Text">Собираются только те сигналы, которые помогают сопровождать подростка бережно, с согласием и понятной педагогической целью.</p></article>
+            <article><h3 data-i18n="safety3Title">Принцип минимизации данных</h3><p data-i18n="safety3Text">Любое использование данных подростков должно быть ограничено понятной педагогической целью, согласием и заранее определёнными правилами доступа.</p></article>
           </div>
         </div>
       </section>
@@ -525,8 +530,8 @@
             </div>
             <article class="risk-highlight">
               <span class="risk-badge" data-i18n="riskHighlightLabel">Зона особого внимания</span>
-              <h3 data-i18n="risk5Title">Группа высокого риска</h3>
-              <p data-i18n="risk5Text">Подростки с дефицитарным кластерным профилем особенно уязвимы: им сложнее удерживать саморегуляцию, переносить обратную связь и сохранять чувство авторства. Именно им нужна более ранняя и бережная поддержка.</p>
+              <h3 data-i18n="risk5Title">Потребность в ранней поддержке</h3>
+              <p data-i18n="risk5Text">Один из выявленных профилей описывает сочетание менее выраженных ресурсов саморегуляции и эмоционального интеллекта. Это основание предложить более раннюю и бережную педагогическую поддержку, а не оценивать личность подростка.</p>
             </article>
           </div>
           <div class="risk-grid">
@@ -552,12 +557,13 @@
             </article>
             <article class="risk-card">
               <span class="risk-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="16" rx="3"></rect><path d="M9 8h6M9 12h6M9 16h3"></path></svg></span>
-              <h3 data-i18n="risk6Title">Расстройство сетевого поведения</h3>
-              <p data-i18n="risk6Text">Компенсаторное замещение реальной социальной активности и личностного становления на «зрелищное общение» и пассивное потребление в цифровой среде. Приводит к утрате субъектности и неспособности к подлинному взрослению.</p>
+              <h3 data-i18n="risk6Title">Замещение реального действия</h3>
+              <p data-i18n="risk6Text">Когда цифровое взаимодействие вытесняет реальные отношения и самостоятельное действие, поддержка должна возвращать подростка к диалогу, рефлексии и собственным решениям.</p>
             </article>
           </div>
         </div>
       </section>
+    </main>
     <footer>
       <div class="footer-grid">
         <div>
@@ -572,9 +578,8 @@
           </div>
         </div>
         <div>
-          <strong data-i18n="footerLicense">Правовая информация</strong>
+          <strong data-i18n="footerLicense">SelfReg AI</strong>
           <div class="footer-links footer-links-inline">
-            <a href="https://github.com/NetworkSchoolideas/selfreg-ai-networkschool/blob/main/LICENSE">MIT License</a>
             <span>2026</span>
           </div>
         </div>

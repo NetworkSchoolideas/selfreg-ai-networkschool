@@ -9,6 +9,9 @@
 - After every visual edit, verify contrast on the real rendered background in both RU and EN versions. Dark theme is a separate release gate, not an optional check. Any unreadable text on translucent, image-backed, or dark cards is a blocking regression. Light panels must always force dark text, and dark panels must use high-contrast text tokens.
 - Hybrid diagrams and embedded light panels must isolate their own component styles; their cards, badges, and captions must not inherit global dark-card backgrounds in dark theme.
 - Treat duplicate meaning across sections as a blocking issue. If a point is already stated clearly once, reorganize instead of repeating it.
+- Every published statistic must identify its actual analytic denominator and source. Do not present a working-base size as the denominator of a correlation, regression, factor, or cluster result.
+- Preserve research content, but distinguish confirmed findings from exploratory trends. Do not use diagnostic labels, causal certainty, or stigmatizing descriptions for adolescents unless an approved public primary source explicitly supports them.
+- Any claim about consent, collection, storage, deletion, access to responses, or a teacher dashboard requires an approved app-side privacy and data-processing document before publication.
 
 ## Next Work Priority
 
