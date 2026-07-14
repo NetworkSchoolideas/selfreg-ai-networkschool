@@ -9,6 +9,22 @@ the validation gate is passed. Approved public wording, the mission structure,
 and the research block are preserved; corrections must improve precision and
 accessibility rather than remove meaningful content.
 
+## Competition product phase — 2026-07-14
+
+The current goal is a **push-ready public project presentation**, not a full
+production launch for collecting or processing adolescent data.
+
+- [x] Verify the public CTA, RU/EN state, light/dark themes, desktop/mobile
+  layout, local media loading, and browser console.
+- [x] Add canonical and language alternates, Open Graph/Twitter metadata,
+  favicon, manifest icon, `robots.txt`, and `sitemap.xml`.
+- [x] Keep public research claims limited to the approved internal aggregate
+  record; do not expose source documents or participant data.
+- [ ] Generate privacy/terms and data-processing materials as a separate
+  research-and-drafting task before any wider public product launch.
+- [ ] Add supplied accurate captions and transcripts as a separate media
+  accessibility task; they do not block the competition presentation push.
+
 ## P0 — Release blockers
 
 ### 1. Research claims and teen-facing language — in progress
@@ -19,8 +35,9 @@ accessibility rather than remove meaningful content.
   statistically confirmed in the supplied article.
 - [x] Replace diagnostic or causal public wording that is not supported by the
   supplied documents.
-- [ ] Obtain an approved public research reference or publication URL for the
-  quantitative claims. Do not publish private participant material.
+- [x] Use the supplied internal research documents as the approved source for
+  public aggregate claims. Do not publish private participant material or imply
+  that an external publication exists.
 
 ### 2. Privacy and data-processing disclosure — blocked on app-side materials
 
@@ -29,6 +46,8 @@ accessibility rather than remove meaningful content.
 - [x] Check the linked application for public privacy and terms pages: the code
   contains consent and deletion mechanics, but no publishable `/privacy` or
   `/terms` page was found on 2026-07-13.
+- [x] Recheck the live application on 2026-07-14: `/privacy` and `/terms`
+  return HTTP 200, but both serve an application shell without legal content.
 - [ ] Verify the application privacy notice, terms, retention/deletion rules,
   responsible contact, and minor-consent process with the application team.
 - [ ] Add only approved public links and wording after that verification.
@@ -40,10 +59,17 @@ accessibility rather than remove meaningful content.
 - [x] Restore the `main` / `footer` landmark boundary and add a skip link.
 - [x] Replace the low-contrast focus treatment with a visible dual-ring focus state.
 - [ ] Add accurate captions and text transcripts for every RU and EN video/audio item.
+- [x] Inspect the supplied local media on 2026-07-14: there are no `.vtt`,
+  `.srt`, or transcript files. The available RU video script is not a verified
+  transcript of the 2:25 media file and cannot be published as one.
 
 ### 4. Media integrity — pending
 
-- [ ] Confirm RU/EN media pairing, duration, editorial scope, and file sizes.
+- [x] Confirm that RU/EN media are intentionally not duration-matched; this is
+  not a release blocker. Editorial scope and file sizes remain recorded.
+- [x] Record current media durations and sizes: RU video 2:25 (12.2 MB), RU
+  audio 2:17 (4.2 MB), EN video 4:54 (23.1 MB), EN audio 20:10 (37.2 MB).
+  The duration difference is approved.
 - [ ] Optimise or replace assets only after editorial confirmation; do not delete
   language assets on the basis of duration alone.
 
@@ -63,7 +89,9 @@ accessibility rather than remove meaningful content.
 - [x] Localise document title, description, theme-toggle accessibility text, and
   language URL state.
 - [x] Make the research diagram responsive without hidden horizontal overflow.
-- [ ] Add approved canonical, Open Graph, social preview, icons, and sitemap metadata.
+- [x] Add a local SVG favicon and connect it from the document head.
+- [x] Add canonical, Open Graph/Twitter social preview metadata, icons, and
+  sitemap metadata for the verified public landing host.
 - [ ] Review project instructions and ignored planning files for intentional tracking.
 
 ## Evidence record used for P0.1

@@ -534,6 +534,10 @@ function setLang(lang) {
   const url = new URL(window.location.href);
   url.searchParams.set("lang", lang);
   window.history.replaceState(null, "", url);
+  const publicUrl = new URL(url.pathname + url.search + url.hash, "https://selfreg-ai-networkschool.vercel.app").href;
+  document.querySelector("[data-seo-canonical]")?.setAttribute("href", publicUrl);
+  document.querySelector("[data-seo-url]")?.setAttribute("content", publicUrl);
+  document.querySelector("[data-seo-locale]")?.setAttribute("content", lang === "en" ? "en_US" : "ru_RU");
   setTheme(getTheme());
 }
 

@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://selfreg-ai-networkschool.vercel.app/sitemap.xml
