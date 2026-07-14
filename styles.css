@@ -81,8 +81,8 @@ body {
     var(--bg);
   color: var(--text);
   font-family: var(--font-sans);
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.68;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -155,25 +155,25 @@ h4 {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 64px;
   font-weight: 670;
   line-height: 1.04;
 }
 
 h2 {
-  font-size: 38px;
+  font-size: 44px;
   font-weight: 620;
   line-height: 1.14;
 }
 
 h3 {
-  font-size: 23px;
+  font-size: 27px;
   font-weight: 620;
   line-height: 1.25;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 650;
   line-height: 1.3;
 }
@@ -213,7 +213,7 @@ li + li {
   gap: 10px;
   min-height: 36px;
   color: var(--text);
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 700;
   text-decoration: none;
 }
@@ -239,7 +239,7 @@ nav {
   display: flex;
   justify-content: center;
   gap: clamp(14px, 1.6vw, 24px);
-  font-size: 13px;
+  font-size: 15px;
 }
 
 nav a {
@@ -420,8 +420,8 @@ html[data-theme="dark"] .hero {
   margin-top: 20px;
   padding-bottom: 26px;
   color: var(--text-soft);
-  font-size: 19px;
-  line-height: 1.68;
+  font-size: 21px;
+  line-height: 1.7;
 }
 
 .lead::after {
@@ -439,8 +439,8 @@ html[data-theme="dark"] .hero {
   max-width: 620px;
   margin-top: 20px;
   color: var(--text-soft);
-  font-size: 16px;
-  line-height: 1.64;
+  font-size: 18px;
+  line-height: 1.68;
 }
 
 .actions,
@@ -468,7 +468,7 @@ html[data-theme="dark"] .hero {
   justify-content: center;
   border-radius: var(--radius-sm);
   padding: 0 20px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 620;
   text-decoration: none;
   transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
@@ -492,7 +492,7 @@ html[data-theme="dark"] .hero {
   min-height: 40px;
   padding: 0 16px;
   border-radius: 999px;
-  font-size: 13px;
+  font-size: 14px;
   box-shadow: none;
 }
 
@@ -561,7 +561,7 @@ html[data-theme="dark"] .hero {
   display: flex;
   gap: 18px;
   color: var(--text-soft);
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -628,7 +628,7 @@ html[data-theme="dark"] .insight-card {
   padding: 14px 16px;
   border-radius: var(--radius-sm);
   box-shadow: none;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 650;
 }
 
@@ -648,7 +648,7 @@ html[data-theme="dark"] .insight-card {
   align-items: center;
   padding: 12px 18px;
   border-radius: var(--radius-sm);
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .api-key span {
@@ -668,12 +668,14 @@ html[data-theme="dark"] .api-key span {
   position: relative;
   padding: var(--section-y) 0;
   scroll-margin-top: calc(var(--nav-h) + 24px);
-  transition: background-color 200ms ease, color 200ms ease;
+  transition: background-color 200ms ease, color 200ms ease, box-shadow 200ms ease;
 }
 
 .section + .section {
+  margin-top: clamp(16px, 2vw, 28px);
   border-top: 1px solid transparent;
-  border-image: linear-gradient(90deg, rgba(22, 127, 114, 0.34), rgba(198, 212, 226, 0.24), rgba(36, 111, 210, 0)) 1;
+  border-image: linear-gradient(90deg, rgba(22, 127, 114, 0.56), rgba(198, 212, 226, 0.54), rgba(36, 111, 210, 0.42)) 1;
+  box-shadow: 0 -10px 26px rgba(13, 31, 51, 0.055), 0 16px 30px rgba(13, 31, 51, 0.035);
 }
 
 main#top {
@@ -820,7 +822,7 @@ main#top {
 .risk-badge {
   margin: 0 0 12px;
   color: var(--teal);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 680;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -832,8 +834,8 @@ main#top {
 .model-lead,
 .risks-intro {
   color: var(--text-soft);
-  font-size: 18px;
-  line-height: 1.65;
+  font-size: 20px;
+  line-height: 1.7;
 }
 
 .wide {
@@ -909,7 +911,7 @@ main#top {
   max-width: 640px;
   margin-top: 20px;
   color: #d7e2ee;
-  font-size: clamp(16px, 1.25vw, 18px);
+  font-size: clamp(18px, 1.3vw, 20px);
   line-height: 1.7;
 }
 
@@ -1008,7 +1010,7 @@ main#top {
   border-radius: 999px;
   background: rgba(143, 216, 199, 0.08);
   color: #8fd8c7;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 760;
   font-variant-numeric: tabular-nums;
   text-align: center;
@@ -1049,8 +1051,8 @@ main#top {
   grid-column: 2;
   grid-row: 1;
   color: var(--night-text);
-  font-size: 19px;
-  line-height: 1.28;
+  font-size: 22px;
+  line-height: 1.32;
 }
 
 .principle-card p,
@@ -1058,8 +1060,8 @@ main#top {
   grid-column: 2 / -1;
   grid-row: 2;
   color: var(--night-muted);
-  font-size: 15px;
-  line-height: 1.68;
+  font-size: 17px;
+  line-height: 1.72;
 }
 
 .evidence-panel {
@@ -1085,7 +1087,7 @@ main#top {
 
 .evidence-panel span {
   color: var(--night-muted);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .problem-frame .wide,
@@ -1268,7 +1270,7 @@ main#top {
   border-radius: 0;
   background: transparent;
   color: color-mix(in srgb, var(--teal) 72%, var(--text) 28%);
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 0;
   line-height: 1;
 }
@@ -1320,9 +1322,9 @@ main#top {
 .teacher-copy-panel p,
 .media-copy p,
 .manifesto p {
-  margin-top: 14px;
+  margin-top: 16px;
   color: color-mix(in srgb, var(--text) 78%, white 22%);
-  line-height: 1.68;
+  line-height: 1.72;
 }
 
 .theory-strip {
@@ -1380,7 +1382,7 @@ main#top {
 
 .model-mini-title {
   color: #0d1f33;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 720;
 }
 
@@ -1427,7 +1429,7 @@ main#top {
 .ab-item span,
 .model-detail-note {
   color: #40576f;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 .ai-role-card {
@@ -1457,7 +1459,7 @@ main#top {
   justify-content: center;
   border-radius: 50%;
   color: #ffffff;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .ab-a b { background: var(--teal); }
@@ -1473,7 +1475,7 @@ main#top {
   padding: 16px 20px;
   background: #0b1728;
   color: var(--night-text);
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 620;
   line-height: 1.5;
   white-space: normal;
@@ -1581,8 +1583,8 @@ main#top {
 }
 
 #evidence .data-grid span {
-  font-size: 14px;
-  line-height: 1.55;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
 .cluster-grid span {
@@ -1590,7 +1592,7 @@ main#top {
   display: block;
   min-width: 0;
   color: var(--night-text);
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 650;
   line-height: 1.25;
   overflow-wrap: anywhere;
@@ -1609,7 +1611,7 @@ main#top {
   border-radius: 999px;
   background: rgba(143, 216, 199, 0.11);
   color: #aee9dd;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 650;
   line-height: 1.2;
   margin-left: 8px;
@@ -1857,7 +1859,7 @@ main#top {
 
 .dash-row span {
   color: var(--night-muted);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .dash-row strong,
@@ -1890,8 +1892,8 @@ main#top {
 .risk-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 16px;
-  margin-top: 30px;
+  gap: 22px;
+  margin-top: 36px;
 }
 
 .risks-shell {
@@ -1911,10 +1913,12 @@ main#top {
 .risk-card {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
-  gap: 6px 18px;
-  padding: 24px 26px;
-  border-left: 2px solid rgba(22, 127, 114, 0.24);
-  box-shadow: 0 10px 24px rgba(13, 31, 51, 0.045);
+  gap: 8px 20px;
+  padding: 28px 30px;
+  border: 1px solid color-mix(in srgb, var(--teal) 26%, var(--border) 74%);
+  border-left: 3px solid rgba(22, 127, 114, 0.68);
+  background: linear-gradient(100deg, rgba(255, 255, 255, 0.98), rgba(247, 251, 253, 0.94));
+  box-shadow: 0 14px 30px rgba(13, 31, 51, 0.07);
 }
 
 .risk-card h3,
@@ -1996,7 +2000,7 @@ footer::before {
 
 footer strong {
   color: var(--night-text);
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 720;
 }
 
@@ -2011,7 +2015,7 @@ footer strong {
   max-width: 460px;
   margin-top: 6px;
   color: #dce7f2;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.75;
 }
 
@@ -2031,7 +2035,7 @@ footer strong {
   border-radius: 999px;
   color: var(--night-muted);
   text-decoration: none;
-  font-size: 15px;
+  font-size: 16px;
   transition: border-color 180ms ease, color 180ms ease, background-color 180ms ease;
 }
 
@@ -2046,7 +2050,7 @@ footer strong {
   margin: 30px auto 0;
   padding-top: 18px;
   border-top: 1px solid var(--night-border);
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.65;
   color: #c7d5e4;
 }
@@ -2163,6 +2167,12 @@ html[data-theme="dark"] .manifesto {
 
 html[data-theme="dark"] .media-copy {
   box-shadow: none;
+}
+
+html[data-theme="dark"] .risk-card {
+  border-color: rgba(143, 216, 199, 0.26);
+  border-left-color: rgba(143, 216, 199, 0.72);
+  background: linear-gradient(100deg, rgba(15, 35, 54, 0.96), rgba(9, 23, 38, 0.9));
 }
 
 html[data-theme="dark"] .problem-grid p,
@@ -2481,7 +2491,11 @@ html[data-theme="dark"] .ab-item span {
   }
 
   body {
-    font-size: 16px;
+    font-size: 17px;
+  }
+
+  .section + .section {
+    margin-top: 14px;
   }
 
   .content,
@@ -2518,7 +2532,7 @@ html[data-theme="dark"] .ab-item span {
     background: color-mix(in srgb, var(--surface) 92%, var(--bg-soft) 8%);
     color: var(--text-soft);
     cursor: pointer;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 650;
     line-height: 1.2;
     list-style: none;
@@ -2565,7 +2579,7 @@ html[data-theme="dark"] .ab-item span {
     padding: 9px 10px;
     border-radius: var(--radius-sm);
     color: var(--text-soft);
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 1.25;
     text-decoration: none;
@@ -2579,7 +2593,7 @@ html[data-theme="dark"] .ab-item span {
   }
 
   .brand {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .theme-toggle,
@@ -2636,7 +2650,7 @@ html[data-theme="dark"] .ab-item span {
   .lead {
     inline-size: min(100%, 310px);
     max-width: 310px;
-    font-size: 17px;
+    font-size: 19px;
     line-height: 1.7;
     overflow-wrap: anywhere;
   }
@@ -2644,7 +2658,7 @@ html[data-theme="dark"] .ab-item span {
   .hero-note {
     inline-size: min(100%, 310px);
     max-width: 310px;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.62;
     overflow-wrap: anywhere;
   }
@@ -2844,7 +2858,7 @@ html[data-theme="dark"] .ab-item span {
   .visual-figure figcaption,
   .research-figure figcaption {
     padding: 14px 16px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.55;
   }
 
@@ -2857,11 +2871,11 @@ html[data-theme="dark"] .ab-item span {
   }
 
   h1 {
-    font-size: 42px;
+    font-size: 46px;
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 
