@@ -82,11 +82,17 @@ production launch for collecting or processing adolescent data.
 - [x] Remove the unsupported MIT licence statement and broken link.
 - [ ] Add an approved legal/privacy destination once it exists.
 
-### 6. Reproducible release verification — pending
+### 6. Reproducible release verification — complete for the competition release
 
-- [ ] Define the applicable static checks for this dependency-free landing.
-- [ ] Verify RU/EN, light/dark, desktop/mobile, keyboard focus, anchors, media,
-  and browser console.
+- [x] Define the applicable static checks for this dependency-free landing:
+  `node --check i18n.js`, `git diff --check`, local static HTTP/asset checks,
+  and isolated Chromium verification. Project `typecheck`, `lint`, `test`, and
+  production-build commands do not exist because there is no package toolchain.
+- [x] Verify RU/EN, light/dark, desktop/mobile, keyboard focus, anchors, media,
+  and browser console in isolated Chromium on 2026-07-14. The final eight-state
+  smoke matrix had meaningful content, no framework overlay, no console error,
+  and no HTTP error response; all 15 local dynamic/static assets and the public
+  application CTA returned HTTP 200.
 
 ## P2 — Publication polish
 
