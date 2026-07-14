@@ -723,7 +723,8 @@ main#top {
 
 #safety {
   background:
-    linear-gradient(180deg, rgba(242, 247, 250, 0.98), rgba(238, 244, 248, 0.96)),
+    linear-gradient(90deg, rgba(242, 247, 250, 0.98) 0%, rgba(242, 247, 250, 0.94) 52%, rgba(238, 244, 248, 0.76) 100%),
+    url("assets/bg-byok-infrastructure.webp") center / cover no-repeat,
     radial-gradient(circle at 18% 12%, rgba(22, 127, 114, 0.07), transparent 24%),
     linear-gradient(180deg, color-mix(in srgb, var(--bg-soft) 74%, var(--surface) 26%), var(--bg));
 }
@@ -779,9 +780,8 @@ main#top {
 .future {
   overflow: hidden;
   background:
-    linear-gradient(180deg, rgba(5, 13, 24, 0.9), rgba(7, 19, 34, 0.94)),
+    linear-gradient(180deg, rgba(5, 13, 24, 0.84), rgba(7, 19, 34, 0.9)),
     radial-gradient(circle at 14% 12%, rgba(22, 127, 114, 0.14), transparent 32%),
-    linear-gradient(180deg, rgba(7, 17, 31, 0.985), rgba(9, 24, 40, 0.972)),
     url("assets/bg-hero-selfreg-ai.webp") center / cover no-repeat,
     var(--night);
   color: var(--night-text);
@@ -790,9 +790,8 @@ main#top {
 #evidence,
 .future {
   background:
-    linear-gradient(180deg, rgba(5, 13, 24, 0.9), rgba(7, 19, 34, 0.94)),
+    linear-gradient(180deg, rgba(5, 13, 24, 0.88), rgba(7, 19, 34, 0.92)),
     radial-gradient(circle at 80% 10%, rgba(36, 111, 210, 0.14), transparent 30%),
-    linear-gradient(180deg, rgba(7, 17, 31, 0.985), rgba(9, 24, 40, 0.972)),
     url("assets/bg-evidence-research.webp") center / cover no-repeat,
     var(--night);
 }
@@ -1996,6 +1995,13 @@ html[data-theme="dark"] nav a::after {
 html[data-theme="dark"] .problem-frame,
 html[data-theme="dark"] #safety {
   background: linear-gradient(180deg, color-mix(in srgb, var(--bg-soft) 72%, var(--surface) 28%), var(--bg));
+}
+
+html[data-theme="dark"] #safety {
+  background:
+    linear-gradient(90deg, rgba(7, 17, 31, 0.98) 0%, rgba(7, 17, 31, 0.94) 52%, rgba(7, 17, 31, 0.76) 100%),
+    url("assets/bg-byok-infrastructure.webp") center / cover no-repeat,
+    linear-gradient(180deg, color-mix(in srgb, var(--bg-soft) 72%, var(--surface) 28%), var(--bg));
 }
 
 html[data-theme="dark"] #loop,
