@@ -756,6 +756,39 @@ main#top {
     linear-gradient(180deg, color-mix(in srgb, var(--bg-soft) 74%, var(--surface) 26%), var(--bg));
 }
 
+#media::before,
+.future::before,
+#cases::before,
+.scenario-section::before,
+#teacher::before,
+#safety::before,
+#risks::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: clamp(42px, 5vw, 78px);
+  pointer-events: none;
+}
+
+#media::before,
+#cases::before {
+  background: linear-gradient(180deg, rgba(7, 19, 34, 0.92), rgba(7, 19, 34, 0));
+}
+
+.future::before,
+.scenario-section::before,
+#teacher::before {
+  background: linear-gradient(180deg, rgba(246, 249, 252, 0.98), rgba(246, 249, 252, 0));
+}
+
+#safety::before,
+#risks::before {
+  background: linear-gradient(180deg, rgba(242, 247, 250, 0.98), rgba(242, 247, 250, 0));
+}
+
 .content {
   position: relative;
   z-index: 1;
@@ -2029,6 +2062,16 @@ html[data-theme="dark"] #safety {
     linear-gradient(90deg, rgba(7, 17, 31, 0.98) 0%, rgba(7, 17, 31, 0.94) 52%, rgba(7, 17, 31, 0.76) 100%),
     url("assets/bg-byok-infrastructure.webp") center / cover no-repeat,
     linear-gradient(180deg, color-mix(in srgb, var(--bg-soft) 72%, var(--surface) 28%), var(--bg));
+}
+
+html[data-theme="dark"] #media::before,
+html[data-theme="dark"] .future::before,
+html[data-theme="dark"] #cases::before,
+html[data-theme="dark"] .scenario-section::before,
+html[data-theme="dark"] #teacher::before,
+html[data-theme="dark"] #safety::before,
+html[data-theme="dark"] #risks::before {
+  background: linear-gradient(180deg, rgba(7, 17, 31, 0.98), rgba(7, 17, 31, 0));
 }
 
 html[data-theme="dark"] #loop,
