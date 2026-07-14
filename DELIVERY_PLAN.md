@@ -48,6 +48,10 @@ production launch for collecting or processing adolescent data.
   `/terms` page was found on 2026-07-13.
 - [x] Recheck the live application on 2026-07-14: `/privacy` and `/terms`
   return HTTP 200, but both serve an application shell without legal content.
+- [x] Prepare `docs/LEGAL_RELEASE_BRIEF_RU.md`: an internal source-backed
+  decision checklist for the operator, minor-consent process, data map,
+  retention/deletion rules, public-policy package, and the condition for adding
+  landing links. It is not a public policy.
 - [ ] Verify the application privacy notice, terms, retention/deletion rules,
   responsible contact, and minor-consent process with the application team.
 - [ ] Add only approved public links and wording after that verification.
