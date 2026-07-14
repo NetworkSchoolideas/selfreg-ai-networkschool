@@ -2381,14 +2381,14 @@ html[data-theme="dark"] .ab-item span {
     padding-top: 58px;
     gap: 30px;
     background:
-      linear-gradient(180deg, rgba(245, 247, 250, 0.98), rgba(245, 247, 250, 0.94)),
+      linear-gradient(180deg, rgba(245, 247, 250, 0.98), rgba(245, 247, 250, 0.86)),
       url("assets/bg-hero-selfreg-ai.webp") center / cover no-repeat,
       var(--bg);
   }
 
   html[data-theme="dark"] .hero {
     background:
-      linear-gradient(180deg, rgba(7, 17, 31, 0.98), rgba(7, 17, 31, 0.94)),
+      linear-gradient(180deg, rgba(7, 17, 31, 0.98), rgba(7, 17, 31, 0.84)),
       url("assets/bg-hero-selfreg-ai.webp") center / cover no-repeat,
       var(--bg);
   }
@@ -2567,14 +2567,14 @@ html[data-theme="dark"] .ab-item span {
     padding: 48px 32px 48px 16px;
     gap: 0;
     background:
-      linear-gradient(180deg, rgba(245, 247, 250, 0.99), rgba(245, 247, 250, 0.95)),
+      linear-gradient(180deg, rgba(245, 247, 250, 0.98), rgba(245, 247, 250, 0.84)),
       url("assets/bg-hero-selfreg-ai.webp") center / cover no-repeat,
       var(--bg);
   }
 
   html[data-theme="dark"] .hero {
     background:
-      linear-gradient(180deg, rgba(7, 17, 31, 0.99), rgba(7, 17, 31, 0.95)),
+      linear-gradient(180deg, rgba(7, 17, 31, 0.98), rgba(7, 17, 31, 0.82)),
       url("assets/bg-hero-selfreg-ai.webp") center / cover no-repeat,
       var(--bg);
   }
