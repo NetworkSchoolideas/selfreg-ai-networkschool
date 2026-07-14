@@ -564,6 +564,14 @@ document.addEventListener("DOMContentLoaded", () => {
       link.closest("details")?.removeAttribute("open");
     });
   });
+  document.querySelectorAll(".mobile-section-menu").forEach((menu) => {
+    menu.addEventListener("keydown", (event) => {
+      if (event.key !== "Escape" || !menu.open) return;
+      event.preventDefault();
+      menu.removeAttribute("open");
+      menu.querySelector("summary")?.focus();
+    });
+  });
   document.querySelectorAll("[data-lang-button]").forEach((button) => {
     button.addEventListener("click", () => {
       setLang(button.getAttribute("data-lang-button"));
