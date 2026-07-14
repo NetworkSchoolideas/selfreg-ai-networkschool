@@ -15,6 +15,7 @@
       .red{fill:#fff1ee;stroke:#d85c4a;stroke-width:3}
       .txt{font:900 18px Arial,sans-serif;fill:#132238}
       .small{font:700 13px Arial,sans-serif;fill:#5f6f82}
+      .note{font:700 12px Arial,sans-serif;fill:#5f6f82}
       .num{font:900 25px Arial,sans-serif;fill:#2f80ed}
       .line{fill:none;stroke:#2f80ed;stroke-width:4;marker-end:url(#arrow)}
       .softLine{fill:none;stroke:#9ab0c5;stroke-width:3;stroke-dasharray:9 8;marker-end:url(#arrow)}
@@ -42,10 +43,11 @@
   <path class="line" d="M334 211 C370 211 390 211 428 211"/>
   <path class="line" d="M692 211 C730 211 750 211 786 211"/>
   <path class="softLine" d="M202 268 C330 392 790 392 918 268"/>
-  <rect class="card" x="366" y="328" width="500" height="44" rx="10"/>
+  <rect class="card" x="352" y="320" width="528" height="62" rx="10"/>
   <text class="num" x="365" y="190">0.54</text>
   <text class="num" x="723" y="190">0.17</text>
-  <text class="small" x="398" y="355">Исследовательская проверка: непрямой эффект требует дальнейшей верификации</text>
+  <text class="note" x="414" y="347">Исследовательская проверка: непрямой эффект</text>
+  <text class="note" x="438" y="369">требует дальнейшей верификации</text>
 
   <rect class="card" x="72" y="430" width="292" height="112" rx="16"/>
   <text class="txt" x="116" y="472">Дефицитарный</text>

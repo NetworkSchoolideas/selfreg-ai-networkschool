@@ -6,7 +6,7 @@
       <path d="M0 0 L10 5 L0 10z" fill="#2f80ed"/>
     </marker>
     <style>
-      .bg{fill:#f8fbfd}.title{font:900 28px Arial,sans-serif;fill:#132238}.sub{font:700 15px Arial,sans-serif;fill:#5f6f82}.card{fill:#fff;stroke:#d8e0ea;stroke-width:2}.blue{fill:#eef5ff;stroke:#2f80ed;stroke-width:3}.green{fill:#edf8f4;stroke:#23967f;stroke-width:3}.txt{font:900 18px Arial,sans-serif;fill:#132238}.small{font:700 13px Arial,sans-serif;fill:#5f6f82}.num{font:900 25px Arial,sans-serif;fill:#2f80ed}.line{fill:none;stroke:#2f80ed;stroke-width:4;marker-end:url(#arrow)}.softLine{fill:none;stroke:#9ab0c5;stroke-width:3;stroke-dasharray:9 8;marker-end:url(#arrow)}
+      .bg{fill:#f8fbfd}.title{font:900 28px Arial,sans-serif;fill:#132238}.sub{font:700 15px Arial,sans-serif;fill:#5f6f82}.card{fill:#fff;stroke:#d8e0ea;stroke-width:2}.blue{fill:#eef5ff;stroke:#2f80ed;stroke-width:3}.green{fill:#edf8f4;stroke:#23967f;stroke-width:3}.txt{font:900 18px Arial,sans-serif;fill:#132238}.small{font:700 13px Arial,sans-serif;fill:#5f6f82}.note{font:700 12px Arial,sans-serif;fill:#5f6f82}.num{font:900 25px Arial,sans-serif;fill:#2f80ed}.line{fill:none;stroke:#2f80ed;stroke-width:4;marker-end:url(#arrow)}.softLine{fill:none;stroke:#9ab0c5;stroke-width:3;stroke-dasharray:9 8;marker-end:url(#arrow)}
     </style>
   </defs>
   <rect class="bg" width="1120" height="620" rx="18"/>
@@ -26,10 +26,11 @@
   <path class="line" d="M334 211 C370 211 390 211 428 211"/>
   <path class="line" d="M692 211 C730 211 750 211 786 211"/>
   <path class="softLine" d="M202 268 C330 392 790 392 918 268"/>
-  <rect class="card" x="366" y="328" width="500" height="44" rx="10"/>
+  <rect class="card" x="352" y="320" width="528" height="62" rx="10"/>
   <text class="num" x="365" y="190">0.54</text>
   <text class="num" x="723" y="190">0.17</text>
-  <text class="small" x="398" y="355">Exploratory test: the indirect effect requires further verification</text>
+  <text class="note" x="420" y="347">Exploratory test: the indirect effect</text>
+  <text class="note" x="435" y="369">requires further verification</text>
   <rect class="card" x="72" y="430" width="292" height="112" rx="16"/>
   <text class="txt" x="120" y="472">Deficit profile</text>
   <text class="small" x="112" y="502">cluster: support and a soft start</text>
