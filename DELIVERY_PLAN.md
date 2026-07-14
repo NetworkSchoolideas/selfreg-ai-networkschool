@@ -39,7 +39,7 @@ production launch for collecting or processing adolescent data.
   public aggregate claims. Do not publish private participant material or imply
   that an external publication exists.
 
-### 2. Privacy and data-processing disclosure — blocked on app-side materials
+### 2. Privacy and data-processing disclosure — closed-test scope complete
 
 - [x] Remove landing claims that imply an already documented collection,
   retention, consent, or teacher-view workflow.
@@ -52,9 +52,13 @@ production launch for collecting or processing adolescent data.
   privacy notice and terms: a source-backed decision checklist, confirmed
   contact channel, minor-consent/data-map/retention decisions, and the
   condition for adding landing links. They are not public legal texts.
-- [ ] Verify the application privacy notice, terms, retention/deletion rules,
-  responsible contact, and minor-consent process with the application team.
-- [ ] Add only approved public links and wording after that verification.
+- [x] Add local RU/EN closed-test notices at `/privacy` and `/terms`, linked
+  from the footer. They state invitation-only access, safe test boundaries,
+  the contact channel, and a route to stop participation; they do not claim to
+  be a universal public-launch privacy policy.
+- [ ] Before any wider public product launch, verify the application privacy
+  notice, terms, retention/deletion rules, responsible contact, and
+  minor-consent process with the application team.
 
 ## P1 — Required before release
 
@@ -81,10 +85,11 @@ production launch for collecting or processing adolescent data.
 - [ ] Optimise or replace assets only after editorial confirmation; do not delete
   language assets on the basis of duration alone.
 
-### 5. Legal footer — in progress
+### 5. Legal footer — complete for closed testing
 
 - [x] Remove the unsupported MIT licence statement and broken link.
-- [ ] Add an approved legal/privacy destination once it exists.
+- [x] Add RU/EN footer links to the local closed-test privacy notice and
+  participation rules.
 
 ### 6. Reproducible release verification — complete for the competition release
 
