@@ -373,13 +373,14 @@ html[data-theme="dark"] .hero {
 }
 
 .hero-visual {
-  position: relative;
   grid-column: 2;
   grid-row: 1;
   display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  grid-template-rows: auto minmax(0, 1fr);
   min-height: 430px;
-  align-items: center;
-  justify-items: center;
+  align-items: stretch;
+  gap: 16px;
   width: min(560px, 100%);
   justify-self: end;
   filter: saturate(0.96);
@@ -539,9 +540,11 @@ html[data-theme="dark"] .hero {
 }
 
 .teacher-mockup {
-  width: min(320px, 34vw);
-  min-height: 390px;
-  padding: 26px;
+  grid-column: 1;
+  grid-row: 2;
+  width: 100%;
+  min-height: 370px;
+  padding: 22px;
   border-radius: var(--radius);
 }
 
@@ -557,9 +560,9 @@ html[data-theme="dark"] .hero {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   align-items: end;
-  gap: 12px;
-  height: 150px;
-  margin: 46px 0 26px;
+  gap: 8px;
+  height: 132px;
+  margin: 36px 0 24px;
 }
 
 .stage {
@@ -598,18 +601,17 @@ html[data-theme="dark"] .insight-card {
 }
 
 .student-phone {
-  position: absolute;
-  right: 10px;
-  top: 72px;
-  width: min(270px, 30vw);
+  grid-column: 2;
+  grid-row: 2;
+  width: 100%;
   min-height: 370px;
-  padding: 34px 22px;
+  padding: 30px 18px;
   border-radius: 14px;
 }
 
 .phone-header {
-  margin-bottom: 26px;
-  font-size: 23px;
+  margin-bottom: 22px;
+  font-size: 21px;
 }
 
 .phone-bubble {
@@ -629,9 +631,9 @@ html[data-theme="dark"] .insight-card {
 }
 
 .api-key {
-  position: absolute;
-  top: 28px;
-  right: 86px;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  justify-self: end;
   display: flex;
   gap: 12px;
   align-items: center;
@@ -2185,12 +2187,9 @@ html[data-theme="dark"] .ab-item span {
     max-width: 520px;
   }
 
-  .teacher-mockup {
-    width: min(320px, 48vw);
-  }
-
+  .teacher-mockup,
   .student-phone {
-    width: min(280px, 42vw);
+    width: 100%;
   }
 
   .research-notes {
@@ -2667,7 +2666,7 @@ html[data-theme="dark"] .ab-item span {
     display: none;
   }
 
-  .research-mobile-summary {
+  #evidence .research-mobile-summary {
     display: grid;
     gap: 14px;
     padding: 20px;
@@ -2675,7 +2674,7 @@ html[data-theme="dark"] .ab-item span {
     color: #132238;
   }
 
-  .research-mobile-summary p {
+  #evidence .research-mobile-summary p {
     margin: 0;
     padding-left: 14px;
     border-left: 3px solid var(--teal);
@@ -2683,6 +2682,11 @@ html[data-theme="dark"] .ab-item span {
     font-size: 15px;
     font-weight: 650;
     line-height: 1.55;
+  }
+
+  #evidence .research-mobile-summary ::selection {
+    background: var(--blue);
+    color: #ffffff;
   }
 
   .media-player {
