@@ -1,6 +1,6 @@
 # Release Audit Plan
 
-Updated: 2026-07-12
+Updated: 2026-07-15
 
 ## Release rule
 
@@ -16,6 +16,9 @@ production launch for collecting or processing adolescent data.
 
 - [x] Verify the public CTA, RU/EN state, light/dark themes, desktop/mobile
   layout, local media loading, and browser console.
+- [x] Convert the three large generated section backdrops to WebP while
+  preserving the approved imagery. The initial local transfer dropped from
+  about 5.39 MB to about 676 KB; no generated backdrop was removed.
 - [x] Add canonical and language alternates, Open Graph/Twitter metadata,
   favicon, manifest icon, `robots.txt`, and `sitemap.xml`.
 - [x] Keep public research claims limited to the approved internal aggregate
@@ -102,6 +105,10 @@ production launch for collecting or processing adolescent data.
   smoke matrix had meaningful content, no framework overlay, no console error,
   and no HTTP error response; all 15 local dynamic/static assets and the public
   application CTA returned HTTP 200.
+- [x] Re-run the release matrix on 2026-07-15 after performance and legal-page
+  polish: landing plus local privacy/terms passed RU/EN, light/dark, and
+  desktop/mobile checks with no overflow, console errors, or HTTP errors.
+  Mobile deep-link navigation now lands immediately on the selected section.
 
 ## P2 — Publication polish
 
