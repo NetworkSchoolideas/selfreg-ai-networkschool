@@ -720,6 +720,10 @@ main#top {
 
 #media {
   scroll-margin-top: calc(var(--nav-h) + 44px);
+  background:
+    linear-gradient(90deg, rgba(246, 249, 252, 0.98) 0%, rgba(246, 249, 252, 0.92) 48%, rgba(246, 249, 252, 0.72) 100%),
+    url("assets/bg-media-learning-studio.png") center / cover no-repeat,
+    linear-gradient(180deg, color-mix(in srgb, var(--bg) 82%, var(--surface) 18%), color-mix(in srgb, var(--bg-soft) 70%, var(--surface) 30%));
 }
 
 #teacher {
@@ -2032,6 +2036,13 @@ html[data-theme="dark"] #media,
 html[data-theme="dark"] #cases,
 html[data-theme="dark"] #risks {
   background: linear-gradient(180deg, color-mix(in srgb, var(--bg) 76%, var(--surface) 24%), color-mix(in srgb, var(--bg-soft) 76%, var(--surface) 24%));
+}
+
+html[data-theme="dark"] #media {
+  background:
+    linear-gradient(90deg, rgba(7, 17, 31, 0.98) 0%, rgba(7, 17, 31, 0.92) 48%, rgba(7, 17, 31, 0.72) 100%),
+    url("assets/bg-media-learning-studio.png") center / cover no-repeat,
+    linear-gradient(180deg, color-mix(in srgb, var(--bg) 76%, var(--surface) 24%), color-mix(in srgb, var(--bg-soft) 76%, var(--surface) 24%));
 }
 
 html[data-theme="dark"] .teacher-mockup,
