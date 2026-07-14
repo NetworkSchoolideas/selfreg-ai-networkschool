@@ -722,21 +722,21 @@ main#top {
   scroll-margin-top: calc(var(--nav-h) + 44px);
   background:
     linear-gradient(90deg, rgba(246, 249, 252, 0.98) 0%, rgba(246, 249, 252, 0.92) 48%, rgba(246, 249, 252, 0.72) 100%),
-    url("assets/bg-media-learning-studio.png") center / cover no-repeat,
+    url("assets/bg-media-learning-studio.webp") center / cover no-repeat,
     linear-gradient(180deg, color-mix(in srgb, var(--bg) 82%, var(--surface) 18%), color-mix(in srgb, var(--bg-soft) 70%, var(--surface) 30%));
 }
 
 .scenario-section {
   background:
     linear-gradient(90deg, rgba(246, 249, 252, 0.98) 0%, rgba(246, 249, 252, 0.92) 48%, rgba(246, 249, 252, 0.72) 100%),
-    url("assets/bg-adolescent-scenario.png") center / cover no-repeat,
+    url("assets/bg-adolescent-scenario.webp") center / cover no-repeat,
     var(--bg);
 }
 
 #cases {
   background:
     linear-gradient(90deg, rgba(246, 249, 252, 0.98) 0%, rgba(246, 249, 252, 0.92) 48%, rgba(246, 249, 252, 0.72) 100%),
-    url("assets/bg-sport-learning-analytics.png") center / cover no-repeat,
+    url("assets/bg-sport-learning-analytics.webp") center / cover no-repeat,
     linear-gradient(180deg, color-mix(in srgb, var(--bg) 82%, var(--surface) 18%), color-mix(in srgb, var(--bg-soft) 70%, var(--surface) 30%));
 }
 
@@ -2120,21 +2120,21 @@ html[data-theme="dark"] #risks {
 html[data-theme="dark"] #media {
   background:
     linear-gradient(90deg, rgba(7, 17, 31, 0.98) 0%, rgba(7, 17, 31, 0.92) 48%, rgba(7, 17, 31, 0.72) 100%),
-    url("assets/bg-media-learning-studio.png") center / cover no-repeat,
+    url("assets/bg-media-learning-studio.webp") center / cover no-repeat,
     linear-gradient(180deg, color-mix(in srgb, var(--bg) 76%, var(--surface) 24%), color-mix(in srgb, var(--bg-soft) 76%, var(--surface) 24%));
 }
 
 html[data-theme="dark"] .scenario-section {
   background:
     linear-gradient(90deg, rgba(7, 17, 31, 0.98) 0%, rgba(7, 17, 31, 0.92) 48%, rgba(7, 17, 31, 0.72) 100%),
-    url("assets/bg-adolescent-scenario.png") center / cover no-repeat,
+    url("assets/bg-adolescent-scenario.webp") center / cover no-repeat,
     var(--bg);
 }
 
 html[data-theme="dark"] #cases {
   background:
     linear-gradient(90deg, rgba(7, 17, 31, 0.98) 0%, rgba(7, 17, 31, 0.92) 48%, rgba(7, 17, 31, 0.72) 100%),
-    url("assets/bg-sport-learning-analytics.png") center / cover no-repeat,
+    url("assets/bg-sport-learning-analytics.webp") center / cover no-repeat,
     linear-gradient(180deg, color-mix(in srgb, var(--bg) 76%, var(--surface) 24%), color-mix(in srgb, var(--bg-soft) 76%, var(--surface) 24%));
 }
 
@@ -2476,6 +2476,10 @@ html[data-theme="dark"] .ab-item span {
 }
 
 @media (max-width: 760px) {
+  html {
+    scroll-behavior: auto;
+  }
+
   body {
     font-size: 16px;
   }
