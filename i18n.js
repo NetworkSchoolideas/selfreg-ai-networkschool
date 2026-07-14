@@ -231,7 +231,9 @@
     footerCode: "Медиа проекта",
     footerMediaVideo: "Видео",
     footerMediaAudio: "Аудио",
-    footerLicense: "SelfReg AI",
+    footerLegal: "Закрытый тест",
+    footerPrivacy: "Конфиденциальность",
+    footerTerms: "Правила участия",
     footerPilot: "Пилотные запуски — по запросу, с согласованной педагогической целью."
   },
   en: {
@@ -466,7 +468,9 @@
     footerCode: "Project media",
     footerMediaVideo: "Video",
     footerMediaAudio: "Audio",
-    footerLicense: "SelfReg AI",
+    footerLegal: "Closed test",
+    footerPrivacy: "Privacy notice",
+    footerTerms: "Participation rules",
     footerPilot: "Pilot runs by request, with an agreed educational purpose."
   }
 };
@@ -537,6 +541,10 @@ function setLang(lang) {
     const active = node.getAttribute("data-lang-button") === lang;
     node.classList.toggle("active", active);
     node.setAttribute("aria-pressed", String(active));
+  });
+  document.querySelectorAll("[data-legal-page]").forEach((node) => {
+    const page = node.getAttribute("data-legal-page");
+    if (page) node.setAttribute("href", `${page}?lang=${lang}`);
   });
   const url = new URL(window.location.href);
   url.searchParams.set("lang", lang);
