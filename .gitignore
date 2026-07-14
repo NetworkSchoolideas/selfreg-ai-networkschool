@@ -9,5 +9,16 @@ node_modules
 # Local QA and audit artifacts
 tmp-qa/
 plans/
-docs/design-audit-2026-06-27/
-docs/design-audit-2026-07-02/*.png
+output/
+docs/design-audit-*/
+
+# Internal project and agent materials
+.agents/
+.codex/
+AGENTS.md
+CODEX_HANDOFF.md
+DELIVERY_PLAN.md
+README_DEPLOY.md
+docs/DEPLOYMENT_AND_APP_MIGRATION_RU.md
+docs/LEGAL_RELEASE_BRIEF_RU.md
+docs/*_DRAFT.md
