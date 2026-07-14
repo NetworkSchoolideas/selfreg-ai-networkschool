@@ -255,6 +255,10 @@ nav a:hover {
   color: var(--text);
 }
 
+nav a.is-current {
+  color: var(--text);
+}
+
 nav a::after {
   content: "";
   position: absolute;
@@ -271,6 +275,11 @@ nav a::after {
 
 nav a:hover::after {
   opacity: 0.82;
+  transform: scaleX(1);
+}
+
+nav a.is-current::after {
+  opacity: 1;
   transform: scaleX(1);
 }
 
@@ -2455,7 +2464,8 @@ html[data-theme="dark"] .ab-item span {
   }
 
   .mobile-section-links a:hover,
-  .mobile-section-links a:focus-visible {
+  .mobile-section-links a:focus-visible,
+  .mobile-section-links a.is-current {
     background: var(--teal-soft);
     color: var(--text);
   }

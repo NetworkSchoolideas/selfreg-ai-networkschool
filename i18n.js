@@ -563,6 +563,55 @@ function scheduleHashScroll() {
   window.setTimeout(scrollToHashTarget, 900);
 }
 
+function setupSectionNavigation() {
+  const links = Array.from(document.querySelectorAll(".primary-nav a[href^='#'], .mobile-section-links a[href^='#']"));
+  const sections = Array.from(new Set(links
+    .map((link) => document.getElementById(decodeURIComponent(link.getAttribute("href").slice(1))))
+    .filter(Boolean)));
+  if (!links.length || !sections.length) return;
+
+  const setCurrentSection = (id) => {
+    links.forEach((link) => {
+      const current = link.getAttribute("href") === `#${id}`;
+      link.classList.toggle("is-current", current);
+      if (current) {
+        link.setAttribute("aria-current", "location");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+  };
+
+  const syncCurrentSection = () => {
+    const fromHash = decodeURIComponent(window.location.hash.slice(1));
+    if (fromHash && sections.some((section) => section.id === fromHash)) {
+      setCurrentSection(fromHash);
+      return;
+    }
+
+    const marker = window.innerHeight * 0.34;
+    let current = sections[0];
+    sections.forEach((section) => {
+      if (section.getBoundingClientRect().top <= marker) current = section;
+    });
+    setCurrentSection(current.id);
+  };
+
+  let frame = 0;
+  const scheduleSync = () => {
+    if (frame) return;
+    frame = requestAnimationFrame(() => {
+      frame = 0;
+      syncCurrentSection();
+    });
+  };
+
+  window.addEventListener("scroll", scheduleSync, { passive: true });
+  window.addEventListener("resize", scheduleSync);
+  window.addEventListener("hashchange", syncCurrentSection);
+  syncCurrentSection();
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".mobile-section-links a").forEach((link) => {
     link.addEventListener("click", () => {
@@ -592,6 +641,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   setTheme(getTheme());
   setLang(getLang());
+  setupSectionNavigation();
   scheduleHashScroll();
 });
 
