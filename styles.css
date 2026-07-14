@@ -697,7 +697,10 @@ main#top {
 
 #loop,
 #teacher {
-  background: linear-gradient(180deg, color-mix(in srgb, var(--surface-soft) 54%, var(--bg) 46%), color-mix(in srgb, var(--bg-soft) 76%, var(--surface) 24%));
+  background:
+    linear-gradient(90deg, rgba(246, 249, 252, 0.98) 0%, rgba(246, 249, 252, 0.94) 48%, rgba(246, 249, 252, 0.78) 100%),
+    url("assets/bg-model-loop.webp") center / cover no-repeat,
+    linear-gradient(180deg, color-mix(in srgb, var(--surface-soft) 54%, var(--bg) 46%), color-mix(in srgb, var(--bg-soft) 76%, var(--surface) 24%));
 }
 
 #media,
@@ -712,7 +715,8 @@ main#top {
 
 #teacher {
   background:
-    linear-gradient(180deg, rgba(246, 249, 252, 0.98), rgba(241, 246, 250, 0.96)),
+    linear-gradient(90deg, rgba(246, 249, 252, 0.98) 0%, rgba(246, 249, 252, 0.92) 50%, rgba(246, 249, 252, 0.74) 100%),
+    url("assets/bg-teacher-dashboard.webp") center / cover no-repeat,
     radial-gradient(circle at 84% 18%, rgba(36, 111, 210, 0.08), transparent 24%),
     linear-gradient(180deg, color-mix(in srgb, var(--surface-soft) 54%, var(--bg) 46%), color-mix(in srgb, var(--bg-soft) 76%, var(--surface) 24%));
 }
@@ -1988,7 +1992,17 @@ html[data-theme="dark"] #safety {
 
 html[data-theme="dark"] #loop,
 html[data-theme="dark"] #teacher {
-  background: linear-gradient(180deg, color-mix(in srgb, var(--surface-soft) 52%, var(--bg) 48%), color-mix(in srgb, var(--bg-soft) 80%, var(--surface) 20%));
+  background:
+    linear-gradient(90deg, rgba(7, 17, 31, 0.98) 0%, rgba(7, 17, 31, 0.94) 50%, rgba(7, 17, 31, 0.78) 100%),
+    url("assets/bg-model-loop.webp") center / cover no-repeat,
+    linear-gradient(180deg, color-mix(in srgb, var(--surface-soft) 52%, var(--bg) 48%), color-mix(in srgb, var(--bg-soft) 80%, var(--surface) 20%));
+}
+
+html[data-theme="dark"] #teacher {
+  background:
+    linear-gradient(90deg, rgba(7, 17, 31, 0.98) 0%, rgba(7, 17, 31, 0.94) 50%, rgba(7, 17, 31, 0.78) 100%),
+    url("assets/bg-teacher-dashboard.webp") center / cover no-repeat,
+    linear-gradient(180deg, color-mix(in srgb, var(--surface-soft) 52%, var(--bg) 48%), color-mix(in srgb, var(--bg-soft) 80%, var(--surface) 20%));
 }
 
 html[data-theme="dark"] #media,
