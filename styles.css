@@ -1320,7 +1320,7 @@ main#top {
 .teacher-copy-panel p,
 .media-copy p,
 .manifesto p {
-  margin-top: 12px;
+  margin-top: 14px;
   color: color-mix(in srgb, var(--text) 78%, white 22%);
   line-height: 1.68;
 }
