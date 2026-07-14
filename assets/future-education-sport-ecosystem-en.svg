@@ -10,8 +10,8 @@
     </style>
   </defs>
   <rect class="bg" width="1120" height="660" rx="18"/>
-  <text class="title" x="48" y="58">Education as data-driven development sport</text>
-  <text class="light" x="48" y="88">Signals help reveal talent, risk, and the next step.</text>
+  <text class="title" x="48" y="76">Education as data-driven development sport</text>
+  <text class="light" x="48" y="112">Signals help reveal talent, risk, and the next step.</text>
   <ellipse class="orbit" cx="560" cy="354" rx="405" ry="220"/>
   <ellipse class="orbit" cx="560" cy="354" rx="275" ry="150"/>
   <circle class="core" cx="560" cy="350" r="86"/>

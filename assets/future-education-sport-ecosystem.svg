@@ -20,8 +20,8 @@
     </style>
   </defs>
   <rect class="bg" width="1120" height="660" rx="18"/>
-  <text class="title" x="48" y="58">Образование как “большой спорт” развития</text>
-  <text class="light" x="48" y="88">Данные помогают заметить талант, риск и следующий шаг.</text>
+  <text class="title" x="48" y="76">Образование как “большой спорт” развития</text>
+  <text class="light" x="48" y="112">Данные помогают заметить талант, риск и следующий шаг.</text>
   <ellipse class="orbit" cx="560" cy="354" rx="405" ry="220"/>
   <ellipse class="orbit" cx="560" cy="354" rx="275" ry="150"/>
 
