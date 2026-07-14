@@ -582,19 +582,19 @@ function setupSectionNavigation() {
     });
   };
 
-  const syncCurrentSection = () => {
+  const syncCurrentSection = ({ preferHash = false } = {}) => {
     const fromHash = decodeURIComponent(window.location.hash.slice(1));
-    if (fromHash && sections.some((section) => section.id === fromHash)) {
+    if (preferHash && fromHash && sections.some((section) => section.id === fromHash)) {
       setCurrentSection(fromHash);
       return;
     }
 
     const marker = window.innerHeight * 0.34;
-    let current = sections[0];
-    sections.forEach((section) => {
-      if (section.getBoundingClientRect().top <= marker) current = section;
+    const current = sections.find((section) => {
+      const rect = section.getBoundingClientRect();
+      return rect.top <= marker && rect.bottom > marker;
     });
-    setCurrentSection(current.id);
+    setCurrentSection(current?.id || null);
   };
 
   let frame = 0;
@@ -608,8 +608,8 @@ function setupSectionNavigation() {
 
   window.addEventListener("scroll", scheduleSync, { passive: true });
   window.addEventListener("resize", scheduleSync);
-  window.addEventListener("hashchange", syncCurrentSection);
-  syncCurrentSection();
+  window.addEventListener("hashchange", () => syncCurrentSection({ preferHash: true }));
+  syncCurrentSection({ preferHash: true });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
