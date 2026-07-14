@@ -74,6 +74,10 @@ production launch for collecting or processing adolescent data.
 - [x] Record current media durations and sizes: RU video 2:25 (12.2 MB), RU
   audio 2:17 (4.2 MB), EN video 4:54 (23.1 MB), EN audio 20:10 (37.2 MB).
   The duration difference is approved.
+- [x] Defer media download until user playback: video and audio use
+  `preload="none"`, and the language switch no longer forces `load()` for media
+  that has not been played. Isolated Chromium recorded zero initial media
+  requests; playback still loaded and played the selected source.
 - [ ] Optimise or replace assets only after editorial confirmation; do not delete
   language assets on the basis of duration alone.
 

@@ -521,10 +521,15 @@ function setLang(lang) {
   document.querySelectorAll("[data-src-ru][data-src-en]").forEach((node) => {
     const src = node.getAttribute(`data-src-${lang}`);
     const alt = node.getAttribute(`data-alt-${lang}`);
-    if (src) node.setAttribute("src", src);
     if (alt) node.setAttribute("alt", alt);
-    if (node.tagName === "VIDEO" || node.tagName === "AUDIO") {
+    if (!src || node.getAttribute("src") === src) return;
+    const isMedia = node.tagName === "VIDEO" || node.tagName === "AUDIO";
+    const wasPlaying = isMedia && !node.paused && !node.ended;
+    if (isMedia) {
       node.pause();
+    }
+    node.setAttribute("src", src);
+    if (wasPlaying) {
       node.load();
     }
   });
