@@ -5,6 +5,7 @@
     skipToContent: "Перейти к содержимому",
     brandHome: "Главная SelfReg AI",
     navLabel: "Основная навигация",
+    mobileNavLabel: "Разделы лендинга",
     languageLabel: "Выбор языка",
     themeToDark: "Включить тёмную тему",
     themeToLight: "Включить светлую тему",
@@ -239,6 +240,7 @@
     skipToContent: "Skip to content",
     brandHome: "SelfReg AI home",
     navLabel: "Main navigation",
+    mobileNavLabel: "Explore sections",
     languageLabel: "Language selector",
     themeToDark: "Switch to dark theme",
     themeToLight: "Switch to light theme",
@@ -557,6 +559,11 @@ function scheduleHashScroll() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".mobile-section-links a").forEach((link) => {
+    link.addEventListener("click", () => {
+      link.closest("details")?.removeAttribute("open");
+    });
+  });
   document.querySelectorAll("[data-lang-button]").forEach((button) => {
     button.addEventListener("click", () => {
       setLang(button.getAttribute("data-lang-button"));

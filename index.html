@@ -27,13 +27,13 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="manifest" href="site.webmanifest" />
     <link rel="preload" as="image" href="assets/bg-hero-selfreg-ai.webp" />
-    <link rel="stylesheet" href="styles.css?v=20260710-mobile-hero" />
+    <link rel="stylesheet" href="styles.css?v=20260714-product-pass" />
   </head>
   <body>
     <a class="skip-link" href="#top" data-i18n="skipToContent">Перейти к содержимому</a>
     <header class="nav">
       <a class="brand" href="#top" aria-label="Главная SelfReg AI" data-i18n-aria-label="brandHome">SelfReg AI</a>
-      <nav aria-label="Основная навигация" data-i18n-aria-label="navLabel">
+      <nav class="primary-nav" aria-label="Основная навигация" data-i18n-aria-label="navLabel">
         <a href="#problem-frame" data-i18n="navProblem">Проблема</a>
         <a href="#loop" data-i18n="navLoop">Модель</a>
         <a href="#evidence" data-i18n="navArchitecture">Исследования</a>
@@ -43,6 +43,22 @@
         <a href="#mission" data-i18n="navMission">Миссия</a>
         <a href="#risks" data-i18n="navRisks">Риски</a>
       </nav>
+      <details class="mobile-section-menu">
+        <summary>
+          <span data-i18n="mobileNavLabel">Разделы лендинга</span>
+          <span class="mobile-section-menu-icon" aria-hidden="true"></span>
+        </summary>
+        <nav class="mobile-section-links" aria-label="Основная навигация" data-i18n-aria-label="navLabel">
+          <a href="#problem-frame" data-i18n="navProblem">Проблема</a>
+          <a href="#loop" data-i18n="navLoop">Модель</a>
+          <a href="#evidence" data-i18n="navArchitecture">Исследования</a>
+          <a href="#media" data-i18n="navMedia">Медиа</a>
+          <a href="#future" data-i18n="navFuture">Будущее</a>
+          <a href="#teacher" data-i18n="navTeacher">Педагог</a>
+          <a href="#mission" data-i18n="navMission">Миссия</a>
+          <a href="#risks" data-i18n="navRisks">Риски</a>
+        </nav>
+      </details>
       <div class="nav-actions">
         <button class="theme-toggle" type="button" data-theme-toggle aria-label="Включить тёмную тему" title="Включить тёмную тему">
           <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
@@ -100,8 +116,23 @@
           </div>
           <p class="hero-note" data-i18n="heroNote">Это не просто чат, а педагогический инструмент, где ИИ выступает временной опорой, а не заменой доверительного взрослого.</p>
           <div class="hero-links">
-            <a class="primary" href="#problem-frame" data-i18n="primaryProblem">Зачем это нужно</a>
+            <a class="primary" href="#story" data-i18n="primaryProblem">Зачем это нужно</a>
             <a class="secondary" href="#loop" data-i18n="secondary">Как это работает</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="story" class="section">
+        <div class="content split story-shell">
+          <div>
+            <p class="section-kicker" data-i18n="storyKicker">Почему это нужно</p>
+            <h2 data-i18n="storyTitle">Проблема: образование видит результат, но плохо видит процесс взросления</h2>
+            <p data-i18n="storyText">В школе обычно фиксируются оценки, посещаемость, дисциплина и итог работы. Но педагог редко видит, как подросток ставит цель, где застревает перед первым шагом, как переживает обратную связь и где теряет саморегуляцию. SelfReg AI собирает эти сигналы в коротком диалоге и показывает их взрослому в понятной форме.</p>
+          </div>
+          <div class="evidence-panel" aria-label="Project focus">
+            <div><strong>5</strong><span data-i18n="metricLoop">шагов саморегуляции</span></div>
+            <div><strong>RU / EN</strong><span data-i18n="metricLang">две языковые версии</span></div>
+            <div><strong data-i18n="metricApiLabel">1 следующий шаг</strong><span data-i18n="metricByok">вместо перегрузки советами</span></div>
           </div>
         </div>
       </section>
@@ -185,21 +216,6 @@
                 </article>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="story" class="section">
-        <div class="content split story-shell">
-          <div>
-            <p class="section-kicker" data-i18n="storyKicker">Почему это нужно</p>
-            <h2 data-i18n="storyTitle">Проблема: образование видит результат, но плохо видит процесс взросления</h2>
-            <p data-i18n="storyText">В школе обычно фиксируются оценки, посещаемость, дисциплина и итог работы. Но педагог редко видит, как подросток ставит цель, где застревает перед первым шагом, как переживает обратную связь и где теряет саморегуляцию. SelfReg AI собирает эти сигналы в коротком диалоге и показывает их взрослому в понятной форме.</p>
-          </div>
-          <div class="evidence-panel" aria-label="Project focus">
-            <div><strong>5</strong><span data-i18n="metricLoop">шагов саморегуляции</span></div>
-            <div><strong>RU / EN</strong><span data-i18n="metricLang">две языковые версии</span></div>
-            <div><strong data-i18n="metricApiLabel">1 следующий шаг</strong><span data-i18n="metricByok">вместо перегрузки советами</span></div>
           </div>
         </div>
       </section>
