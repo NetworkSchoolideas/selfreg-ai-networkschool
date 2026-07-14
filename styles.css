@@ -913,6 +913,13 @@ main#top {
   line-height: 1.7;
 }
 
+.future h2 + p,
+#cases h2 + p,
+.risks-main h2 + p,
+#teacher h2 + p {
+  margin-top: clamp(16px, 1.5vw, 20px);
+}
+
 .mission-shell {
   display: grid;
   grid-template-columns: minmax(300px, 0.86fr) minmax(0, 1.14fr);
