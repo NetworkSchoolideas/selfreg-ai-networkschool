@@ -797,6 +797,14 @@ main#top {
     var(--night);
 }
 
+.future {
+  background:
+    linear-gradient(90deg, rgba(5, 13, 24, 0.96) 0%, rgba(7, 19, 34, 0.88) 48%, rgba(7, 19, 34, 0.64) 100%),
+    radial-gradient(circle at 76% 18%, rgba(36, 111, 210, 0.18), transparent 34%),
+    url("assets/bg-future-ecosystem.webp") center / cover no-repeat,
+    var(--night);
+}
+
 #story h2,
 #story h3,
 #story p,
