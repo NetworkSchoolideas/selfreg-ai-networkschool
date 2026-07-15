@@ -547,6 +547,10 @@ function setLang(lang) {
       node.load();
     }
   });
+  document.querySelectorAll("[data-srcset-ru][data-srcset-en]").forEach((node) => {
+    const srcset = node.getAttribute(`data-srcset-${lang}`);
+    if (srcset) node.setAttribute("srcset", srcset);
+  });
   document.querySelectorAll("[data-lang-button]").forEach((node) => {
     const active = node.getAttribute("data-lang-button") === lang;
     node.classList.toggle("active", active);

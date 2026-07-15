@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 720" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="title desc">
+  <title id="title">Будущая образовательная экосистема SelfReg AI</title>
+  <desc id="desc">Мобильная схема сопровождения подростка по аналогии с большим спортом.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10z" fill="#ffffff"/>
+    </marker>
+    <style>
+      .bg{fill:#102a43}.orbit{fill:none;stroke:#fff;stroke-opacity:.14;stroke-width:2}.node{fill:#fff;stroke:#d8e0ea;stroke-width:2}.core{fill:#2f80ed;stroke:#fff;stroke-width:3}.green{fill:#23967f;stroke:#fff;stroke-width:3}.title{font:900 23px Arial,sans-serif;fill:#fff}.light{font:700 16px Arial,sans-serif;fill:#edf4fa}.label{font:900 19px Arial,sans-serif;fill:#132238}.small{font:700 15px Arial,sans-serif;fill:#40556b}.coreText{font:900 20px Arial,sans-serif;fill:#fff}.center{text-anchor:middle}.line{fill:none;stroke:#fff;stroke-width:3;stroke-opacity:.76;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect class="bg" width="390" height="720" rx="18"/>
+  <text class="title" x="24" y="42">Образование как “большой спорт”</text>
+  <text class="title" x="24" y="72">развития</text>
+  <text class="light" x="24" y="106">Данные помогают заметить талант,</text>
+  <text class="light" x="24" y="130">риск и следующий шаг.</text>
+
+  <ellipse class="orbit" cx="195" cy="364" rx="168" ry="214"/>
+  <ellipse class="orbit" cx="195" cy="364" rx="110" ry="142"/>
+
+  <rect class="node" x="18" y="164" width="160" height="104" rx="14"/>
+  <text class="label center" x="98" y="204">Подросток</text>
+  <text class="small center" x="98" y="236">цели · ответы · след</text>
+
+  <rect class="node" x="212" y="164" width="160" height="104" rx="14"/>
+  <text class="label center" x="292" y="204">Педагог</text>
+  <text class="small center" x="292" y="236">не только интуиция</text>
+
+  <circle class="core" cx="195" cy="358" r="68"/>
+  <text class="coreText center" x="195" y="350">SelfReg AI</text>
+  <text class="light center" x="195" y="380">контур поддержки</text>
+
+  <rect class="node" x="18" y="448" width="160" height="104" rx="14"/>
+  <text class="label center" x="98" y="488">Сигналы</text>
+  <text class="small center" x="98" y="520">учёба · психо · тело</text>
+
+  <rect class="node" x="212" y="448" width="160" height="104" rx="14"/>
+  <text class="label center" x="292" y="488">Возможности</text>
+  <text class="small center" x="292" y="520">проекты · наставники</text>
+
+  <rect class="green" x="57" y="620" width="276" height="66" rx="16"/>
+  <text class="coreText center" x="195" y="662">Профиль развития</text>
+
+  <path class="line" d="M98 268 C112 300 140 316 154 330"/>
+  <path class="line" d="M292 268 C278 300 250 316 236 330"/>
+  <path class="line" d="M98 448 C116 420 140 406 156 393"/>
+  <path class="line" d="M292 448 C274 420 250 406 234 393"/>
+  <path class="line" d="M195 426 V618"/>
+</svg>
