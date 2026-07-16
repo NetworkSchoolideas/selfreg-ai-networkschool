@@ -459,6 +459,35 @@ html[data-theme="dark"] .hero {
   gap: 10px;
 }
 
+.hero-test-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+  max-width: 620px;
+  margin-top: 14px;
+  color: var(--text-soft);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.hero-test-links strong {
+  color: var(--text);
+  font-weight: 720;
+}
+
+.hero-test-links a {
+  color: var(--text-soft);
+  font-weight: 650;
+  text-decoration-color: color-mix(in srgb, var(--teal) 64%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.hero-test-links a:hover {
+  color: var(--teal);
+}
+
 .primary,
 .secondary,
 .link-panel a {
@@ -3069,6 +3098,18 @@ html[data-theme="dark"] .ab-item span {
     min-width: 0;
     padding-inline: 12px;
     text-align: center;
+  }
+
+  .hero-test-links {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    width: min(100%, 288px);
+    gap: 4px;
+    font-size: 16px;
+  }
+
+  .hero-test-links > span[aria-hidden="true"] {
+    display: none;
   }
 
   #safety .cards article {
