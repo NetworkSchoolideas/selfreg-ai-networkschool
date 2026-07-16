@@ -10,6 +10,7 @@ node_modules
 tmp-qa/
 plans/
 output/
+.playwright-cli/
 docs/design-audit-*/
 
 # Internal project and agent materials
