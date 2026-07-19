@@ -516,6 +516,11 @@ html[data-theme="dark"] .hero {
   box-shadow: 0 8px 18px rgba(13, 31, 51, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.14);
 }
 
+.app-actions .secondary {
+  min-height: 44px;
+  padding-inline: 20px;
+}
+
 .hero-links .primary,
 .hero-links .secondary {
   min-height: 40px;
@@ -3082,6 +3087,10 @@ html[data-theme="dark"] .ab-item span {
   }
 
   .app-actions .primary {
+    width: min(100%, 288px);
+  }
+
+  .app-actions .secondary {
     width: min(100%, 288px);
   }
 
