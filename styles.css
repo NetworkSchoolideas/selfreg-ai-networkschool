@@ -282,6 +282,23 @@ nav a.is-current::after {
   transform: scaleX(1);
 }
 
+@media (min-width: 1081px) {
+  .primary-nav a:nth-child(3) {
+    margin-right: 18px;
+  }
+
+  .primary-nav a:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -18px;
+    width: 1px;
+    height: 20px;
+    background: var(--border);
+    transform: translateY(-50%);
+  }
+}
+
 .mobile-section-menu {
   display: none;
 }
