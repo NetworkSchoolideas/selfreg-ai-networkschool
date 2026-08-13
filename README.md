@@ -33,6 +33,14 @@ node scripts/landing-smoke.mjs
 node scripts/i18n-integrity.mjs
 ```
 
+Проверка состава будущего публичного дерева GitHub: внутренние handoff,
+планы, агентские каталоги, черновики, логи и дополнительные Markdown-файлы
+не должны быть отслеживаемыми:
+
+```powershell
+node scripts/public-tree-check.mjs
+```
+
 Скрипт проверяет RU/EN главную страницу, clean URLs правил и
 конфиденциальности, а также доступность основного CSS. Можно передать другой
 адрес, например production: `node scripts/landing-smoke.mjs https://example.com`.
