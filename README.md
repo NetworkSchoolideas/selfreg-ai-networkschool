@@ -41,6 +41,13 @@ node scripts/i18n-integrity.mjs
 node scripts/public-tree-check.mjs
 ```
 
+Единый локальный предрелизный gate запускает синтаксические, локализационные,
+репозиторные и clean-URL проверки на временном сервере:
+
+```powershell
+node scripts/release-gate.mjs
+```
+
 Скрипт проверяет RU/EN главную страницу, clean URLs правил и
 конфиденциальности, а также доступность основного CSS. Можно передать другой
 адрес, например production: `node scripts/landing-smoke.mjs https://example.com`.
