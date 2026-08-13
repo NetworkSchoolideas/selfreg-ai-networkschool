@@ -27,6 +27,12 @@ npx.cmd --yes serve . -l 4317
 node scripts/landing-smoke.mjs
 ```
 
+Проверка полноты RU/EN-словаря для всех локализуемых элементов шаблонов:
+
+```powershell
+node scripts/i18n-integrity.mjs
+```
+
 Скрипт проверяет RU/EN главную страницу, clean URLs правил и
 конфиденциальности, а также доступность основного CSS. Можно передать другой
 адрес, например production: `node scripts/landing-smoke.mjs https://example.com`.
