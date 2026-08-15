@@ -54,6 +54,7 @@ function runAsync(command, args) {
 
 run(process.execPath, ["--check", "i18n.js"]);
 run(process.execPath, ["--check", "legal.js"]);
+run(process.execPath, ["--check", "motion.js"]);
 run(process.execPath, ["--check", "scripts/i18n-integrity.mjs"]);
 run(process.execPath, ["--check", "scripts/public-tree-check.mjs"]);
 run(process.execPath, ["scripts/i18n-integrity.mjs"]);

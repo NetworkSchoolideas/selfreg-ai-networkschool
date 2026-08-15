@@ -206,6 +206,21 @@ li + li {
   box-shadow: 0 10px 24px rgba(13, 31, 51, 0.07);
 }
 
+.site-progress {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--teal), var(--blue));
+  box-shadow: 0 0 14px color-mix(in srgb, var(--blue) 42%, transparent);
+  pointer-events: none;
+  transform: scaleX(var(--reading-progress, 0));
+  transform-origin: left center;
+  transition: transform 90ms linear;
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -2477,18 +2492,38 @@ html[data-theme="dark"] .ab-item span {
   .cards article,
   .case-grid article,
   .risk-card,
-  .media-card {
-    transition: border-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+  .media-card,
+  .principle-card,
+  .principle-card-featured,
+  .model-stage-card,
+  .ai-role-card,
+  .scenario-card,
+  .data-grid article,
+  .cluster-grid article,
+  .flow-card,
+  .dashboard-preview,
+  .teacher-copy-panel {
+    transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease;
   }
 
   .problem-grid article:hover,
   .cards article:hover,
   .case-grid article:hover,
   .risk-card:hover,
-  .media-card:hover {
-    transform: translateY(-2px);
-    border-color: var(--border-strong);
-    box-shadow: var(--shadow-md);
+  .media-card:hover,
+  .principle-card:hover,
+  .principle-card-featured:hover,
+  .model-stage-card:hover,
+  .ai-role-card:hover,
+  .scenario-card:hover,
+  .data-grid article:hover,
+  .cluster-grid article:hover,
+  .flow-card:hover,
+  .dashboard-preview:hover,
+  .teacher-copy-panel:hover {
+    transform: translateY(-4px);
+    border-color: color-mix(in srgb, var(--teal) 48%, var(--border-strong));
+    box-shadow: 0 20px 44px rgba(13, 31, 51, 0.12);
   }
 }
 
@@ -3178,6 +3213,58 @@ html[data-theme="dark"] .ab-item span {
   }
 }
 
+@keyframes motionReveal {
+  from {
+    opacity: 0;
+    transform: translateY(28px) scale(0.992);
+    filter: blur(3px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes heroPanelIn {
+  from {
+    opacity: 0;
+    transform: translateY(22px) scale(0.975);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html.motion-ready .motion-reveal {
+    opacity: 0;
+  }
+
+  html.motion-ready .motion-reveal.is-revealed {
+    animation: motionReveal 680ms cubic-bezier(0.22, 1, 0.36, 1) var(--motion-delay, 0ms) both;
+  }
+
+  .hero-visual > * {
+    animation: heroPanelIn 720ms cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .hero-visual > .teacher-mockup {
+    animation-delay: 140ms;
+  }
+
+  .hero-visual > .student-phone {
+    animation-delay: 240ms;
+  }
+
+  .hero-visual > .api-key {
+    animation-delay: 360ms;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -3186,5 +3273,9 @@ html[data-theme="dark"] .ab-item span {
     transition-duration: 0.01ms;
     animation-duration: 0.01ms;
     animation-iteration-count: 1;
+  }
+
+  .site-progress {
+    transition: none;
   }
 }

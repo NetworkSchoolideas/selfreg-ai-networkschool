@@ -11,6 +11,7 @@ const checks = [
   ["terms RU", "terms?lang=ru", 'class="legal-page"'],
   ["terms EN", "terms?lang=en", 'class="legal-page"'],
   ["landing stylesheet", "styles.css", "--text:"],
+  ["landing motion script", "motion.js", "setupScrollReveals"],
 ];
 
 let failed = false;
