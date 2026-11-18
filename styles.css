@@ -1475,12 +1475,15 @@ main#top {
   font-weight: 720;
 }
 
-.model-support-rail,
-.model-loop-column,
-.model-ai-column {
+.model-support-rail {
   display: grid;
+  grid-row: span 5;
   gap: 20px;
   align-content: start;
+}
+
+.model-pair {
+  display: contents;
 }
 
 .support-step {
@@ -2527,6 +2530,41 @@ html[data-theme="dark"] .ab-item span {
   }
 }
 
+.model-detail.model-interactive .model-stage-card:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--blue) 72%, #ffffff);
+  outline-offset: 4px;
+}
+
+.model-detail.model-interactive .model-stage-card.is-stage-active {
+  border-color: color-mix(in srgb, var(--teal) 62%, #0d1f33);
+  box-shadow: 0 16px 32px rgba(20, 136, 125, 0.14);
+}
+
+.model-detail.model-interactive .ai-role-card.is-stage-active {
+  border-color: color-mix(in srgb, var(--blue) 56%, #0d1f33);
+  box-shadow: 0 16px 32px rgba(47, 116, 215, 0.12);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .model-detail.model-interactive .model-stage-card,
+  .model-detail.model-interactive .ai-role-card {
+    transition: border-color 220ms ease, box-shadow 220ms ease, opacity 220ms ease, transform 220ms ease;
+  }
+
+  .model-detail.model-interactive.has-active-stage .model-stage-card:not(.is-stage-active),
+  .model-detail.model-interactive.has-active-stage .ai-role-card:not(.is-stage-active) {
+    opacity: 0.86;
+  }
+
+  .model-detail.model-interactive .model-stage-card.is-stage-active {
+    transform: translateX(8px);
+  }
+
+  .model-detail.model-interactive .ai-role-card.is-stage-active {
+    transform: translateX(-6px);
+  }
+}
+
 @media (max-width: 1180px) {
   .problem-grid,
   .cards,
@@ -2543,8 +2581,14 @@ html[data-theme="dark"] .ab-item span {
   }
 
   .model-support-rail {
+    grid-row: auto;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     align-items: stretch;
+  }
+
+  .model-pair {
+    display: grid;
+    gap: 12px;
   }
 
   .research-notes {

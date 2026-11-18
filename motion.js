@@ -102,7 +102,52 @@ function setupScrollReveals() {
   });
 }
 
+function setupModelJourney() {
+  const model = document.querySelector(".model-detail");
+  if (!model) return;
+
+  const pairs = [...model.querySelectorAll(".model-pair")].map((pair) => ({
+    stage: pair.querySelector(".model-stage-card"),
+    role: pair.querySelector(".ai-role-card")
+  }));
+  if (pairs.length !== 5 || pairs.some(({ stage, role }) => !stage || !role)) return;
+
+  const activate = (index) => {
+    pairs.forEach(({ stage, role }, pairIndex) => {
+      const isActive = pairIndex === index;
+      stage.classList.toggle("is-stage-active", isActive);
+      stage.setAttribute("aria-current", isActive ? "step" : "false");
+      role.classList.toggle("is-stage-active", isActive);
+    });
+    model.classList.add("has-active-stage");
+  };
+
+  model.classList.add("model-interactive");
+  pairs.forEach(({ stage, role }, index) => {
+    stage.tabIndex = 0;
+    stage.addEventListener("pointerenter", () => activate(index));
+    stage.addEventListener("focus", () => activate(index));
+    stage.addEventListener("click", () => activate(index));
+    role.addEventListener("pointerenter", () => activate(index));
+  });
+
+  const initialStage = () => activate(0);
+  if (motionPreference.matches || !("IntersectionObserver" in window)) {
+    initialStage();
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    if (!entries.some((entry) => entry.isIntersecting)) return;
+    observer.disconnect();
+    if (!model.classList.contains("has-active-stage")) initialStage();
+  }, { threshold: 0.18 });
+
+  observer.observe(pairs[0].stage);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   setupReadingProgress();
   setupScrollReveals();
+  setupModelJourney();
 });
